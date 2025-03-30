@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:grial="http://uxdivers.com/grial"
+             x:Class="Ubi.Views.Navigation.Dashboards.CursesBasicPage"
+             BackgroundColor="{ DynamicResource BasePageColor }"
+	Title="{ grial:Translate PageTitleCursesBasic }">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid BackgroundColor="White" 
+                      Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+
+
+                <Label Text="Aqui estão os cursos da categoria básica" Grid.Row="0" TextColor="Black" HorizontalOptions="StartAndExpand"></Label>
+
+
+
+                <grial:CardView CornerRadius="0" 
+                                    RowSpacing="1"
+                                    ColumnSpacing="1"
+                                    Padding="12"
+                                    ShadowSize="20" 
+                                    ShadowOpacity="1"
+                                    BackgroundColor="White"
+                                    Grid.Row="1">
+
+
+
+                    <StackLayout Orientation="Vertical" BackgroundColor="White">
+                        <StackLayout BackgroundColor="White" Orientation="Horizontal">
+                            <Label Text="Seguro de vida" TextColor="Black" Grid.Row="0" FontSize="Medium" FontAttributes="Bold"></Label>
+                            <Image Source="starubi.jpg"  HorizontalOptions="EndAndExpand" ></Image>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                            <Label Text="Aprenda o mínimo para ser um usuário capacitado na ferramenta" TextColor="Black" Grid.Row="0" FontSize="Default" ></Label>
+
+                        </StackLayout>
+                    </StackLayout>
+
+
+                </grial:CardView>
+
+                <grial:CardView CornerRadius="0" 
+                                    RowSpacing="1"
+                                    ColumnSpacing="1"
+                                    Padding="12"
+                                    ShadowSize="20" 
+                                    ShadowOpacity="1"
+                                    BackgroundColor="White"
+                                    Grid.Row="2">
+
+
+
+
+                    <StackLayout Orientation="Vertical" BackgroundColor="White">
+                        <StackLayout BackgroundColor="White" Orientation="Horizontal">
+                            <Label Text="Seguro de Carro" TextColor="Black" Grid.Row="0" FontSize="Medium" FontAttributes="Bold"></Label>
+                            <Image Source="starubi.jpg" HorizontalOptions="EndAndExpand" ></Image>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                            <Label Text="Aprenda o mínimo para ser um usuário capacitado na ferramenta" TextColor="Black" Grid.Row="0" FontSize="Default" ></Label>
+
+                        </StackLayout>
+                    </StackLayout>
+
+
+                </grial:CardView>
+
+                <grial:CardView CornerRadius="0" 
+                                    RowSpacing="1"
+                                    ColumnSpacing="1"
+                                    Padding="12"
+                                    ShadowSize="20" 
+                                    ShadowOpacity="1"
+                                    BackgroundColor="White"
+                                    Grid.Row="3">
+
+
+
+
+                    <StackLayout Orientation="Vertical" BackgroundColor="White" >
+                        <StackLayout BackgroundColor="White" Orientation="Horizontal">
+                            <Label Text="Seguro de Residência" TextColor="Black" Grid.Row="0" FontSize="Medium" FontAttributes="Bold"></Label>
+                            <Image Source="starubi.jpg"  HorizontalOptions="EndAndExpand" ></Image>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                            <Label Text="Aprenda o mínimo para ser um usuário capacitado na ferramenta" TextColor="Black" Grid.Row="0" FontSize="Default" ></Label>
+
+                        </StackLayout>
+                    </StackLayout>
+
+
+                </grial:CardView>
+
+                <grial:CardView CornerRadius="0" 
+                                    RowSpacing="1"
+                                    ColumnSpacing="1"
+                                    Padding="12"
+                                    ShadowSize="20" 
+                                    ShadowOpacity="1"
+                                    BackgroundColor="White"
+                                    Grid.Row="4">
+
+
+
+
+                    <StackLayout Orientation="Vertical" BackgroundColor="White" >
+                        <StackLayout BackgroundColor="White" Orientation="Horizontal">
+                            <Label Text="Seguro Odontológico" TextColor="Black" Grid.Row="0" FontSize="Medium" FontAttributes="Bold"></Label>
+                            <Image Source="starubi.jpg"  HorizontalOptions="EndAndExpand" ></Image>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                            <Label Text="Aprenda o mínimo para ser um usuário capacitado na ferramenta" TextColor="Black" Grid.Row="0" FontSize="Default" ></Label>
+
+                        </StackLayout>
+                    </StackLayout>
+
+
+                </grial:CardView>
+
+                <grial:CardView CornerRadius="0" 
+                                    RowSpacing="1"
+                                    ColumnSpacing="1"
+                                    Padding="12"
+                                    ShadowSize="20" 
+                                    ShadowOpacity="1"
+                                    BackgroundColor="White"
+                                    Grid.Row="5">
+
+
+
+
+                    <StackLayout Orientation="Vertical" BackgroundColor="White" >
+                        <StackLayout BackgroundColor="White" Orientation="Horizontal">
+                            <Label Text="Seguro Procedural" TextColor="Black" Grid.Row="0" FontSize="Medium" FontAttributes="Bold"></Label>
+                            <Image Source="starubi.jpg"  HorizontalOptions="EndAndExpand" ></Image>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                            <Label Text="Aprenda o mínimo para ser um usuário capacitado na ferramenta" TextColor="Black" Grid.Row="0" FontSize="Default" ></Label>
+
+                        </StackLayout>
+                    </StackLayout>
+
+
+                </grial:CardView>
+
+
+
+
+
+
+
+
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

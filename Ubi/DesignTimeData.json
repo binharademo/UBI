@@ -1,0 +1,4966 @@
+{
+  "DashboardItems": {
+    "$id": "dashboard-items",
+    "Items": [
+      {
+        "$id": "dashboard-item-1",
+        "Name": "Contacts",
+        "BackgroundColor": "#FF921243",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_05.jpg",
+        "Icon": "",
+        "ItemCount": 6,
+        "Description": "All the people you know is here. Create, remove and organize your contacts efficiently. You can share them too!",
+        "Badge": 0
+      },
+      {
+        "$id": "dashboard-item-2",
+        "Name": "Documents",
+        "BackgroundColor": "#FFB31250",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_04.jpg",
+        "Icon": "",
+        "ItemCount": 5,
+        "Description": "All the documents you work with everyday are here. Create, remove and organize your files efficiently. You can share them too!",
+        "Badge": 0
+      },
+      {
+        "$id": "dashboard-item-3",
+        "Name": "Notifications",
+        "BackgroundColor": "#FFCD195E",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_07.jpg",
+        "Icon": "",
+        "ItemCount": 15,
+        "Description": "The ultimate notifications hub. Messages, emails, social networks, reminders, everything.",
+        "Badge": 9
+      },
+      {
+        "$id": "dashboard-item-4",
+        "Name": "My Photos",
+        "BackgroundColor": "#FF56329A",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_03.jpg",
+        "Icon": "",
+        "ItemCount": 10,
+        "Description": "All the pictures you take are here. Create, remove and organize your photos efficiently. You can share them too!",
+        "Badge": 0
+      },
+      {
+        "$id": "dashboard-item-5",
+        "Name": "Music",
+        "BackgroundColor": "#FF6A40B9",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_06.jpg",
+        "Icon": "",
+        "ItemCount": 5,
+        "Description": "All your favorites songs are here. All the styles, from classic to avant-garde composers. Make playlists matching your mood. Music is everything :)",
+        "Badge": 0
+      },
+      {
+        "$id": "dashboard-item-6",
+        "Name": "Offers",
+        "BackgroundColor": "#FF7C4ECD",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_02.jpg",
+        "Icon": "",
+        "ItemCount": 7,
+        "Badge": 0
+      },
+      {
+        "$id": "dashboard-item-7",
+        "Name": "World News",
+        "BackgroundColor": "#FF525ABB",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_08.jpg",
+        "Icon": "",
+        "ItemCount": 3,
+        "Badge": 0
+      },
+      {
+        "$id": "dashboard-item-8",
+        "Name": "Events",
+        "BackgroundColor": "#FF5F7DD4",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_09.jpg",
+        "Icon": "",
+        "ItemCount": 19,
+        "Badge": 9
+      },
+      {
+        "$id": "dashboard-item-9",
+        "Name": "Settings",
+        "BackgroundColor": "#FF7B96E5",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_01.jpg",
+        "Icon": "",
+        "ItemCount": 4,
+        "Badge": 0
+      }
+    ]
+  },
+ 
+
+
+
+  "DashboardCardsPage.xaml": {
+    "Items": [
+      {
+        "$id": "dashboard-card-1",
+        "Title": "Top fishing secrets revealed",
+        "Section": "NATURE",
+        "Author": "Margaret Whites",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_04.png",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_04.jpg",
+        "BackgroundColor": "#d81b60"
+      },
+      {
+        "$id": "dashboard-card-2",
+        "Title": "Chasing mavericks",
+        "Section": "SPORTS",
+        "Author": "Skyler Harrisson",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_05.png",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_05.jpg",
+        "BackgroundColor": "#c2185b"
+      },
+      {
+        "$id": "dashboard-card-3",
+        "Title": "Another one bites the dust",
+        "Section": "HEALTH",
+        "Author": "Irma Leites",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_06.png",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_06.jpg",
+        "BackgroundColor": "#56329A"
+      },
+      {
+        "$id": "dashboard-card-4",
+        "Title": "United by friendship",
+        "Section": "ACTUALITY",
+        "Author": "UXDIVERS",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_01.png",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_01.jpg",
+        "BackgroundColor": "#4B436E"
+      },
+      {
+        "$id": "dashboard-card-5",
+        "Title": "The road to you",
+        "Section": "DISCIPLINE",
+        "Author": "Donald Davies",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_02.png",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_02.jpg",
+        "BackgroundColor": "#1e88e5"
+      },
+      {
+        "$id": "dashboard-card-6",
+        "Title": "Nature and its influence on design",
+        "Section": "FREE TIME",
+        "Author": "Regina Joplin",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_03.png",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_03.jpg",
+        "BackgroundColor": "#1565c0"
+      },
+      {
+        "$id": "dashboard-card-7",
+        "Title": "Another one bites the dust",
+        "Section": "SELF-ESTEEM",
+        "Author": "Dimitar Taradasov",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_07.png",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_07.jpg",
+        "BackgroundColor": "#0097a7"
+      },
+      {
+        "$id": "dashboard-card-8",
+        "Title": "A retrospective on Jazz evolution",
+        "Section": "CULTURE",
+        "Author": "Thelonious Davies",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_01.png",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_08.jpg",
+        "BackgroundColor": "#00838f"
+      },
+      {
+        "$id": "dashboard-card-9",
+        "Title": "Blowing in the wind",
+        "Section": "MUSIC",
+        "Author": "Cire Notpalc",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_02.png",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_09.jpg",
+        "BackgroundColor": "#2e7d32"
+      }
+    ]
+  },
+  "DashboardMultipleTilesPage.xaml": {
+    "Items": [
+      {
+        "$id": "dashboard-tile-1",
+        "Title": "Seguros",
+        "Body": "",
+        "Avatar": "",
+        "BackgroundColor": "#48B5BA",
+        "BackgroundImage": "",
+        "ShowBackgroundColor": true,
+        "IsNotification": false,
+        "Icon": "",
+        "Badge": 0
+      },
+      {
+        "$id": "dashboard-tile-2",
+        "Title": "Planos de televisão",
+        "Body": "",
+        "Avatar": "",
+        "BackgroundColor": "#FFC90E",
+        "BackgroundImage": "",
+        "ShowBackgroundColor": true,
+        "IsNotification": false,
+        "Icon": "",
+        "Badge": 0
+      },
+      {
+        "$id": "dashboard-tile-3",
+        "Title": "Planos Odontológicos",
+        "Body": "",
+        "Avatar": "",
+        "BackgroundColor": "#1313FB",
+        "BackgroundImage": "",
+        "ShowBackgroundColor": true,
+        "IsNotification": false,
+        "Icon": "",
+        "Badge": 0
+      },
+      {
+        "$id": "dashboard-tile-4",
+        "Title": "Máquinas de cartões",
+        "Body": "",
+        "Avatar": "",
+        "BackgroundColor": "#E66628",
+        "BackgroundImage": "",
+        "ShowBackgroundColor": true,
+        "IsNotification": false,
+        "Icon": "",
+        "Badge": 0
+      },
+      {
+        "$id": "dashboard-tile-5",
+        "Title": "Seguro de Vida",
+        "Body": "",
+        "Avatar": "",
+        "BackgroundColor": "#4AB02D",
+        "BackgroundImage": "",
+        "ShowBackgroundColor": true,
+        "IsNotification": false,
+        "Icon": "",
+        "Badge": 0
+      },
+      {
+        "$id": "dashboard-tile-6",
+        "Title": "Plano de celular",
+        "Body": "",
+        "Avatar": "",
+        "BackgroundColor": "#8B30AD",
+        "BackgroundImage": "",
+        "ShowBackgroundColor": true,
+        "IsNotification": false,
+        "Icon": "",
+        "Badge": 0
+      },
+      {
+        "$id": "dashboard-tile-7",
+        "Title": "Twitter",
+        "Body": "@Grialuikit did it again!",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_05.png",
+        "BackgroundColor": "#1DA1F2",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_09.jpg",
+        "ShowBackgroundColor": false,
+        "IsNotification": true,
+        "Icon": "",
+        "Badge": 2
+      },
+      {
+        "$id": "dashboard-tile-8",
+        "Title": "World News",
+        "Body": "",
+        "Avatar": "",
+        "BackgroundColor": "#770A002B",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_01.jpg",
+        "ShowBackgroundColor": false,
+        "IsNotification": false,
+        "Icon": "",
+        "Badge": 1
+      },
+      {
+        "$id": "dashboard-tile-9",
+        "Title": "Facebook",
+        "Body": "GrialKit #AWESOME",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_03.png",
+        "BackgroundColor": "#3b5998",
+        "BackgroundImage": "",
+        "ShowBackgroundColor": false,
+        "IsNotification": true,
+        "Icon": "",
+        "Badge": 2
+      },
+      {
+        "$id": "dashboard-tile-10",
+        "Title": "Instagram",
+        "Body": "Grial 3.0 preview, sweet!",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_01.png",
+        "BackgroundColor": "#833ab4",
+        "BackgroundImage": "",
+        "ShowBackgroundColor": false,
+        "IsNotification": true,
+        "Icon": "",
+        "Badge": 2
+      },
+      {
+        "$id": "dashboard-tile-11",
+        "Title": "Events",
+        "Body": "",
+        "Avatar": "",
+        "BackgroundColor": "#319E3A",
+        "BackgroundImage": "",
+        "ShowBackgroundColor": true,
+        "IsNotification": false,
+        "Icon": "",
+        "Badge": 0
+      },
+      {
+        "$id": "dashboard-tile-12",
+        "Title": "Whatsapp",
+        "Body": "Check Grial 3.0!!!",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_02.png",
+        "BackgroundColor": "#128c7e",
+        "BackgroundImage": "",
+        "ShowBackgroundColor": false,
+        "IsNotification": true,
+        "Icon": "",
+        "Badge": 5
+      },
+      {
+        "$id": "dashboard-tile-13",
+        "Title": "Linkedin",
+        "Body": "Xamarin Forms IS Grial",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_07.png",
+        "BackgroundColor": "#0077b5",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_08.jpg",
+        "ShowBackgroundColor": false,
+        "IsNotification": true,
+        "Icon": "",
+        "Badge": 0
+      },
+      {
+        "$id": "dashboard-tile-14",
+        "Title": "Games",
+        "Body": "",
+        "Avatar": "",
+        "BackgroundColor": "#DE6D3B",
+        "BackgroundImage": "",
+        "ShowBackgroundColor": true,
+        "IsNotification": false,
+        "Icon": "",
+        "Badge": 0
+      }
+    ]
+  },
+  "IconsDashboardPage.xaml": {
+    "$ref": "dashboard-items"
+  },
+  "ImagesDashboardPage.xaml": {
+    "$ref": "dashboard-items"
+  },
+  "FlatDashboardPage.xaml": {
+    "$ref": "dashboard-items"
+  },
+  "NavigationListWithImagesPage.xaml": {
+    "$ref": "dashboard-items"
+  },
+  "NavigationListWithIconsPage.xaml": {
+    "$ref": "dashboard-items"
+  },
+  "NavigationFlatListPage.xaml": {
+    "$ref": "dashboard-items"
+  },
+  "NavigationCardsListPage.xaml": {
+    "$ref": "dashboard-items"
+  },
+  "NavigationCardsDescriptionListPage.xaml": {
+    "Category": {
+      "Icon": "",
+      "Name": "Trending"
+    },
+    "Items": [
+      {
+        "$ref": "dashboard-item-1"
+      },
+      {
+        "$ref": "dashboard-item-2"
+      },
+      {
+        "$ref": "dashboard-item-3"
+      },
+      {
+        "$ref": "dashboard-item-4"
+      },
+      {
+        "$ref": "dashboard-item-5"
+      }
+    ]
+  },
+  "DashboardCarouselPage.xaml": {
+    "Items": [
+      {
+        "$ref": "dashboard-item-1"
+      },
+      {
+        "$ref": "dashboard-item-2"
+      },
+      {
+        "$ref": "dashboard-item-3"
+      },
+      {
+        "$ref": "dashboard-item-4"
+      },
+      {
+        "$ref": "dashboard-item-5"
+      },
+      {
+        "$ref": "dashboard-item-6"
+      },
+      {
+        "$ref": "dashboard-item-7"
+      },
+      {
+        "$ref": "dashboard-item-8"
+      },
+      {
+        "$ref": "dashboard-item-9"
+      }
+    ],
+    "Headers": [
+      {
+        "$id": "dashboard-header-item-1",
+        "Name": "World News",
+        "Description": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.",
+        "Icon": ""
+      },
+      {
+        "$id": "dashboard-header-item-1",
+        "Name": "Award-winning Films",
+        "Description": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.",
+        "Icon": ""
+      },
+      {
+        "$id": "dashboard-header-item-1",
+        "Name": "Learn",
+        "Description": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.",
+        "Icon": ""
+      }
+    ]
+  },
+  "PerformanceDashboardMainPage.xaml": {
+    "Periods": [
+      "Last Week",
+      "Last Month",
+      "Last Year"
+    ],
+    "SelectedPeriodData": {
+      "$ref": "PerformanceDashboardMainPage_LastWeek"
+    },
+    "ChartData": {
+      "LastWeek": {
+        "$id": "PerformanceDashboardMainPage_LastWeek",
+        "MaxValue": 30,
+        "Series": [
+          {
+            "Value": 10,
+            "Label": "Su"
+          },
+          {
+            "Value": 5,
+            "Label": "Mo"
+          },
+          {
+            "Value": 22,
+            "Label": "Tu"
+          },
+          {
+            "Value": 8,
+            "Label": "We"
+          },
+          {
+            "Value": 7,
+            "Label": "Th"
+          },
+          {
+            "Value": 10,
+            "Label": "Fr"
+          },
+          {
+            "Value": 14,
+            "Label": "Sa"
+          }
+        ]
+      },
+      "LastMonth": {
+        "MaxValue": 100,
+        "Series": [
+          {
+            "Value": 30,
+            "Label": "1"
+          },
+          {
+            "Value": 14,
+            "Label": "2"
+          },
+          {
+            "Value": 66,
+            "Label": "3"
+          },
+          {
+            "Value": 24,
+            "Label": "4"
+          },
+          {
+            "Value": 21,
+            "Label": "5"
+          },
+          {
+            "Value": 30,
+            "Label": "6"
+          },
+          {
+            "Value": 42,
+            "Label": "7"
+          },
+          {
+            "Value": 30,
+            "Label": "8"
+          },
+          {
+            "Value": 14,
+            "Label": "9"
+          },
+          {
+            "Value": 66,
+            "Label": "10"
+          },
+          {
+            "Value": 24,
+            "Label": "11"
+          },
+          {
+            "Value": 21,
+            "Label": "12"
+          },
+          {
+            "Value": 70,
+            "Label": "13"
+          },
+          {
+            "Value": 62,
+            "Label": "14"
+          },
+          {
+            "Value": 50,
+            "Label": "15"
+          },
+          {
+            "Value": 44,
+            "Label": "16"
+          },
+          {
+            "Value": 66,
+            "Label": "17"
+          },
+          {
+            "Value": 24,
+            "Label": "18"
+          },
+          {
+            "Value": 21,
+            "Label": "19"
+          },
+          {
+            "Value": 30,
+            "Label": "20"
+          },
+          {
+            "Value": 30,
+            "Label": "21"
+          },
+          {
+            "Value": 14,
+            "Label": "22"
+          },
+          {
+            "Value": 66,
+            "Label": "23"
+          },
+          {
+            "Value": 24,
+            "Label": "24"
+          },
+          {
+            "Value": 21,
+            "Label": "25"
+          },
+          {
+            "Value": 30,
+            "Label": "26"
+          },
+          {
+            "Value": 42,
+            "Label": "27"
+          },
+          {
+            "Value": 42,
+            "Label": "28"
+          },
+          {
+            "Value": 42,
+            "Label": "29"
+          },
+          {
+            "Value": 42,
+            "Label": "30"
+          }
+        ]
+      },
+      "LastYear": {
+        "MaxValue": 500,
+        "Series": [
+          {
+            "Value": 280,
+            "Label": "Jan"
+          },
+          {
+            "Value": 380,
+            "Label": "Feb"
+          },
+          {
+            "Value": 220,
+            "Label": "Mar"
+          },
+          {
+            "Value": 278,
+            "Label": "Apr"
+          },
+          {
+            "Value": 377,
+            "Label": "May"
+          },
+          {
+            "Value": 100,
+            "Label": "Jun"
+          },
+          {
+            "Value": 140,
+            "Label": "Jul"
+          },
+          {
+            "Value": 240,
+            "Label": "Ago"
+          },
+          {
+            "Value": 220,
+            "Label": "Sep"
+          },
+          {
+            "Value": 310,
+            "Label": "Oct"
+          },
+          {
+            "Value": 430,
+            "Label": "Nov"
+          },
+          {
+            "Value": 203,
+            "Label": "Dec"
+          }
+        ]
+      }
+    },
+    "TeamMembers": [
+      {
+        "$id": "flow-tasks-employee-1",
+        "Name": "Regina Joplin",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_03.png",
+        "Status": "Online",
+        "Team": "Support",
+        "Open": 229,
+        "Closed": 22,
+        "Score": 64,
+        "ScoreLabel": "6.4",
+        "Tags": [
+          "Sales",
+          "Support",
+          "Customers",
+          "Michigan",
+          "Team Lead"
+        ]
+      },
+      {
+        "$id": "flow-tasks-employee-2",
+        "Name": "Donald Davies",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_01.png",
+        "Status": "Away",
+        "Team": "IT",
+        "Open": 43,
+        "Closed": 12,
+        "Score": 67,
+        "ScoreLabel": "6.7",
+        "Tags": [
+          "Support",
+          "Programming"
+        ]
+      },
+      {
+        "$id": "flow-tasks-employee-3",
+        "Name": "Jaco Morrison",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_04.png",
+        "Status": "Busy",
+        "Team": "Marketing",
+        "Open": 112,
+        "Closed": 40,
+        "Score": 91,
+        "ScoreLabel": "9.1",
+        "Tags": [
+          "Sales",
+          "Support",
+          "Marketing",
+          "Design",
+          "Lead Generation",
+          "Washington"
+        ]
+      },
+      {
+        "$id": "flow-tasks-employee-4",
+        "Name": "Margaret Whites",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_05.png",
+        "Status": "Online",
+        "Team": "Support",
+        "Open": 229,
+        "Closed": 22,
+        "Score": 78,
+        "ScoreLabel": "8.8",
+        "Tags": [
+          "Sales",
+          "Design",
+          "Marketing",
+          "Growth Hacking",
+          "Team Lead"
+        ]
+      },
+      {
+        "$id": "flow-tasks-employee-5",
+        "Name": "Pat Davies",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_07.png",
+        "Status": "Offline",
+        "Team": "IT",
+        "Open": 43,
+        "Closed": 12,
+        "Score": 24,
+        "ScoreLabel": "2.4",
+        "Tags": [
+          "Support",
+          "Programming",
+          "Hardware",
+          "Network"
+        ]
+      },
+      {
+        "$id": "flow-tasks-employee-6",
+        "Name": "Janis Spector",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_02.png",
+        "Status": "Online",
+        "Team": "Sales",
+        "Open": 112,
+        "Closed": 40,
+        "Score": 80,
+        "ScoreLabel": "8.0",
+        "Tags": [
+          "Sales",
+          "Marketing",
+          "Design",
+          "Team Lead",
+          "User Experience"
+        ]
+      }
+    ],
+    "Metrics": [
+      {
+        "Name": "Open Tasks",
+        "Value": 244,
+        "ValueDifference": 1
+      },
+      {
+        "Name": "Day Services",
+        "Value": 129,
+        "ValueDifference": -1
+      },
+      {
+        "Name": "Active Users",
+        "Value": 190,
+        "ValueDifference": 1
+      },
+      {
+        "Name": "Recurrent Users",
+        "Value": 98,
+        "ValueDifference": 0
+      },
+      {
+        "Name": "Delayed Tasks",
+        "Value": 14,
+        "ValueDifference": 0
+      },
+      {
+        "Name": "Open Tasks",
+        "Value": 244,
+        "ValueDifference": 1
+      },
+      {
+        "Name": "Day Services",
+        "Value": 129,
+        "ValueDifference": -1
+      },
+      {
+        "Name": "Active Users",
+        "Value": 190,
+        "ValueDifference": 1
+      },
+      {
+        "Name": "Recurrent Users",
+        "Value": 98,
+        "ValueDifference": 0
+      },
+      {
+        "Name": "Delayed Tasks",
+        "Value": 14,
+        "ValueDifference": 0
+      }
+    ]
+  },
+  "EmployeePerformanceDashboardPage.xaml": {
+    "Employee": {
+      "$ref": "flow-tasks-employee-1"
+    },
+    "Periods": [
+      "Last Week",
+      "Last Month",
+      "Last Year"
+    ],
+    "SelectedPeriodData": {
+      "$ref": "EmployeePerformanceDashboardPage_LastWeek"
+    },
+    "TasksData": {
+      "LastWeek": {
+        "$id": "EmployeePerformanceDashboardPage_LastWeek",
+        "RingSeries": [
+          {
+            "Value": 50,
+            "ValueLabel": "50%",
+            "Label": "Completed",
+            "Color": "#50E3C2"
+          },
+          {
+            "Value": 40,
+            "ValueLabel": "40%",
+            "Label": "Open",
+            "Color": "#449BFF"
+          },
+          {
+            "Value": 78,
+            "ValueLabel": "78%",
+            "Label": "Awaiting",
+            "Color": "#DE047D"
+          }
+        ]
+      },
+      "LastMonth": {
+        "RingSeries": [
+          {
+            "Value": 70,
+            "ValueLabel": "70%",
+            "Label": "Completed",
+            "Color": "#50E3C2"
+          },
+          {
+            "Value": 30,
+            "ValueLabel": "30%",
+            "Label": "Open",
+            "Color": "#449BFF"
+          },
+          {
+            "Value": 70,
+            "ValueLabel": "70%",
+            "Label": "Awaiting",
+            "Color": "#DE047D"
+          }
+        ]
+      },
+      "LastYear": {
+        "RingSeries": [
+          {
+            "Value": 40,
+            "ValueLabel": "40%",
+            "Label": "Completed",
+            "Color": "#50E3C2"
+          },
+          {
+            "Value": 90,
+            "ValueLabel": "90%",
+            "Label": "Open",
+            "Color": "#449BFF"
+          },
+          {
+            "Value": 66,
+            "ValueLabel": "66%",
+            "Label": "Awaiting",
+            "Color": "#DE047D"
+          }
+        ]
+      }
+    },
+    "Performance": {
+      "MaxValue": 30,
+      "Series": [
+        {
+          "Value": 1,
+          "Label": "Su"
+        },
+        {
+          "Value": 5,
+          "Label": "Mo"
+        },
+        {
+          "Value": 12,
+          "Label": "Tu"
+        },
+        {
+          "Value": 11,
+          "Label": "We"
+        },
+        {
+          "Value": 17,
+          "Label": "Th"
+        },
+        {
+          "Value": 22,
+          "Label": "Fr"
+        },
+        {
+          "Value": 28,
+          "Label": "Sa"
+        }
+      ]
+    },
+    "Services": {
+      "MaxValue": 30,
+      "Series": [
+        {
+          "Value": 10,
+          "Label": "Su"
+        },
+        {
+          "Value": 5,
+          "Label": "Mo"
+        },
+        {
+          "Value": 22,
+          "Label": "Tu"
+        },
+        {
+          "Value": 8,
+          "Label": "We"
+        },
+        {
+          "Value": 7,
+          "Label": "Th"
+        },
+        {
+          "Value": 10,
+          "Label": "Fr"
+        },
+        {
+          "Value": 14,
+          "Label": "Sa"
+        }
+      ]
+    },
+    "WorkedHours": {
+      "MaxValue": 15,
+      "Series": [
+        {
+          "Value": 48,
+          "Label": "In Office",
+          "Color": "#518DD8"
+        },
+        {
+          "Value": 26,
+          "Label": "Extra Time",
+          "Color": "#84B4F0"
+        },
+        {
+          "Value": 15,
+          "Label": "Extra Time",
+          "Color": "#A2D3FF"
+        },
+        {
+          "Value": 12,
+          "Label": "From Home",
+          "Color": "#BFE1FF"
+        }
+      ]
+    }
+  },
+  "EmployeeProfileDashboardPage.xaml": {
+    "Employee": {
+      "$ref": "flow-tasks-employee-1"
+    },
+    "Notes": "Vivamus ac massa tellus. Suspendisse non ex accumsan, varius augue vel, dictum leo. Phasellus luctus nibh tortor, ac faucibus velit dapibus maximus. Suspendisse nec molestie leo, ac convallis magna. Etiam tincidunt eros orci, eget molestie nulla accumsan sed. \n\nDonec volutpat gravida sapien eget condimentum. Sed lobortis commodo ex vitae interdum. Sed sodales dignissim est et eleifend. Vestibulum ligula eros, consequat non fermentum vitae, eleifend tincidunt velit.",
+    "TeamMembers": [
+      {
+        "$ref": "flow-tasks-employee-1"
+      },
+      {
+        "$ref": "flow-tasks-employee-2"
+      },
+      {
+        "$ref": "flow-tasks-employee-3"
+      },
+      {
+        "$ref": "flow-tasks-employee-4"
+      },
+      {
+        "$ref": "flow-tasks-employee-5"
+      },
+      {
+        "$ref": "flow-tasks-employee-6"
+      }
+    ]
+  },
+  "VideoCarouselHighlightsPage.xaml": {
+    "BackgroundVideo": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/local_video.mp4",
+    "Highlights": [
+      {
+        "Title": "More Content",
+        "Description": "Grial UI Kit Flows, more themes, more pages, more layouts, more icons.",
+        "Icon": "",
+        "Color": "#48B5BA"
+      },
+      {
+        "Title": "Richer Content",
+        "Description": "Fluid animations, flexible layouts, gradient support, more custom controls.",
+        "Icon": "",
+        "Color": "#CD195E"
+      },
+      {
+        "Title": "Faster Kickstart",
+        "Description": "Setup your project and create your own themes with Grial Customizer.",
+        "Icon": "",
+        "Color": "#0C60AF"
+      },
+      {
+        "Title": "Grial 3.0",
+        "Description": "The best UI Kit for Xamarin Forms",
+        "Icon": "",
+        "Color": "#833AB4"
+      }
+    ]
+  },
+  "FeaturedMovies": {
+    "$id": "featured-movies",
+    "Movies": [
+      {
+        "$id": "featured-movie-1",
+        "Name": "Ant-Man and the Wasp",
+        "Director": "Peyton Reed",
+        "Year": "August 2018",
+        "PosterImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/featured_movie_1_poster_image.jpg",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/featured_movie_1_background_image.jpg",
+        "Color": "#c22c2d",
+        "Overview": "As Scott Lang balances being both a superhero and a father, Hope van Dyne and Dr. Hank Pym present an urgent new mission that finds the Ant-Man fighting alongside the Wasp to uncover secrets from their past.",
+        "TrailerVideo": "https://www.youtube.com/watch?v=D86RtevtfrA",
+        "Rating": 80,
+        "RatingLabel": "8.0",
+        "BackdropImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/featured_movie_1_backdrop_image.jpg",
+        "Genres": [
+          "ACTION",
+          "ADVENTURE",
+          "FANTASY",
+          "COMEDY"
+        ],
+        "Crew": [
+          {
+            "Name": "Gabriel Ferrari",
+            "Role": "Screenplay"
+          },
+          {
+            "Name": "Erik Sommers",
+            "Role": "Screenplay"
+          },
+          {
+            "Name": "Chris McKenna",
+            "Role": "Screenplay"
+          },
+          {
+            "Name": "Andrew Barrer",
+            "Role": "Screenplay"
+          },
+          {
+            "Name": "Peyton Reed",
+            "Role": "Director"
+          },
+          {
+            "Name": "Paul Rudd",
+            "Role": "Screenplay"
+          }
+        ],
+        "Cast": [
+          {
+            "Name": "Paul Rudd",
+            "Character": "Scott Lang / Ant-Man",
+            "Avatar": "https://image.tmdb.org/t/p/w276_and_h350_face/8eTtJ7XVXY0BnEeUaSiTAraTIXd.jpg"
+          },
+          {
+            "Name": "Michael Peña",
+            "Character": "Luis",
+            "Avatar": "https://image.tmdb.org/t/p/w276_and_h350_face/oqlIKSglghuX7kSTalODn71nlOd.jpg"
+          },
+          {
+            "Name": "Evangeline Lilly",
+            "Character": "Hope van Dyne / The Wasp",
+            "Avatar": "https://image.tmdb.org/t/p/w276_and_h350_face/h8Lerr3D362n1jZvywtbvUzgBIN.jpg"
+          },
+          {
+            "Name": "Walton Goggins",
+            "Character": "Sonny Burch",
+            "Avatar": "https://image.tmdb.org/t/p/w276_and_h350_face/gA5nf2alzIPPjs1MSjS1PmrCedJ.jpg"
+          },
+          {
+            "Name": "Bobby Cannavale",
+            "Character": "Jim Paxton",
+            "Avatar": "https://image.tmdb.org/t/p/w276_and_h350_face/o3xnmePoOUCw7sjoZ4xM4W5DL26.jpg"
+          }
+        ],
+        "Pictures": [
+          "https://image.tmdb.org/t/p/w700_and_h392_bestv2/lj3RxOteLC9GLWKRMqWwRuMXYkF.jpg",
+          "https://image.tmdb.org/t/p/w440_and_h660_bestv2/aoiARgqEjh54ym5KRgV8CkWmXUc.jpg",
+          "https://image.tmdb.org/t/p/w700_and_h392_bestv2/xjFgtltOOuBtLdNedQH8M1TTrjc.jpg",
+          "https://image.tmdb.org/t/p/w700_and_h392_bestv2/94msMeoXTpvUIMp0f3lDZrY7nFX.jpg",
+          "https://image.tmdb.org/t/p/w700_and_h392_bestv2/xYiqc17z3IvpRrjMYxJorxRqbw4.jpg",
+          "https://image.tmdb.org/t/p/w700_and_h392_bestv2/1bgvn5apd1El9oahgxEif6YHIg1.jpg",
+          "https://image.tmdb.org/t/p/w440_and_h660_bestv2/jclTUIWfgsu4oOzr7fwwKUFQOgl.jpg"
+        ]
+      },
+      {
+        "$id": "featured-movie-2",
+        "Name": "Wonder Woman",
+        "Director": "Patty Jenkins",
+        "Year": "May 2017",
+        "PosterImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/featured_movie_2_poster_image.jpg",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/featured_movie_2_background_image.jpg",
+        "TrailerVideo": "https://www.youtube.com/watch?v=INLzqh7rZ-U",
+        "Color": "#bb6300",
+        "Overview": "An Amazon princess comes to the world of Man in the grips of the First World War to confront the forces of evil and bring an end to human conflict.",
+        "Rating": 72,
+        "RatingLabel": "7.2",
+        "BackdropImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/featured_movie_2_backdrop_image.jpg",
+        "Genres": [
+          "ACTION",
+          "ADVENTURE",
+          "FANTASY",
+          "WAR",
+          "SCIENCE FICTION"
+        ],
+        "Crew": [
+          {
+            "Name": "Allan Heinberg",
+            "Role": "Screenplay, Story"
+          },
+          {
+            "Name": "Geoff Johns",
+            "Role": "Writer"
+          },
+          {
+            "Name": "Jason Fuchs",
+            "Role": "Story"
+          },
+          {
+            "Name": "Zack Snyder",
+            "Role": "Story"
+          },
+          {
+            "Name": "Patty Jenkins",
+            "Role": "Director"
+          }
+        ],
+        "Cast": [
+          {
+            "Name": "Gal Gadot",
+            "Character": "Diana Prince / Wonder Woman",
+            "Avatar": "https://image.tmdb.org/t/p/w276_and_h350_face/hzt1aV8FzEJlUtiWtrGSHlcdGCx.jpg"
+          },
+          {
+            "Name": "Chris Pine",
+            "Character": "Steve Trevor",
+            "Avatar": "https://image.tmdb.org/t/p/w276_and_h350_face/vSe6sIsdtcoqBhuWRXynahFg8Vf.jpg"
+          },
+          {
+            "Name": "Robin Wright",
+            "Character": "Antiope",
+            "Avatar": "https://image.tmdb.org/t/p/w276_and_h350_face/tXfQTgcIEPP7gtVdJ44ZxZPhacn.jpg"
+          },
+          {
+            "Name": "Connie Nielsen",
+            "Character": "Hippolyta",
+            "Avatar": "https://image.tmdb.org/t/p/w276_and_h350_face/lvQypTfeH2Gn2PTbzq6XkT2PLmn.jpg"
+          },
+          {
+            "Name": "Danny Huston",
+            "Character": "Erich Ludendorff",
+            "Avatar": "https://image.tmdb.org/t/p/w276_and_h350_face/jc1eGtCShQ2ZkzqWApiWbA1lbTF.jpg"
+          }
+        ],
+        "Pictures": [
+          "https://image.tmdb.org/t/p/w440_and_h660_bestv2/v51eUcRsKD1xBrDPEeD4D2fXYwh.jpg",
+          "https://image.tmdb.org/t/p/w440_and_h660_bestv2/jz2DY4QuAnnYK3Gsm2h9b0mND7s.jpg",
+          "https://image.tmdb.org/t/p/w1066_and_h600_bestv2/zr9AFBByEYPZk4krrSSHIc22nJR.jpg",
+          "https://image.tmdb.org/t/p/w1066_and_h600_bestv2/9tuQAYHLA9G02Th6eiV5hq7mpbj.jpg",
+          "https://image.tmdb.org/t/p/w440_and_h660_bestv2/dx8f6XZUP6JVT8ljCzSmkxUq433.jpg",
+          "https://image.tmdb.org/t/p/w440_and_h660_bestv2/9shl41OxQSPM5KA20hnz2PmMGZ9.jpg",
+          "https://image.tmdb.org/t/p/w440_and_h660_bestv2/eF1oi474qPVJROPlSy5zyKKUwDE.jpg"
+        ]
+      },
+      {
+        "$id": "featured-movie-3",
+        "Name": "Spider-Man: Homecoming",
+        "Director": "Jon Watts",
+        "Year": "June 2017",
+        "PosterImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/featured_movie_3_poster_image.jpg",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/featured_movie_3_background_image.jpg",
+        "Color": "#1d4f66",
+        "TrailerVideo": "https://www.youtube.com/watch?v=xrzXIaTt99U",
+        "Overview": "Following the events of Captain America: Civil War, Peter Parker, with the help of his mentor Tony Stark, tries to balance his life as an ordinary high school student in Queens, New York City, with fighting crime as his superhero alter ego Spider-Man as a new threat, the Vulture, emerges.",
+        "Rating": 63,
+        "RatingLabel": "6.3",
+        "BackdropImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/featured_movie_3_backdrop_image.jpg",
+        "Genres": [
+          "new york",
+          "high school",
+          "superhero",
+          "comics",
+          "teenager",
+          "reboot"
+        ],
+        "Crew": [
+          {
+            "Name": "Jon Watts",
+            "Role": "Director, Writer"
+          },
+          {
+            "Name": "Erik Sommers",
+            "Role": "Writer"
+          },
+          {
+            "Name": "Chris McKenna",
+            "Role": "Writer"
+          },
+          {
+            "Name": "Jonathan M. Goldstein",
+            "Role": "Writer"
+          },
+          {
+            "Name": "Christopher D. Ford",
+            "Role": "Writer"
+          },
+          {
+            "Name": "Steve Ditko",
+            "Role": "Characters"
+          },
+          {
+            "Name": "John Francis Daley",
+            "Role": "Writer"
+          },
+          {
+            "Name": "Stan Lee",
+            "Role": "Characters"
+          }
+        ],
+        "Cast": [
+          {
+            "Name": "Tom Holland",
+            "Character": "Peter Parker / Spider-Man",
+            "Avatar": "https://image.tmdb.org/t/p/w276_and_h350_face/dO9FYcPPShhiYQ9D50Takd2W8xo.jpg"
+          },
+          {
+            "Name": "Michael Keaton",
+            "Character": "Adrian Toomes / Vulture",
+            "Avatar": "https://image.tmdb.org/t/p/w276_and_h350_face/myVdrYNGTgqunLfUSaM8DuVD7DL.jpg"
+          },
+          {
+            "Name": "Jon Favreau",
+            "Character": "Harold Happy Hogan",
+            "Avatar": "https://image.tmdb.org/t/p/w276_and_h350_face/sJSGJwGa3hjMlJNUCxF7wQwo7fb.jpg"
+          },
+          {
+            "Name": "Zendaya",
+            "Character": "Michelle 'MJ' Jones",
+            "Avatar": "https://image.tmdb.org/t/p/w276_and_h350_face/6WPolY7Wd3GMiuN1dPxYZX7liik.jpg"
+          },
+          {
+            "Name": "Donald Glover",
+            "Character": "Aaron Davis",
+            "Avatar": "https://image.tmdb.org/t/p/w276_and_h350_face/36o5mpbQVdxOf9kUxWw7SllOuk.jpg"
+          }
+        ],
+        "Pictures": [
+          "https://image.tmdb.org/t/p/w1066_and_h600_bestv2/lAsr1ytUq0ATWdCbcjf59pupPFy.jpg",
+          "https://image.tmdb.org/t/p/w700_and_h392_bestv2/9iFpsmj1jvdq7DYdRCCZQmldo74.jpg",
+          "https://image.tmdb.org/t/p/w1066_and_h600_bestv2/24GSBmRoQlX7tnHvH5BTPq2eMVQ.jpg",
+          "https://image.tmdb.org/t/p/w700_and_h392_bestv2/tPpYGm2mVecue7Bk3gNVoSPA5qn.jpg",
+          "https://image.tmdb.org/t/p/w440_and_h660_bestv2/yIu8j6Iwwn8sP4jTzcx7XnsNbEZ.jpg",
+          "https://image.tmdb.org/t/p/w700_and_h392_bestv2/yHIONS8qyPCDxepahbz472nisTC.jpg",
+          "https://image.tmdb.org/t/p/w440_and_h660_bestv2/nexiA2QxBmn0PU0jMs3x0rDv4lE.jpg"
+        ]
+      },
+      {
+        "$id": "featured-movie-4",
+        "Name": "Thor: Ragnarok",
+        "Director": "Taika Waititi",
+        "Year": "October 2017",
+        "PosterImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/featured_movie_4_poster_image.jpg",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/featured_movie_4_background_image.jpg",
+        "Color": "#306C2D",
+        "Overview": "Thor is on the other side of the universe and finds himself in a race against time to get back to Asgard to stop Ragnarok, the prophecy of destruction to his homeworld and the end of Asgardian civilization, at the hands of the ruthless Hela.",
+        "TrailerVideo": "https://www.youtube.com/watch?v=ue80QwXMRHg",
+        "Rating": 75,
+        "RatingLabel": "7.5",
+        "BackdropImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/featured_movie_4_backdrop_image.jpg",
+        "Genres": [
+          "action",
+          "adventure",
+          "superhero",
+          "comic",
+          "femail villain"
+        ],
+        "Crew": [
+          {
+            "Name": "Taika Waititi",
+            "Role": "Director"
+          },
+          {
+            "Name": "Eric Pearson",
+            "Role": "Writer"
+          },
+          {
+            "Name": "Christopher Yost",
+            "Role": "Writer"
+          },
+          {
+            "Name": "Stephany Folsom",
+            "Role": "Story"
+          },
+          {
+            "Name": "Craig Kyle",
+            "Role": "Writer"
+          }
+        ],
+        "Cast": [
+          {
+            "Name": "Chris Hemsworth",
+            "Character": "Thor Odinson",
+            "Avatar": "https://image.tmdb.org/t/p/w276_and_h350_face/lrhth7yK9p3vy6p7AabDUM1THKl.jpg"
+          },
+          {
+            "Name": "Tom Hiddleston",
+            "Character": "Loki",
+            "Avatar": "https://image.tmdb.org/t/p/w276_and_h350_face/qB1lHPFBPIzw6I7EvsciZ5wyUNS.jpg"
+          },
+          {
+            "Name": "Cate Blanchett",
+            "Character": "Hela",
+            "Avatar": "https://image.tmdb.org/t/p/w276_and_h350_face/eE98pTm0Q2xIn0710VBC603IE5Q.jpg"
+          },
+          {
+            "Name": "Mark Ruffalo",
+            "Character": "Bruce Banner / The Hulk",
+            "Avatar": "https://image.tmdb.org/t/p/w276_and_h350_face/isQ747u0MU8U9gdsNlPngjABclH.jpg"
+          }
+        ],
+        "Pictures": [
+          "https://image.tmdb.org/t/p/w440_and_h660_bestv2/ge6MrYNCNFhrK0NI9bsuoeqiDrf.jpg",
+          "https://image.tmdb.org/t/p/w440_and_h660_bestv2/6nFtlT1iFj2n9icAtsj9LZeSWcB.jpg",
+          "https://image.tmdb.org/t/p/w700_and_h392_bestv2/6YozDnrA2fXdIbB5nWDFHtB5ZY6.jpg",
+          "https://image.tmdb.org/t/p/w700_and_h392_bestv2/42ZVMjbbHPRAjEipty9E4HtSfHk.jpg",
+          "https://image.tmdb.org/t/p/w440_and_h660_bestv2/poNn1fyNwimsale1xgXL7cUGdg8.jpg",
+          "https://image.tmdb.org/t/p/w440_and_h660_bestv2/hzHOvXXlKDGRLZfvHp82lC9XvFK.jpg",
+          "https://image.tmdb.org/t/p/w440_and_h660_bestv2/1WVQNvlgug2PIqYkYpurgN5iqMm.jpg"
+        ]
+      }
+    ]
+  },
+  "MoviesMainPage.xaml": {
+    "Sections": [
+      {
+        "$id": "movie-section-1",
+        "Title": "Actor of the Month",
+        "Movies": [
+          {
+            "$id": "movie-1",
+            "Title": "Inception",
+            "TrailerVideo": "https://www.youtube.com/watch?v=66TuSJo4dZM",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/e8MyVAjISnQ8TCcOPQ0Pk2PTe46.jpg",
+            "Seasons": "2010",
+            "RatingValue": 4.4,
+            "RatingMax": 5.0,
+            "Director": "Christopher Nolan",
+            "Plot": "A thief, who steals corporate secrets through use of dream-sharing technology, is given the inverse task of planting an idea into the mind of a CEO.\"",
+            "Cast": [
+              "Leonardo DiCaprio",
+              "Joseph Gordon-Levitt",
+              "Ellen Page"
+            ],
+            "Genres": [
+              "ACTION",
+              "THRILLER",
+              "SCIENCE FICTION",
+              "MYSTERY",
+              "ADVENTURE"
+            ]
+          },
+          {
+            "$id": "movie-2",
+            "Title": "Django Unchained",
+            "TrailerVideo": "https://www.youtube.com/watch?v=_iH0UBYDI4g",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/2lwQVuahsePfQbnXvj14Qy0QzA7.jpg",
+            "Seasons": "2012",
+            "RatingValue": 4.25,
+            "RatingMax": 5.0,
+            "Director": "Quentin Tarantino",
+            "Plot": "With the help of a German bounty hunter, a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner.",
+            "Cast": [
+              "Jamie Foxx",
+              "Christoph Waltz",
+              "Leonardo DiCaprio"
+            ],
+            "Genres": [
+              "DRAMA",
+              "WESTERN"
+            ]
+          },
+          {
+            "$id": "movie-3",
+            "Title": "The Revenant",
+            "TrailerVideo": "https://www.youtube.com/watch?v=LoebZZ8K5N0",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/yCuTOperQ9UvEApq9WOFuxLfeZL.jpg",
+            "Seasons": "2015",
+            "RatingValue": 4.05,
+            "RatingMax": 5.0,
+            "Director": "Alejandro G. Iñárritu",
+            "Plot": "A frontiersman on a fur trading expedition in the 1820s fights for survival after being mauled by a bear and left for dead by members of his own hunting team.",
+            "Cast": [
+              "Leonardo DiCaprio",
+              "Tom Hardy",
+              "Will Poulter"
+            ],
+            "Genres": [
+              "WESTERN",
+              "DRAMA",
+              "ADVENTURE",
+              "THRILLER"
+            ]
+          },
+          {
+            "$id": "movie-4",
+            "Title": "The Departed",
+            "TrailerVideo": "https://www.youtube.com/watch?v=iojhqm0JTW4",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/2e1PIg1vyDF8w2dXfvNZm1KoR5S.jpg",
+            "Seasons": "2006",
+            "RatingValue": 4.25,
+            "RatingMax": 5.0,
+            "Director": "Martin Scorsese",
+            "Plot": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.",
+            "Cast": [
+              "Leonardo DiCaprio",
+              "Matt Damon",
+              "Jack Nicholson"
+            ],
+            "Genres": [
+              "DRAMA",
+              "THRILLER",
+              "CRIME"
+            ]
+          },
+          {
+            "$id": "movie-5",
+            "Title": "Titanic",
+            "TrailerVideo": "https://www.youtube.com/watch?v=zCy5WQ9S4c0",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/ld3MtQf8UYX1unS7ufH2jrpwwOE.jpg",
+            "Seasons": "1997",
+            "RatingValue": 3.85,
+            "RatingMax": 5.0,
+            "Director": "James Cameron",
+            "Plot": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+            "Cast": [
+              "Leonardo DiCaprio",
+              "Kate Winslet",
+              "Billy Zane"
+            ],
+            "Genres": [
+              "DRAMA",
+              "ROMANCE",
+              "THRILLER"
+            ]
+          },
+          {
+            "$id": "movie-6",
+            "Title": "The Audition",
+            "TrailerVideo": "https://www.youtube.com/watch?v=-_w1nkBu4xk",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/sdJQpbyBLPqHLdAcFs0PT9dJgbt.jpg",
+            "Seasons": "2015",
+            "RatingValue": 3.7,
+            "RatingMax": 5.0,
+            "Director": "Martin Scorsese",
+            "Plot": "A short film promoting the opening of Melco-Crown's movie-themed resort and casino in Macau.",
+            "Cast": [
+              "Robert De Niro",
+              "Leonardo DiCaprio",
+              "Brad Pitt"
+            ],
+            "Genres": [
+              "DRAMA"
+            ]
+          },
+          {
+            "$id": "movie-7",
+            "Title": "Gatsby",
+            "TrailerVideo": "https://www.youtube.com/watch?v=rARN6agiW7o",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/zQG4ZYn5NBfdzw25LphLkfruMto.jpg",
+            "Seasons": "2013",
+            "RatingValue": 3.65,
+            "RatingMax": 5.0,
+            "Director": "Baz Luhrmann",
+            "Plot": "A writer and wall street trader, Nick, finds himself drawn to the past and lifestyle of his millionaire neighbor, Jay Gatsby.",
+            "Cast": [
+              "Leonardo DiCaprio",
+              "Carey Mulligan",
+              "Joel Edgerton"
+            ],
+            "Genres": [
+              "DRAMA",
+              "ROMANCE"
+            ]
+          },
+          {
+            "$id": "movie-8",
+            "Title": "Shutter Island",
+            "TrailerVideo": "https://www.youtube.com/watch?v=YDGldPitxic",
+            "Source": "http://ia.media-imdb.com/images/M/MV5BMTMxMTIyNzMxMV5BMl5BanBnXkFtZTcwOTc4OTI3Mg@@._V1_UX128_CR0,0,128,190_AL_.jpg",
+            "Seasons": "2010",
+            "RatingValue": 4.05,
+            "RatingMax": 5.0,
+            "Director": "Martin Scorsese",
+            "Plot": "In 1954, a U.S. marshal investigates the disappearance of a murderess who escaped from a hospital for the criminally insane.",
+            "Cast": [
+              "Leonardo DiCaprio",
+              "Emily Mortimer",
+              "Mark Ruffalo"
+            ],
+            "Genres": [
+              "DRAMA",
+              "THRILLER",
+              "mystery"
+            ]
+          },
+          {
+            "$id": "movie-9",
+            "Title": "Blood Diamond",
+            "TrailerVideo": "https://www.youtube.com/watch?v=yknIZsvQjG4",
+            "Source": "https://image.tmdb.org/t/p/w1280/wRamTzV6udKaMXrspxqOuo02zk0.jpg",
+            "Seasons": "2016",
+            "RatingValue": 4.0,
+            "RatingMax": 5.0,
+            "Director": "Edward Zwick",
+            "Plot": "A fisherman, a smuggler, and a syndicate of businessmen match wits over the possession of a priceless diamond.",
+            "Cast": [
+              "Leonardo DiCaprio",
+              "Djimon Hounsou",
+              "Jennifer Connelly"
+            ],
+            "Genres": [
+              "DRAMA",
+              "THRILLER",
+              "action"
+            ]
+          }
+        ]
+      },
+      {
+        "Title": "Latest Best Picture-Winning Titles",
+        "Movies": [
+          {
+            "Title": "Spotlight",
+            "TrailerVideo": "https://www.youtube.com/watch?v=EwdCIpbTN5g",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/7jOgrlQEDbkXyfZxkD0Ctd0P8jH.jpg",
+            "Seasons": "2015",
+            "RatingValue": 4.05,
+            "RatingMax": 5.0,
+            "Director": "Tom McCarthy",
+            "Plot": "The true story of how the Boston Globe uncovered the massive scandal of child molestation and cover-up within the local Catholic Archdiocese, shaking the entire Catholic Church to its core.",
+            "Cast": [
+              "Mark Ruffalo",
+              "Michael Keaton",
+              "Rachel McAdams"
+            ],
+            "Genres": [
+              "DRAMA",
+              "THRILLER",
+              "history"
+            ]
+          },
+          {
+            "Title": "Birdman",
+            "TrailerVideo": "https://www.youtube.com/watch?v=uJfLoE6hanc",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/eOJUEs5cyMFrQuRPQI0glVOVgyo.jpg",
+            "Seasons": "2014",
+            "RatingValue": 3.9,
+            "RatingMax": 5.0,
+            "Director": "Alejandro G. Iñárritu",
+            "Plot": "Illustrated upon the progress of his latest Broadway play, a former popular actor's struggle to cope with his current life as a wasted actor is shown.",
+            "Cast": [
+              "Alejandro G. Iñárritu",
+              "Nicolás Giacobone"
+            ],
+            "Genres": [
+              "DRAMA"
+            ]
+          },
+          {
+            "Title": "12 Years As A Slave",
+            "TrailerVideo": "https://www.youtube.com/watch?v=z02Ie8wKKRg",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/pzKoaViF0xaXZJXKbOKOssic28Z.jpg",
+            "Seasons": "2013",
+            "RatingValue": 4.05,
+            "RatingMax": 5.0,
+            "Director": "Steve McQueen",
+            "Plot": "In the antebellum United States, Solomon Northup, a free black man from upstate New York, is abducted and sold into slavery.",
+            "Cast": [
+              "Chiwetel Ejiofor",
+              "Michael Kenneth Williams",
+              "Michael Fassbender"
+            ],
+            "Genres": [
+              "DRAMA",
+              "comedy"
+            ]
+          },
+          {
+            "Title": "Argo",
+            "TrailerVideo": "https://www.youtube.com/watch?v=JW3WfSFgrVY",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/l1jE0FCaVopNrwOkSCBdv58yTxb.jpg",
+            "Seasons": "2012",
+            "RatingValue": 3.85,
+            "RatingMax": 5.0,
+            "Director": "Ben Affleck",
+            "Plot": "Acting under the cover of a Hollywood producer scouting a location for a science fiction film, a CIA agent launches a dangerous operation to rescue six Americans in Tehran during the U.S. hostage crisis in Iran in 1980.",
+            "Cast": [
+              "Ben Affleck",
+              "Bryan Cranston",
+              "John Goodman"
+            ],
+            "Genres": [
+              "DRAMA",
+              "THRILLER"
+            ]
+          },
+          {
+            "Title": "The Artist",
+            "TrailerVideo": "https://www.youtube.com/watch?v=YB9Oq0hn5KY",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/xHEmIqRydBg9HRUapQyTpkBBDxE.jpg",
+            "Seasons": "2010",
+            "RatingValue": 4.0,
+            "RatingMax": 5.0,
+            "Director": "Michel Hazanavicius",
+            "Plot": "A silent movie star meets a young dancer, but the arrival of talking pictures sends their careers in opposite directions.",
+            "Cast": [
+              "Jean Dujardin",
+              "Bérénice Bejo",
+              "John Goodman"
+            ],
+            "Genres": [
+              "DRAMA",
+              "comedy",
+              "action"
+            ]
+          },
+          {
+            "Title": "The King's Speech",
+            "TrailerVideo": "https://www.youtube.com/watch?v=EcxBrTvLbBM",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/rxvdasU2XTdxNxbMOQMKTvi2MTF.jpg",
+            "Seasons": "2010",
+            "RatingValue": 4.0,
+            "RatingMax": 5.0,
+            "Director": "Tom Hooper",
+            "Plot": "The story of King George VI of the United Kingdom of Great Britain and Northern Ireland, his impromptu ascension to the throne and the speech therapist who helped the unsure monarch become worthy of it.",
+            "Cast": [
+              "Colin Firth",
+              "Geoffrey Rush",
+              "Helena Bonham Carter"
+            ],
+            "Genres": [
+              "documentary",
+              "history"
+            ]
+          },
+          {
+            "Title": "The Hurt Locker",
+            "TrailerVideo": "https://www.youtube.com/watch?v=AIbFvqFYRT4",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/eos3i5W5DtB61RCj5fJQcMvXF55.jpg",
+            "Seasons": "2008",
+            "RatingValue": 2.5,
+            "RatingMax": 5.0,
+            "Director": "Kathryn Bigelow",
+            "Plot": "During the Iraq War, a Sergeant recently assigned to an army bomb squad is put at odds with his squad mates due to his maverick way of handling his work.",
+            "Cast": [
+              "Jeremy Renner",
+              "Anthony Mackie",
+              "Brian Geraghty",
+              "Guy Pearce",
+              "Sergeant Matt Thompson",
+              "Ralph Fiennes"
+            ],
+            "Genres": [
+              "DRAMA",
+              "THRILLER",
+              "war"
+            ]
+          },
+          {
+            "Title": "Slumdog Millionaire",
+            "TrailerVideo": "https://www.youtube.com/watch?v=AIzbwV7on6Q",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/cuh3Lcwl6jWJY5eTSAIVODvl1d0.jpg",
+            "Seasons": "2008",
+            "RatingValue": 4.0,
+            "RatingMax": 5.0,
+            "Director": "Danny Boyle, Loveleen Tandan",
+            "Plot": "A Mumbai teen reflects on his upbringing in the slums when he is accused of cheating on the Indian Version of \"Who Wants to be a Millionaire?\"",
+            "Cast": [
+              "Dev Patel",
+              "Freida Pinto",
+              "Saurabh Shukla"
+            ],
+            "Genres": [
+              "DRAMA",
+              "romance"
+            ]
+          },
+          {
+            "Title": "No Country For Old Men",
+            "TrailerVideo": "https://www.youtube.com/watch?v=38A__WT3-o0",
+            "Source": "https://image.tmdb.org/t/p/original/kVgZv4585OLGS8R1Or6tF1RY6hc.jpg",
+            "Seasons": "2007",
+            "RatingValue": 1.05,
+            "RatingMax": 5.0,
+            "Director": "Ethan Coen, Joel Coen",
+            "Plot": "Violence and mayhem ensue after a hunter stumbles upon a drug deal gone wrong and more than two million dollars in cash near the Rio Grande.",
+            "Cast": [
+              "Tommy Lee Jones",
+              "Javier Bardem",
+              "Josh Brolin"
+            ],
+            "Genres": [
+              "DRAMA",
+              "crime",
+              "thriller"
+            ]
+          }
+        ]
+      },
+      {
+        "Title": "Sci-Fi Classic Titles",
+        "Movies": [
+          {
+            "Title": "Blade Runner",
+            "TrailerVideo": "https://www.youtube.com/watch?v=eogpIG53Cis",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/2ftEvXBESAYFJmJQAaB0QEWqSSa.jpg",
+            "Seasons": "1982",
+            "RatingValue": 4.1,
+            "RatingMax": 5.0,
+            "Director": "Ridley Scott",
+            "Plot": "A blade runner must pursue and try to terminate four replicants who stole a ship in space and have returned to Earth to find their creator.",
+            "Cast": [
+              "Harrison Ford",
+              "Rutger Hauer",
+              "Sean Young"
+            ],
+            "Genres": [
+              "science fiction",
+              "thriller"
+            ]
+          },
+          {
+            "Title": "Back to the Future",
+            "TrailerVideo": "https://www.youtube.com/watch?v=qvsgGtivCgs",
+            "Source": "https://images-na.ssl-images-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "Seasons": "1985",
+            "RatingValue": 4.25,
+            "RatingMax": 5.0,
+            "Director": "Robert Zemeckis",
+            "Plot": "Marty McFly, a 17-year-old high school student, is accidentally sent 30 years into the past in a time-traveling DeLorean invented by his close friend, the maverick scientist Doc Brown.",
+            "Cast": [
+              "Michael J. Fox",
+              "Christopher Lloyd",
+              "Lea Thompson"
+            ],
+            "Genres": [
+              "science fiction",
+              "COMEDY",
+              "adventure"
+            ]
+          },
+          {
+            "Title": "Back to the Future Part II",
+            "TrailerVideo": "https://www.youtube.com/watch?v=MdENmefJRpw",
+            "Source": "https://images-na.ssl-images-amazon.com/images/M/MV5BZTMxMGM5MjItNDJhNy00MWI2LWJlZWMtOWFhMjI5ZTQwMWM3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg",
+            "Seasons": "1989",
+            "RatingValue": 3.9,
+            "RatingMax": 5.0,
+            "Director": "Robert Zemeckis",
+            "Plot": "After visiting 2015, Marty McFly must repeat his visit to 1955 to prevent disastrous changes to 1985...without interfering with his first trip.",
+            "Cast": [
+              "Michael J. Fox",
+              "Christopher Lloyd",
+              "Lea Thompson"
+            ],
+            "Genres": [
+              "science fiction",
+              "adventure",
+              "comedy",
+              "family"
+            ]
+          },
+          {
+            "Title": "Back to the Future Part III",
+            "TrailerVideo": "https://www.youtube.com/watch?v=3C8c3EoEfw4",
+            "Source": "https://images-na.ssl-images-amazon.com/images/M/MV5BYjhlMGYxNmMtOWFmMi00Y2M2LWE5NWYtZTdlMDRlMGEzMDA3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,676,1000_AL_.jpg",
+            "Seasons": "1990",
+            "RatingValue": 3.7,
+            "RatingMax": 5.0,
+            "Director": "Robert Zemeckis",
+            "Plot": "Enjoying a peaceable existence in 1885, Doctor Emmet Brown is about to be killed by Buford \"Mad Dog\" Tannen. Marty McFly travels back in time to save his friend.",
+            "Cast": [
+              "Michael J. Fox",
+              "Christopher Lloyd",
+              "Mary Steenburgen"
+            ],
+            "Genres": [
+              "science fiction",
+              "adventure",
+              "comedy",
+              "family"
+            ]
+          },
+          {
+            "Title": "The Terminator",
+            "TrailerVideo": "https://www.youtube.com/watch?v=k64P4l2Wmeg",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/mDeDcnWDS35f7VRQBato0fEEVFt.jpg",
+            "Seasons": "1984",
+            "RatingValue": 4.5,
+            "RatingMax": 5.0,
+            "Director": "James Cameron",
+            "Plot": "A human-looking indestructible cyborg is sent from 2029 to 1984 to assassinate a waitress, whose unborn son will lead humanity in a war against the machines, while a soldier from that war is sent to protect her at all costs.",
+            "Cast": [
+              "Arnold Schwarzenegger",
+              "Linda Hamilton",
+              "Michael Biehn"
+            ],
+            "Genres": [
+              "science fiction",
+              "action",
+              "thriller"
+            ]
+          },
+          {
+            "Title": "Terminator 2: Judgment Day",
+            "TrailerVideo": "https://www.youtube.com/watch?v=-W8CegO_Ixw",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/mujzyTZ4yF4r5hqFQmIRBmfNgzL.jpg",
+            "Seasons": "1991",
+            "RatingValue": 4.05,
+            "RatingMax": 5.0,
+            "Director": "James Cameron",
+            "Plot": "A cyborg, identical to the one who failed to kill Sarah Connor, must now protect her ten year old son, John Connor, from a more advanced cyborg.",
+            "Cast": [
+              "Arnold Schwarzenegger",
+              "Linda Hamilton",
+              "Michael Biehn"
+            ],
+            "Genres": [
+              "science fiction",
+              "action",
+              "thriller"
+            ]
+          }
+        ]
+      },
+      {
+        "Title": "Sci-Fi Titles",
+        "Movies": [
+          {
+            "Title": "Mad Max: Fury Road",
+            "TrailerVideo": "https://www.youtube.com/watch?v=hEJnMQG9ev8",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/eLnvZlxc7DvVUW3fsV9fCJH2QLm.jpg",
+            "Seasons": "2015",
+            "RatingValue": 4.05,
+            "RatingMax": 5.0,
+            "Director": "George Miller",
+            "Plot": "A woman rebels against a tyrannical ruler in postapocalyptic Australia in search for her home-land with the help of a group of female prisoners, a psychotic worshipper, and a drifter named Max.",
+            "Cast": [
+              "Tom Hardy",
+              "Charlize Theron",
+              "Nicholas Hoult"
+            ],
+            "Genres": [
+              "science fiction",
+              "action",
+              "thriller",
+              "adventure"
+            ]
+          },
+          {
+            "Title": "The Martian",
+            "TrailerVideo": "https://www.youtube.com/watch?v=ej3ioOneTy8",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/rtwM5uRiRifrC6IPYSHH0lQUDbH.jpg",
+            "Seasons": "2015",
+            "RatingValue": 4.0,
+            "RatingMax": 5.0,
+            "Director": "Ridley Scott",
+            "Plot": "An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive.",
+            "Cast": [
+              "Matt Damon",
+              "Jessica Chastain",
+              "Kristen Wiig"
+            ],
+            "Genres": [
+              "science fiction",
+              "adventure",
+              "drama"
+            ]
+          },
+          {
+            "Title": "Limitless",
+            "TrailerVideo": "https://www.youtube.com/watch?v=4TLppsfzQH8",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/xlnl2qhH2vDHjrWckaqBDIj3pwT.jpg",
+            "Seasons": "2011",
+            "RatingValue": 3.7,
+            "RatingMax": 5.0,
+            "Director": "Neil Burger",
+            "Plot": "With the help of a mysterious pill that enables the user to access 100 percent of his brain abilities, a struggling writer becomes a financial wizard, but it also puts him in a new world with lots of dangers.",
+            "Cast": [
+              "Bradley Cooper",
+              "Anna Friel",
+              "Abbie Cornish"
+            ],
+            "Genres": [
+              "science fiction",
+              "mystery",
+              "thriller"
+            ]
+          },
+          {
+            "Title": "TRON: Legacy",
+            "TrailerVideo": "https://www.youtube.com/watch?v=L9szn1QQfas",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/kwPq6X7J0UB0Zp1cwoaFTZClsNt.jpg",
+            "Seasons": "2010",
+            "RatingValue": 3.4,
+            "RatingMax": 5.0,
+            "Director": "Joseph Kosinski",
+            "Plot": "The son of a virtual world designer goes looking for his father and ends up inside the digital world that his father designed. He meets his father's corrupted creation and a unique ally who was born inside the digital world.",
+            "Cast": [
+              "Jeff Bridges",
+              "Garrett Hedlund",
+              "Olivia Wilde"
+            ],
+            "Genres": [
+              "science fiction",
+              "action",
+              "adventure"
+            ]
+          },
+          {
+            "Title": "Gravity",
+            "TrailerVideo": "https://www.youtube.com/watch?v=OiTiKOy59o4",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/8Ocoj4GJlKpxxeh35o7thdco6JW.jpg",
+            "Seasons": "2013",
+            "RatingValue": 3.9,
+            "RatingMax": 5.0,
+            "Director": "Alfonso Cuarón",
+            "Plot": "A medical engineer and an astronaut work together to survive after an accident leaves them adrift in space.",
+            "Cast": [
+              "Sandra Bullock",
+              "George Clooney",
+              "Ed Harris"
+            ],
+            "Genres": [
+              "science fiction",
+              "drama"
+            ]
+          },
+          {
+            "Title": "Oblivion",
+            "TrailerVideo": "https://www.youtube.com/watch?v=XmIIgE7eSak",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/c2AiGLgYdAMu8jjiSOSZTc6F3cL.jpg",
+            "Seasons": "2013",
+            "RatingValue": 3.5,
+            "RatingMax": 5.0,
+            "Director": "Joseph Kosinski",
+            "Plot": "A veteran assigned to extract Earth's remaining resources begins to question what he knows about his mission and himself.",
+            "Cast": [
+              "Tom Cruise",
+              "Morgan Freeman",
+              "Andrea Riseborough"
+            ],
+            "Genres": [
+              "science fiction",
+              "drama",
+              "thriller"
+            ]
+          },
+          {
+            "Title": "Ghost In The Shell",
+            "TrailerVideo": "https://www.youtube.com/watch?v=G4VmJcZR0Yg",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/2tdlBIw3Rw1wO8jBEK889Wo4e6K.jpg",
+            "Seasons": "2017",
+            "RatingValue": 3.5,
+            "RatingMax": 5.0,
+            "Director": "Rupert Sanders",
+            "Plot": "A cyborg policewoman attempts to bring down a nefarious computer hacker.",
+            "Cast": [
+              "Jonathan Herman",
+              "Jamie Moss"
+            ],
+            "Genres": [
+              "science fiction",
+              "action",
+              "thriller",
+              "drama"
+            ]
+          },
+          {
+            "Title": "Elysium",
+            "TrailerVideo": "https://www.youtube.com/watch?v=oIBtePb-dGY",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/3tkRyEAlDciJmbitE0h2BPFbWrd.jpg",
+            "Seasons": "2013",
+            "RatingValue": 3.3,
+            "RatingMax": 5.0,
+            "Director": "Neill Blomkamp",
+            "Plot": "In the year 2154, the very wealthy live on a man-made space station while the rest of the population resides on a ruined Earth. A man takes on a mission that could bring equality to the polarized worlds.",
+            "Cast": [
+              "Matt Damon",
+              "Jodie Foster",
+              "Sharlto Copley"
+            ],
+            "Genres": [
+              "science fiction",
+              "action",
+              "thriller",
+              "drama"
+            ]
+          },
+          {
+            "Title": "Terminator Genisys",
+            "TrailerVideo": "https://www.youtube.com/watch?v=62E4FJTwSuc",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/wboQBwqPLRRapOygmIEMpaD62az.jpg",
+            "Seasons": "2015",
+            "RatingValue": 3.3,
+            "RatingMax": 5.0,
+            "Director": "Alan Taylor",
+            "Plot": "When John Connor, leader of the human resistance, sends Sgt. Kyle Reese back to 1984 to protect Sarah Connor and safeguard the future, an unexpected turn of events creates a fractured timeline.",
+            "Cast": [
+              "Arnold Schwarzenegger",
+              "Jason Clarke",
+              "Emilia Clarke"
+            ],
+            "Genres": [
+              "science fiction",
+              "action",
+              "thriller",
+              "adventure"
+            ]
+          }
+        ]
+      },
+      {
+        "Title": "Marvel Universe Titles",
+        "Movies": [
+          {
+            "Title": "X-Men Origins: Wolverine",
+            "TrailerVideo": "https://www.youtube.com/watch?v=QojV7s3UTu0",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/7m8UUbcQxAkXtC4RPf4ixsreFld.jpg",
+            "Seasons": "2009",
+            "RatingValue": 3.35,
+            "RatingMax": 5.0,
+            "Director": "Gavin Hood",
+            "Plot": "A look at Wolverine's early life, in particular his time with the government squad Team X and the impact it will have on his later years.",
+            "Cast": [
+              "Hugh Jackman",
+              "Liev Schreiber",
+              "Ryan Reynolds"
+            ],
+            "Genres": [
+              "thriller",
+              "science fiction",
+              "action",
+              "adventure"
+            ]
+          },
+          {
+            "Title": "Iron Man",
+            "TrailerVideo": "https://www.youtube.com/watch?v=8hYlB38asDY",
+            "Source": "https://image.tmdb.org/t/p/original/rYy4MShKrZVXhiG4BLqwW1PeSOT.jpg",
+            "Seasons": "2008",
+            "RatingValue": 3.95,
+            "RatingMax": 5.0,
+            "Director": "Jon Favreau",
+            "Plot": "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
+            "Cast": [
+              "Robert Downey Jr.",
+              "Gwyneth Paltrow",
+              "Terrence Howard"
+            ],
+            "Genres": [
+              "thriller",
+              "science fiction",
+              "action"
+            ]
+          },
+          {
+            "Title": "Iron Man 2",
+            "TrailerVideo": "https://www.youtube.com/watch?v=BoohRoVA9WQ",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/rjVcKi0LkaHSan9xKJpkwS6GrS2.jpg",
+            "Seasons": "2010",
+            "RatingValue": 3.5,
+            "RatingMax": 5.0,
+            "Director": "Jon Favreau",
+            "Plot": "With the world now aware of his identity as Iron Man, Tony Stark must contend with both his declining health and a vengeful mad man with ties to his father's legacy.",
+            "Cast": [
+              "Robert Downey Jr.",
+              "Mickey Rourke",
+              "Gwyneth Paltrow"
+            ],
+            "Genres": [
+              "science fiction",
+              "action",
+              "adventure"
+            ]
+          },
+          {
+            "Title": "Iron Man 3",
+            "TrailerVideo": "https://www.youtube.com/watch?v=Ke1Y3P9D0Bc",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/mHUs170P6Gw3X8qNNGrFVldA5fk.jpg",
+            "Seasons": "2013",
+            "RatingValue": 3.6,
+            "RatingMax": 5.0,
+            "Director": "Shane Black",
+            "Plot": "When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.",
+            "Cast": [
+              "Robert Downey Jr.",
+              "Guy Pearce",
+              "Gwyneth Paltrow"
+            ],
+            "Genres": [
+              "science fiction",
+              "action",
+              "thriller"
+            ]
+          },
+          {
+            "Title": "Fantastic 4",
+            "TrailerVideo": "https://www.youtube.com/watch?v=_rRoD28-WgU",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/3lVrQmxNqjeqttkq07raTPRDV0F.jpg",
+            "Seasons": "2015",
+            "RatingValue": 2.15,
+            "RatingMax": 5.0,
+            "Director": "Josh Trank",
+            "Plot": "Four young outsiders teleport to an alternate and dangerous universe which alters their physical form in shocking ways. The four must learn to harness their new abilities and work together to save Earth from a former friend turned enemy.",
+            "Cast": [
+              "Miles Teller",
+              "Kate Mara",
+              "Michael B. Jordan"
+            ],
+            "Genres": [
+              "action",
+              "adventure",
+              "fantasy",
+              "science fiction"
+            ]
+          },
+          {
+            "Title": "Hulk",
+            "TrailerVideo": "https://www.youtube.com/watch?v=2ErnLuJKQA4",
+            "Source": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/rX3eLT0bvrjO4dMYhukGV1WnOv9.jpg",
+            "Seasons": "2003",
+            "RatingValue": 2.85,
+            "RatingMax": 5.0,
+            "Director": "Ang Lee",
+            "Plot": "Bruce Banner, a genetics researcher with a tragic past, suffers an accident that causes him to transform into a raging green monster when he gets angry.",
+            "Cast": [
+              "Eric Bana",
+              "Jennifer Connelly",
+              "Sam Elliott"
+            ],
+            "Genres": [
+              "fantasy",
+              "action",
+              "adventure",
+              "science fiction"
+            ]
+          },
+          {
+            "Title": "The Incredible Hulk",
+            "TrailerVideo": "https://www.youtube.com/watch?v=xbqNb2PFKKA",
+            "Source": "https://image.tmdb.org/t/p/original/nJvb0J281x7oB32L0zVVnsO5VOL.jpg",
+            "Seasons": "2008",
+            "RatingValue": 3.4,
+            "RatingMax": 5.0,
+            "Director": "Louis Leterrier",
+            "Plot": "Bruce Banner, a scientist on the run from the U.S. Government, must find a cure for the monster he emerges whenever he loses his temper. However, Banner then must fight a soldier who unleashes himself as a threat stronger than he.",
+            "Cast": [
+              "Edward Norton",
+              "Liv Tyler",
+              "Tim Roth"
+            ],
+            "Genres": [
+              "action",
+              "fantasy",
+              "science fiction",
+              "adventure"
+            ]
+          }
+        ]
+      }
+    ],
+    "Featured": {
+      "$ref": "featured-movies"
+    }
+  },
+  "MovieDetailPage.xaml": {
+    "Movie": {
+      "Title": "Django Unchained",
+      "TrailerVideo": "https://www.youtube.com/watch?v=_iH0UBYDI4g",
+      "Source": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/django_unchained.jpg",
+      "Seasons": "2012",
+      "RatingValue": 4.25,
+      "RatingMax": 5.0,
+      "Director": "Quentin Tarantino",
+      "Plot": "With the help of a German bounty hunter, a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner.",
+      "Cast": [
+        "Jamie Foxx",
+        "Christoph Waltz",
+        "Leonardo DiCaprio"
+      ],
+      "Genres": [
+        "DRAMA",
+        "WESTERN"
+      ],
+      "Section": {
+        "$ref": "movie-section-1"
+      }
+    }
+  },
+  "FeaturedMoviesPage.xaml": {
+    "$ref": "featured-movies"
+  },
+  "CustomActionSheet.xaml": {
+    "Title": "File Actions",
+    "Actions": [
+      {
+        "Icon": "",
+        "Label": "Share"
+      },
+      {
+        "Icon": "",
+        "Label": "Upload"
+      },
+      {
+        "Icon": "",
+        "Label": "Copy"
+      },
+      {
+        "Icon": "",
+        "Label": "Print"
+      },
+      {
+        "Icon": "",
+        "Label": "Delete"
+      }
+    ]
+  },
+  "EcommerceFlowReviews": {
+    "$id": "ecommerce-flow-product-reviews",
+    "List": [
+      {
+        "$id": "ecommerce-flow-product-review-1",
+        "Title": "Nice product",
+        "Reviewer": "Regina Joplin",
+        "RatingValue": 4.3,
+        "RatingMax": 5.0,
+        "Date": "October 2th 2018",
+        "Comment": "In connection with this appellative of \"Whalebone whales,\" it is of great leap of yer happiness leadership colors. This is how we design a great article sample."
+      },
+      {
+        "Title": "Very good choice",
+        "Reviewer": "Pat Davies",
+        "RatingValue": 4.0,
+        "RatingMax": 5.0,
+        "Date": "August 25th 2018",
+        "Comment": "I love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly."
+      },
+      {
+        "Title": "Nice product",
+        "Reviewer": "Regina Joplin",
+        "RatingValue": 4.3,
+        "RatingMax": 5.0,
+        "Date": "October 2th 2018",
+        "Comment": "In connection with this appellative of \"Whalebone whales,\" it is of great leap of yer happiness leadership colors. This is how we design a great article sample."
+      },
+      {
+        "Title": "Very good choice",
+        "Reviewer": "Pat Davies",
+        "RatingValue": 4.0,
+        "RatingMax": 5.0,
+        "Date": "August 25th 2018",
+        "Comment": "I love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly."
+      },
+      {
+        "Title": "Exceelent!!",
+        "Reviewer": "Peter Puchelli",
+        "RatingValue": 5.0,
+        "RatingMax": 5.0,
+        "Date": "November 2th 2017",
+        "Comment": " love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly."
+      },
+      {
+        "Title": "Fine",
+        "Reviewer": "Rick Morty",
+        "RatingValue": 3.0,
+        "RatingMax": 5.0,
+        "Date": "July 5th 2017",
+        "Comment": "In connection with this appellative of \"Whalebone whales,\" it is of great leap of yer happiness leadership colors. This is how we design a great article sample."
+      }
+    ],
+    "Count": 7
+  },
+  "EcommerceMainPage.xaml": {
+    "Categories": [
+      {
+        "Name": "Lamps",
+        "Content": [
+          {
+            "$id": "prod-lamp-1",
+            "Name": "Alta Lamp",
+            "Manufacturer": "UXDIVERS",
+            "Description": "This is Alta Lamp, designed by Roberto Camela the most innovative product designer from a beatiful scandinavian country.",
+            "Price": 49.99,
+            "IsNew": true,
+            "IsFavorite": true,
+            "Image": "http://52.10.147.219/system/uploads/images/product_big_lamp_c1_l@2x.png",
+            "Rating": 4.3,
+            "Reviews": {
+              "$ref": "ecommerce-flow-product-reviews"
+            },
+            "AvailableColors": [
+              {
+                "Color": "#ABDACF",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_big_lamp_c1_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_big_lamp_c1_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_big_lamp_c1_r@2x.png"
+                ]
+              },
+              {
+                "Color": "#9184C7",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_big_lamp_c2_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_big_lamp_c2_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_big_lamp_c2_r@2x.png"
+                ]
+              },
+              {
+                "Color": "#E47C7C",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_big_lamp_c3_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_big_lamp_c3_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_big_lamp_c3_r@2x.png"
+                ]
+              },
+              {
+                "Color": "#D5DF6F",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_big_lamp_c4_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_big_lamp_c4_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_big_lamp_c4_r@2x.png"
+                ]
+              }
+            ]
+          },
+          {
+            "$id": "prod-lamp-2",
+            "Name": "Chuck Norris Lamp",
+            "Manufacturer": "UXDIVERS",
+            "Description": "Sharped angles, it looks hard, it's masculine it moves like a ninja lamp. This is the Chuck Norris Lamp and it will kick your light bulbs.",
+            "Price": 39.99,
+            "IsNew": false,
+            "IsFavorite": false,
+            "Image": "http://52.10.147.219/system/uploads/images/product_lamp_1_c1_l@2x.png",
+            "Rating": 5.0,
+            "Reviews": {
+              "$ref": "ecommerce-flow-product-reviews"
+            },
+            "AvailableColors": [
+              {
+                "Color": "#585857",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_lamp_1_c1_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_lamp_1_c1_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_lamp_1_c1_r@2x.png"
+                ]
+              },
+              {
+                "Color": "#EBEAEA",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_lamp_1_c2_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_lamp_1_c2_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_lamp_1_c2_r@2x.png"
+                ]
+              },
+              {
+                "Color": "#BE3A39",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_lamp_1_c3_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_lamp_1_c3_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_lamp_1_c3_r@2x.png"
+                ]
+              },
+              {
+                "Color": "#3D4084",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_lamp_1_c4_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_lamp_1_c4_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_lamp_1_c4_r@2x.png"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Sofas",
+        "Content": [
+          {
+            "$id": "prod-sofa-1",
+            "Name": "Sofabio",
+            "Manufacturer": "UXDIVERS",
+            "Description": "Sofabio was carefully designed by a husband that was constantly kicked out of bed and sent to the sofa to spend the night. Durable, strong, designed for mens that like UFC.",
+            "Price": 499,
+            "IsNew": false,
+            "IsFavorite": true,
+            "Image": "http://52.10.147.219/system/uploads/images/product_feature_1@2x.png",
+            "Rating": 3.9,
+            "Reviews": {
+              "$ref": "ecommerce-flow-product-reviews"
+            },
+            "AvailableColors": [
+              {
+                "Color": "#C78E33",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_sofa_1_c3_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_sofa_1_c3_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_sofa_1_c3_r@2x.png"
+                ]
+              },
+              {
+                "Color": "#574741",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_sofa_1_c1_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_sofa_1_c1_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_sofa_1_c1_r@2x.png"
+                ]
+              },
+              {
+                "Color": "#CCCCCC",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_sofa_1_c2_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_sofa_1_c2_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_sofa_1_c2_r@2x.png"
+                ]
+              },
+              {
+                "Color": "#000000",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_sofa_1_c4_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_sofa_1_c4_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_sofa_1_c4_r@2x.png"
+                ]
+              }
+            ]
+          },
+          {
+            "$id": "prod-sofa-2",
+            "Name": "Al Bondi",
+            "Manufacturer": "UXDIVERS",
+            "Description": "Designed by Al Bondi from Married... with children. Lay down and spend a good time while watching your favorite tv program and get your brain washed once more.",
+            "Price": 699,
+            "IsNew": true,
+            "IsFavorite": false,
+            "Image": "http://52.10.147.219/system/uploads/images/product_feature_2@2x.png",
+            "Rating": 3.5,
+            "Reviews": {
+              "$ref": "ecommerce-flow-product-reviews"
+            },
+            "AvailableColors": [
+              {
+                "Color": "#000000",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_sofa_3_c2_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_sofa_3_c2_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_sofa_3_c2_r@2x.png"
+                ]
+              },
+              {
+                "Color": "#A7926D",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_sofa_3_c3_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_sofa_3_c3_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_sofa_3_c3_r@2x.png"
+                ]
+              },
+              {
+                "Color": "#CBCBCB",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_sofa_3_c4_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_sofa_3_c4_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_sofa_3_c4_r@2x.png"
+                ]
+              }
+            ]
+          },
+          {
+            "$id": "prod-sofa-3",
+            "Name": "Offspring",
+            "Manufacturer": "UXDIVERS",
+            "Description": "So go on, indulge yourself. That's right, kick off your shoes, put your feet up, lean back and just enjoy the melodies. After all, music soothes even the savage beasts.",
+            "Price": 799,
+            "IsNew": false,
+            "IsFavorite": false,
+            "Image": "http://52.10.147.219/system/uploads/images/product_feature_3@2x.png",
+            "Rating": 3.8,
+            "Reviews": {
+              "$ref": "ecommerce-flow-product-reviews"
+            },
+            "AvailableColors": [
+              {
+                "Color": "#E6E6E6",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_sofa_2_c1_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_sofa_2_c1_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_sofa_2_c1_r@2x.png"
+                ]
+              },
+              {
+                "Color": "#404040",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_sofa_2_c2_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_sofa_2_c2_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_sofa_2_c2_r@2x.png"
+                ]
+              },
+              {
+                "Color": "#A7916E",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_sofa_2_c3_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_sofa_2_c3_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_sofa_2_c3_r@2x.png"
+                ]
+              },
+              {
+                "Color": "#7274F7",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_sofa_2_c4_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_sofa_2_c4_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_sofa_2_c4_r@2x.png"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Chairs",
+        "Content": [
+          {
+            "$id": "prod-chair-1",
+            "Name": "La Shisha",
+            "Manufacturer": "UXDIVERS",
+            "Description": "This chair is not comfortable, is not durable, is not pretty, but you can pretend you know something about design with your friends.",
+            "Price": 129,
+            "IsNew": false,
+            "IsFavorite": true,
+            "Image": "http://52.10.147.219/system/uploads/images/product_chair_2_c2_l@2x.png",
+            "Rating": 0.7,
+            "Reviews": {
+              "$ref": "ecommerce-flow-product-reviews"
+            },
+            "AvailableColors": [
+              {
+                "Color": "#E6E6E6",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_chair_2_c1_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_chair_2_c1_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_chair_2_c1_r@2x.png"
+                ]
+              },
+              {
+                "Color": "#894D31",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_chair_2_c2_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_chair_2_c2_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_chair_2_c2_r@2x.png"
+                ]
+              },
+              {
+                "Color": "#3D74A0",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_chair_2_c3_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_chair_2_c3_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_chair_2_c3_r@2x.png"
+                ]
+              },
+              {
+                "Color": "#B23332",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_chair_2_c4_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_chair_2_c4_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_chair_2_c4_r@2x.png"
+                ]
+              }
+            ]
+          },
+          {
+            "$id": "prod-chair-2",
+            "Name": "Chat Noir",
+            "Manufacturer": "UXDIVERS",
+            "Description": "Chat Noir, looks like a sofa but no, it's in fact a chair. The coolest thing about it, is that you can make a pile of Chat Noir chairs. Not comfortable.",
+            "Price": 149,
+            "IsNew": false,
+            "IsFavorite": false,
+            "Image": "http://52.10.147.219/system/uploads/images/product_chair_1_c1_l@2x.png",
+            "Rating": 3.5,
+            "Reviews": {
+              "$ref": "ecommerce-flow-product-reviews"
+            },
+            "AvailableColors": [
+              {
+                "Color": "#0c0c0c",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_chair_1_c1_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_chair_1_c1_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_chair_1_c1_r@2x.png"
+                ]
+              },
+              {
+                "Color": "#E6E6E6",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_chair_1_c2_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_chair_1_c2_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_chair_1_c2_r@2x.png"
+                ]
+              },
+              {
+                "Color": "#CD2026",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_chair_1_c3_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_chair_1_c3_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_chair_1_c3_r@2x.png"
+                ]
+              },
+              {
+                "Color": "#774CAD",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_chair_1_c4_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_chair_1_c4_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_chair_1_c4_r@2x.png"
+                ]
+              }
+            ]
+          },
+          {
+            "$id": "prod-chair-3",
+            "Name": "The Crusher",
+            "Manufacturer": "UXDIVERS",
+            "Description": "If your back hurts, this not for you. This chair looks stylish, it looks pretty on photos, but it will brake your back if you spend more than 4 minutes on it. Buy it and feed your instagram.",
+            "Price": 139,
+            "IsNew": false,
+            "IsFavorite": false,
+            "Image": "http://52.10.147.219/system/uploads/images/product_chair_4_c3_l@2x.png",
+            "Rating": 3.5,
+            "Reviews": {
+              "$ref": "ecommerce-flow-product-reviews"
+            },
+            "AvailableColors": [
+              {
+                "Color": "#C5482A",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_chair_4_c1_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_chair_4_c1_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_chair_4_c1_r@2x.png"
+                ]
+              },
+              {
+                "Color": "#E6E6E6",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_chair_4_c2_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_chair_4_c2_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_chair_4_c2_r@2x.png"
+                ]
+              },
+              {
+                "Color": "#4553BA",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_chair_4_c3_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_chair_4_c3_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_chair_4_c3_r@2x.png"
+                ]
+              },
+              {
+                "Color": "#7DCB2D",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_chair_4_c4_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_chair_4_c4_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_chair_4_c4_r@2x.png"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "Stools",
+        "Content": [
+          {
+            "$id": "prod-stool-1",
+            "Name": "Stephan Kito",
+            "Manufacturer": "UXDIVERS",
+            "Description": "Say hello to Esteban Kito. Give your hobbit friends a warm welcome to your home and invite them to drink a beer on Estabn Kito. Not recommended for Elfos.",
+            "Price": 49.99,
+            "IsNew": true,
+            "IsFavorite": false,
+            "Image": "http://52.10.147.219/system/uploads/images/product_stool_2_c1_d@2x.png",
+            "Rating": 4.7,
+            "Reviews": {
+              "$ref": "ecommerce-flow-product-reviews"
+            },
+            "AvailableColors": [
+              {
+                "Color": "#969696",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_stool_2_c1_d@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_stool_2_c1_f@2x.png"
+                ]
+              },
+              {
+                "Color": "#2B2B2B",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_stool_2_c2_d@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_stool_2_c2_f@2x.png"
+                ]
+              },
+              {
+                "Color": "#942425",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_stool_2_c3_d@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_stool_2_c3_f@2x.png"
+                ]
+              },
+              {
+                "Color": "#275297",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_stool_2_c4_d@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_stool_2_c4_f@2x.png"
+                ]
+              }
+            ]
+          },
+          {
+            "$id": "prod-stool-2",
+            "Name": "Little Boshta",
+            "Manufacturer": "UXDIVERS",
+            "Description": "Give your house some style with this Little Boshta stool from the great CakeOne collection. Of course this is not to sit, only use it to put magazines on it and take some cool pictures for your friends and family.",
+            "Price": 29.99,
+            "IsNew": false,
+            "IsFavorite": false,
+            "Image": "http://52.10.147.219/system/uploads/images/product_stool_4_c4_r@2x.png",
+            "Rating": 4.1,
+            "Reviews": {
+              "$ref": "ecommerce-flow-product-reviews"
+            },
+            "AvailableColors": [
+              {
+                "Color": "#1F2022",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_stool_4_c1_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_stool_4_c1_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_stool_4_c1_r@2x.png"
+                ]
+              },
+              {
+                "Color": "#BC1B1C",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_stool_4_c2_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_stool_4_c2_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_stool_4_c2_r@2x.png"
+                ]
+              },
+              {
+                "Color": "#E6E6E6",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_stool_4_c3_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_stool_4_c3_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_stool_4_c3_r@2x.png"
+                ]
+              },
+              {
+                "Color": "#47AFC9",
+                "Gallery": [
+                  "http://52.10.147.219/system/uploads/images/product_stool_4_c4_l@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_stool_4_c4_f@2x.png",
+                  "http://52.10.147.219/system/uploads/images/product_stool_4_c4_r@2x.png"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "HighlightedProducts": [
+      {
+        "$ref": "prod-sofa-1"
+      },
+      {
+        "$ref": "prod-sofa-2"
+      },
+      {
+        "$ref": "prod-sofa-3"
+      }
+    ],
+    "Banner": "Get 25% off on newest collections"
+  },
+  "ProductDetailPage.xaml": {
+    "Name": "Sofabio",
+    "Manufacturer": "UXDIVERS",
+    "Description": "Sofabio was carefully designed by a husband that was constantly kicked out of bed and sent to the sofa to spend the night. Durable, strong, designed for mens that like UFC.",
+    "Price": 499,
+    "IsNew": true,
+    "IsFavorite": true,
+    "Image": "http://52.10.147.219/system/uploads/images/product_feature_1@2x.png",
+    "Rating": 3.9,
+    "Quantities": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "AvailableColors": [
+      {
+        "Color": "#C78E33",
+        "Gallery": [
+          "http://52.10.147.219/system/uploads/images/product_sofa_1_c3_l@2x.png",
+          "http://52.10.147.219/system/uploads/images/product_sofa_1_c3_f@2x.png",
+          "http://52.10.147.219/system/uploads/images/product_sofa_1_c3_r@2x.png"
+        ]
+      },
+      {
+        "Color": "#574741",
+        "Gallery": [
+          "http://52.10.147.219/system/uploads/images/product_sofa_1_c1_l@2x.png",
+          "http://52.10.147.219/system/uploads/images/product_sofa_1_c1_f@2x.png",
+          "http://52.10.147.219/system/uploads/images/product_sofa_1_c1_r@2x.png"
+        ]
+      },
+      {
+        "Color": "#CCCCCC",
+        "Gallery": [
+          "http://52.10.147.219/system/uploads/images/product_sofa_1_c2_l@2x.png",
+          "http://52.10.147.219/system/uploads/images/product_sofa_1_c2_f@2x.png",
+          "http://52.10.147.219/system/uploads/images/product_sofa_1_c2_r@2x.png"
+        ]
+      },
+      {
+        "Color": "#000000",
+        "Gallery": [
+          "http://52.10.147.219/system/uploads/images/product_sofa_1_c4_l@2x.png",
+          "http://52.10.147.219/system/uploads/images/product_sofa_1_c4_f@2x.png",
+          "http://52.10.147.219/system/uploads/images/product_sofa_1_c4_r@2x.png"
+        ]
+      }
+    ],
+    "Reviews": {
+      "List": [
+        {
+          "Title": "Nice product",
+          "Reviewer": "Regina Joplin",
+          "RatingValue": 4.3,
+          "RatingMax": 5.0,
+          "Date": "October 2th 2018",
+          "Comment": "In connection with this appellative of \"Whalebone whales,\" it is of great leap of yer happiness leadership colors. This is how we design a great article sample."
+        },
+        {
+          "Title": "Very good choice",
+          "Reviewer": "Pat Davies",
+          "RatingValue": 4.0,
+          "RatingMax": 5.0,
+          "Date": "August 25th 2018",
+          "Comment": "I love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly."
+        },
+        {
+          "Title": "Nice product",
+          "Reviewer": "Regina Joplin",
+          "RatingValue": 4.3,
+          "RatingMax": 5.0,
+          "Date": "October 2th 2018",
+          "Comment": "In connection with this appellative of \"Whalebone whales,\" it is of great leap of yer happiness leadership colors. This is how we design a great article sample."
+        },
+        {
+          "Title": "Very good choice",
+          "Reviewer": "Pat Davies",
+          "RatingValue": 4.0,
+          "RatingMax": 5.0,
+          "Date": "August 25th 2018",
+          "Comment": "I love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly."
+        },
+        {
+          "Title": "Exceelent!!",
+          "Reviewer": "Peter Puchelli",
+          "RatingValue": 5.0,
+          "RatingMax": 5.0,
+          "Date": "November 2th 2017",
+          "Comment": " love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly."
+        },
+        {
+          "Title": "Fine",
+          "Reviewer": "Rick Morty",
+          "RatingValue": 3.0,
+          "RatingMax": 5.0,
+          "Date": "July 5th 2017",
+          "Comment": "In connection with this appellative of \"Whalebone whales,\" it is of great leap of yer happiness leadership colors. This is how we design a great article sample."
+        }
+      ]
+    },
+    "RelatedProducts": [
+      {
+        "Name": "Al Bondi",
+        "Manufacturer": "UXDIVERS",
+        "Price": 699,
+        "Image": "http://52.10.147.219/system/uploads/images/product_feature_2@2x.png"
+      },
+      {
+        "Name": "Little Boshta",
+        "Manufacturer": "UXDIVERS",
+        "Price": 29.99,
+        "Image": "http://52.10.147.219/system/uploads/images/product_stool_4_c4_r@2x.png",
+        "Rating": 4.1
+      },
+      {
+        "Name": "Alta Lamp",
+        "Manufacturer": "UXDIVERS",
+        "Price": 49.99,
+        "Image": "http://52.10.147.219/system/uploads/images/product_big_lamp_c1_l@2x.png"
+      },
+      {
+        "$ref": "prod-sofa-3"
+      }
+    ]
+  },
+  "OrderConfirmationPage.xaml": {
+    "Product": {
+      "$id": "prod-with-related",
+      "Name": "Sofabio",
+      "Manufacturer": "UXDIVERS",
+      "Description": "Sofabio was carefully designed by a husband that was constantly kicked out of bed and sent to the sofa to spend the night. Durable, strong, designed for mens that like UFC.",
+      "Price": 499,
+      "IsNew": false,
+      "IsFavorite": true,
+      "Image": "http://52.10.147.219/system/uploads/images/product_feature_1@2x.png",
+      "Rating": 3.9,
+      "Quantities": [
+        1,
+        2,
+        3
+      ],
+      "RelatedProducts": [
+        {
+          "$ref": "prod-sofa-3"
+        },
+        {
+          "$ref": "prod-sofa-2"
+        },
+        {
+          "$ref": "prod-stool-1"
+        }
+      ]
+    },
+    "IsGift": true,
+    "Subtotal": 499,
+    "Total": "40.1",
+    "ShippingAddress": "8952 Pacocha Station Suite 664",
+    "PaymentMethod": "VISA XXXX-XXX-XXXX-3461"
+  },
+  "CheckoutPage.xaml": {
+    "Product": {
+      "$ref": "prod-with-related"
+    },
+    "ShippingOptions": [
+      {
+        "Option": "Free Shipping",
+        "Description": "4-6 Business Day",
+        "Price": 0
+      },
+      {
+        "Option": "Standard",
+        "Description": "2-4 Business Day",
+        "Price": 10
+      },
+      {
+        "Option": "Express",
+        "Description": "1 Business Day",
+        "Price": 20
+      }
+    ],
+    "Quantity": 1,
+    "VAT": "0.79",
+    "Total": 499,
+    "ShippingAddress": "8952 Pacocha Station Suite 664",
+    "PaymentMethod": "VISA XXXX-XXX-XXXX-3461"
+  },
+  "SocialPage.xaml": {
+    "$id": "SocialPage.xaml",
+    "Profile": {
+      "Name": "Robert Stainford",
+      "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/user_01.png",
+      "Description": "Passion driven designer and developer. Frustrated musician and father of two."
+    },
+    "Related": {
+      "$id": "social-related",
+      "Images": [
+        "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/gallery_01.jpg",
+        "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/gallery_02.jpg",
+        "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/gallery_03.jpg",
+        "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/gallery_04.jpg",
+        "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/gallery_05.jpg",
+        "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/gallery_06.jpg",
+        "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/gallery_07.jpg",
+        "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/gallery_08.jpg",
+        "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/gallery_09.jpg"
+      ],
+      "Friends": [
+        {
+          "$id": "friend-1",
+          "Name": "Donald Davies",
+          "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_01.png"
+        },
+        {
+          "Name": "Janis Spector",
+          "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_02.png"
+        },
+        {
+          "Name": "Regina Joplin",
+          "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_03.png"
+        },
+        {
+          "Name": "Jaco Morrison",
+          "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_04.png"
+        },
+        {
+          "Name": "Margaret Whites",
+          "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_05.png"
+        },
+        {
+          "Name": "Skyler Harrisson",
+          "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_06.png"
+        },
+        {
+          "Name": "Alison Pastorius",
+          "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_07.png"
+        }
+      ]
+    }
+  },
+  "SocialVariantPage.xaml": {
+    "Profile": {
+      "Name": "Clare Japi",
+      "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/user_02.png",
+      "Description": "I like my toast done on one side."
+    },
+    "Related": {
+      "$ref": "social-related"
+    }
+  },
+  "ProfilePage.xaml": {
+    "Name": "Regina Joplin",
+    "Image": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/profile_image.jpg",
+    "Description": "Photography is my passion. Black and white is the way I see the world."
+  },
+  "TimelinePage.xaml": {
+    "TimelineList": [
+      {
+        "$id": "timeline-item-1",
+        "EventTitle": "Eric Douglas has a new photo",
+        "EventDescription": "Eric uploaded a more recently pic from him.",
+        "Image": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_01.png",
+        "When": "JUN 29, 2018"
+      },
+      {
+        "EventTitle": "Sam joined a new group",
+        "EventDescription": "Sam joined the Marketing and Affiliates group",
+        "Image": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_03.png",
+        "When": "JUN 28, 2018"
+      },
+      {
+        "EventTitle": "You have a new follower!",
+        "EventDescription": "Tony is now folowing you.",
+        "Image": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_04.png",
+        "When": "JUN 17, 2018"
+      },
+      {
+        "EventTitle": "You have a new follower!",
+        "EventDescription": "Ingrid Davies is now followig you.",
+        "Image": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_05.png",
+        "When": "JUN 17, 2018"
+      },
+      {
+        "EventTitle": "You have a new like!",
+        "EventDescription": "Emily liked your last post!",
+        "Image": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_06.png",
+        "When": "JUN 14, 2018"
+      },
+      {
+        "EventTitle": "Jaco joined a new group!",
+        "EventDescription": "Jaco Davies has joined the Internet of Things group. He is now the member number 100 of this group.",
+        "Image": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_07.png",
+        "When": "JUN 14, 2018"
+      },
+      {
+        "EventTitle": "Jaco added a new comment to \"Internet of Things\" group",
+        "EventDescription": "Hi guys, thanks for allow me be part of this great group. I would like to suggest...",
+        "Image": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_07.png",
+        "When": "JUN 14, 2018"
+      },
+      {
+        "EventTitle": "Ingrid have a new like!",
+        "EventDescription": "Jaco liked your last post.",
+        "Image": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_05.png",
+        "When": "JUN 14, 2018"
+      },
+      {
+        "EventTitle": "Eric Douglas joined a new group!",
+        "EventDescription": "Eric has joined the Jazz and Blues group. He is now the member number 207 of this group.",
+        "Image": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_01.png",
+        "When": "JUN 12, 2018"
+      },
+      {
+        "EventTitle": "You have a new like!",
+        "EventDescription": "Emily liked your last post!",
+        "Image": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_06.png",
+        "When": "JUN 12, 2018"
+      },
+      {
+        "EventTitle": "You have a new like!",
+        "EventDescription": "Sam liked your last post!",
+        "Image": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_03.png",
+        "When": "JUN 12, 2018"
+      },
+      {
+        "EventTitle": "Sam joined a new group!",
+        "EventDescription": "Sam has joined the Avant Garde group. She is now the member number 99 of this group.",
+        "Image": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_01.png",
+        "When": "JUN 12, 2018"
+      },
+      {
+        "EventTitle": "Sam joined a new group!",
+        "EventDescription": "Sam has joined the Bon Apetite! group. She is now the member number 487 of this group.",
+        "Image": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_01.png",
+        "When": "JUN 12, 2018"
+      },
+      {
+        "EventTitle": "Ingrid have a new like!",
+        "EventDescription": "Jaco liked your last post.",
+        "Image": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_05.png",
+        "When": "JUN 11, 2018"
+      }
+    ]
+  },
+  "SocialCardPage.xaml": {
+    "Profile": {
+      "Name": "Clare Japi",
+      "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/user_02.png",
+      "Description": "I like my toast done on one side."
+    },
+    "Related": {
+      "$ref": "social-related"
+    }
+  },
+  "ContactSimpleDetailPage.xaml": {
+    "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_03.png",
+    "Values": [
+      {
+        "Label": "Name",
+        "Value": "Regina Joplin"
+      },
+      {
+        "Label": "Address 1",
+        "Value": "05673 Brisa Cape"
+      },
+      {
+        "Label": "Address 2",
+        "Value": "4618 Skiles Vista"
+      },
+      {
+        "Label": "Phone Number",
+        "Value": "(+352) 621-7040 4940"
+      },
+      {
+        "Label": "Email",
+        "Value": "rjoplin@uxdivers.com"
+      },
+      {
+        "Label": "Organization",
+        "Value": "UXDivers"
+      },
+      {
+        "Label": "Country",
+        "Value": "USA"
+      },
+      {
+        "Label": "City",
+        "Value": "San Francisco"
+      },
+      {
+        "Label": "ZIP",
+        "Value": "WY 96078"
+      },
+      {
+        "Label": "Notes",
+        "Value": "UX/UI Designer with a BA in Motion Design."
+      }
+    ]
+  },
+  "Articles": {
+    "$id": "articles",
+    "List": [
+      {
+        "$id": "article-1",
+        "Title": "United by friendship",
+        "Subtitle": "Friendship beyond everything",
+        "Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et aliquet nunc.\nSed ultricies sed augue sit amet maximus. In vel tellus sed ipsum volutpat venenatis et sit amet diam. Suspendisse feugiat mollis nibh, in facilisis diam convallis sit amet.\n\nMaecenas lectus turpis, rhoncus et est at, lacinia placerat urna. Praesent malesuada consectetur justo, scelerisque fermentum enim lobortis ullamcorper. Duis commodo sit amet ligula vitae luctus. Nulla commodo ipsum a lorem efficitur luctus.",
+        "Section": "ACTUALITY",
+        "Author": "UXDIVERS",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_01.png",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/article_01.jpg",
+        "Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+        "QuoteAuthor": "Jaco Morrison",
+        "When": "JAN 6, 2017",
+        "Followers": "112",
+        "Likes": "2.1k"
+      },
+      {
+        "$id": "article-2",
+        "Title": "Olympic dream",
+        "Subtitle": "The way to the podium",
+        "Body": "In connection with this appellative of \"Whalebone whales,\" it is of great leap of yer happiness leadership colors. This is how we design a great article sample.",
+        "Section": "SPORTS",
+        "Author": "Donald Davies",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_02.png",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/article_02.jpg",
+        "Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+        "QuoteAuthor": "Donald Davies",
+        "When": "FEB 13, 2017",
+        "Followers": "340",
+        "Likes": "12K"
+      },
+      {
+        "$id": "article-3",
+        "Title": "Wheels of fortune",
+        "Subtitle": "And the wind cries mary",
+        "Body": "In connection with this appellative of \"Whalebone whales,\" it is of great leap of yer happiness leadership colors. This is how we design a great article sample.",
+        "Section": "FREE TIME",
+        "Author": "Regina Joplin",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_03.png",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/article_03.jpg",
+        "Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+        "QuoteAuthor": "Regina Joplin",
+        "When": "FEB 21, 2017",
+        "Followers": "120",
+        "Likes": "798"
+      },
+      {
+        "$id": "article-4",
+        "Title": "Last adventure",
+        "Subtitle": "The conquest of space",
+        "Body": "In connection with this appellative of \"Whalebone whales,\" it is of great leap of yer happiness leadership colors. This is how we design a great article sample.",
+        "Section": "SCIENCE",
+        "Author": "UXDIVERS",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_04.png",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/article_04.jpg",
+        "Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+        "QuoteAuthor": "Janis Spector",
+        "When": "MAR 9, 2017",
+        "Followers": "327",
+        "Likes": "921"
+      },
+      {
+        "$id": "article-5",
+        "Title": "Sweet leaf",
+        "Subtitle": "The rainforest newest hope",
+        "Body": "In connection with this appellative of \"Whalebone whales,\" it is of great leap of yer happiness leadership colors. This is how we design a great article sample.",
+        "Section": "NATURE",
+        "Author": "Margaret Whites",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_05.png",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/article_05.jpg",
+        "Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+        "QuoteAuthor": "Donald Davies",
+        "When": "JUN 17, 2015",
+        "Followers": "2K",
+        "Likes": "92"
+      },
+      {
+        "$id": "article-6",
+        "Title": "Smoke kills",
+        "Subtitle": "The war against tabacco",
+        "Body": "In connection with this appellative of \"Whalebone whales,\" it is of great leap of yer happiness leadership colors. This is how we design a great article sample.",
+        "Section": "HEALTH",
+        "Author": "Skyler Harrisson",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_06.png",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/article_06.jpg",
+        "Quote": "Donec euismod nulla et sem lobortis ultrices. Cras id imperdiet metus. Sed congue luctus arcu.",
+        "QuoteAuthor": "Skyler Harrisson",
+        "When": "JUN 12, 2017",
+        "Followers": "235",
+        "Likes": "4.7K"
+      }
+    ]
+  },
+  "ArticlesBrowserPage.xaml": {
+    "Articles": [
+      {
+        "$ref": "article-1"
+      },
+      {
+        "$ref": "article-3"
+      },
+      {
+        "$ref": "article-5"
+      }
+    ],
+    "Related": [
+      {
+        "$ref": "article-2"
+      },
+      {
+        "$ref": "article-4"
+      },
+      {
+        "$ref": "article-6"
+      }
+    ]
+  },
+  "ArticlesListPage.xaml": {
+    "$ref": "articles"
+  },
+  "ArticlesFeedPage.xaml": {
+    "$ref": "articles"
+  },
+  "ArticlesListVariantPage.xaml": {
+    "$ref": "articles"
+  },
+  "ArticlesClassicViewPage.xaml": {
+    "$ref": "articles"
+  },
+  "ArticlesColumnsPage.xaml": {
+    "Main": {
+      "Title": "Sweet leaf",
+      "Subtitle": "The rainforest newest hope",
+      "Body": "Whether you are starting with Xamarin or if you are more experienced, Grial will boost your development time by giving all you need to start with the right foot. Forget about endless hours browsing for an specific solution in Xamarin Forms, we’ve done that for you. In connection with this appellative of 'Whalebone whales,' it is of great leap of yer happiness leadership colors. This is how we design a great article sample.",
+      "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/article_05.jpg",
+      "When": "JUN 17, 2015"
+    },
+    "Secondary": {
+      "$ref": "articles"
+    }
+  },
+  "ArticleDetailPage.xaml": {
+    "Article": {
+      "$ref": "article-1"
+    },
+    "Comments": [
+      {
+        "$id": "article-comment-1",
+        "From": {
+          "Name": "Jaco Morrison",
+          "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_01.png"
+        },
+        "Title": "Artina is awesome...you\"ll love it",
+        "Body": "In connection with this appellative of \"Whalebone whales,\" it is of great leap of yer happiness leadership colors.",
+        "HasAttachment": true,
+        "ThreadCount": 2,
+        "When": "July 7",
+        "IsStared": false,
+        "IsRead": false
+      },
+      {
+        "$id": "article-comment-2",
+        "From": {
+          "Name": "Margaret Whites",
+          "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_02.png"
+        },
+        "Title": "Artina is awesome...you\"ll love it",
+        "Body": "In connection with this appellative of \"Whalebone whales,\" it is of great leap of yer happiness leadership colors.",
+        "HasAttachment": false,
+        "ThreadCount": 10,
+        "When": "3 minutes ago",
+        "IsStared": true,
+        "IsRead": false
+      },
+      {
+        "$id": "article-comment-3",
+        "From": {
+          "Name": "Donald Davies",
+          "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_03.png"
+        },
+        "Title": "Artina is awesome...you\"ll love it",
+        "Body": "In connection with this appellative of \"Whalebone whales,\" it is of great leap of yer happiness leadership colors.",
+        "HasAttachment": false,
+        "ThreadCount": 5,
+        "When": "July 7",
+        "IsStared": true,
+        "IsRead": true
+      }
+    ]
+  },
+  "CardArticlePage.xaml": {
+    "Article": {
+      "$ref": "article-1"
+    },
+    "Gallery": [
+      {
+        "$ref": "article-5"
+      },
+      {
+        "$ref": "article-4"
+      },
+      {
+        "$ref": "article-3"
+      },
+      {
+        "$ref": "article-2"
+      }
+    ],
+    "Related": [
+      {
+        "$ref": "article-2"
+      },
+      {
+        "$ref": "article-3"
+      },
+      {
+        "$ref": "article-4"
+      },
+      {
+        "$ref": "article-5"
+      }
+    ],
+    "Comments": [
+      {
+        "$ref": "article-comment-1"
+      },
+      {
+        "$ref": "article-comment-2"
+      },
+      {
+        "$ref": "article-comment-3"
+      }
+    ]
+  },
+  "CurvedHeaderArticlePage.xaml": {
+    "Article": {
+      "$ref": "article-1"
+    },
+    "Related": [
+      {
+        "$ref": "article-2"
+      },
+      {
+        "$ref": "article-5"
+      }
+    ],
+    "Comments": [
+      {
+        "$ref": "article-comment-1"
+      },
+      {
+        "$ref": "article-comment-2"
+      },
+      {
+        "$ref": "article-comment-3"
+      }
+    ]
+  },
+  "ParallaxHeaderArticlePage.xaml": {
+    "Article": {
+      "$ref": "article-1"
+    },
+    "Related": [
+      {
+        "$ref": "article-2"
+      },
+      {
+        "$ref": "article-3"
+      },
+      {
+        "$ref": "article-4"
+      },
+      {
+        "$ref": "article-5"
+      },
+      {
+        "$ref": "article-6"
+      }
+    ],
+    "Cards": [
+      {
+        "$id": "article-card-1",
+        "Icon": "",
+        "Value": "3844",
+        "Description": "Km driven"
+      },
+      {
+        "Icon": "",
+        "Value": "14hr",
+        "Description": "Time spent"
+      },
+      {
+        "Icon": "",
+        "Value": "$235",
+        "Description": "Gas expense"
+      }
+    ],
+    "Comments": [
+      {
+        "$ref": "article-comment-1"
+      },
+      {
+        "$ref": "article-comment-2"
+      },
+      {
+        "$ref": "article-comment-3"
+      }
+    ]
+  },
+  "ChatMainPage.xaml": {
+    "Contacts": [
+      {
+        "$id": "flow-messages-contact-1",
+        "Name": "Jaco Morrison",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_04.png",
+        "City": "New York",
+        "Status": "Offline",
+        "Address1": "05673 Brisa Cape",
+        "Address2": "4618 Skiles Vista",
+        "Phone": "(+352) 621-7040 4940",
+        "Email": "rjoplin@uxdivers.com",
+        "Organization": "UXDivers",
+        "Country": "USA",
+        "Zip": "WY 96078",
+        "Notes": "UX/UI Designer with a BA in Motion Design.",
+        "LastSeen": "last seen within a week"
+      },
+      {
+        "$id": "flow-messages-contact-2",
+        "Name": "Margaret Whites",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_05.png",
+        "City": "Orlando",
+        "Status": "Online",
+        "Address1": "05673 Brisa Cape",
+        "Address2": "4618 Skiles Vista",
+        "Phone": "(+352) 621-7040 4940",
+        "Email": "rjoplin@uxdivers.com",
+        "Organization": "UXDivers",
+        "Country": "USA",
+        "Zip": "WY 96078",
+        "Notes": "UX/UI Designer with a BA in Motion Design.",
+        "LastSeen": "last seen recently"
+      },
+      {
+        "$id": "flow-messages-contact-3",
+        "Name": "Donald Davies",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_01.png",
+        "City": "New Hampshire",
+        "Status": "Away",
+        "Address1": "05673 Brisa Cape",
+        "Address2": "4618 Skiles Vista",
+        "Phone": "(+352) 621-7040 4940",
+        "Email": "rjoplin@uxdivers.com",
+        "Organization": "UXDivers",
+        "Country": "USA",
+        "Zip": "WY 96078",
+        "Notes": "UX/UI Designer with a BA in Motion Design.",
+        "LastSeen": "last within a day"
+      },
+      {
+        "$id": "flow-messages-contact-4",
+        "Name": "Janis Spector",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_02.png",
+        "City": "Nebraska",
+        "Status": "Online",
+        "Address1": "05673 Brisa Cape",
+        "Address2": "4618 Skiles Vista",
+        "Phone": "(+352) 621-7040 4940",
+        "Email": "rjoplin@uxdivers.com",
+        "Organization": "UXDivers",
+        "Country": "USA",
+        "Zip": "WY 96078",
+        "Notes": "UX/UI Designer with a BA in Motion Design.",
+        "LastSeen": "last seen recently"
+      },
+      {
+        "$id": "flow-messages-contact-5",
+        "Name": "Skyler Harrisson",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_06.png",
+        "City": "Nebraska",
+        "Status": "Offline",
+        "Address1": "05673 Brisa Cape",
+        "Address2": "4618 Skiles Vista",
+        "Phone": "(+352) 621-7040 4940",
+        "Email": "rjoplin@uxdivers.com",
+        "Organization": "UXDivers",
+        "Country": "USA",
+        "Zip": "WY 96078",
+        "Notes": "UX/UI Designer with a BA in Motion Design.",
+        "LastSeen": "last seen last month"
+      },
+      {
+        "$id": "flow-messages-contact-6",
+        "Name": "Regina Joplin",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_03.png",
+        "City": "San Francisco",
+        "Status": "Busy",
+        "Address1": "05673 Brisa Cape",
+        "Address2": "4618 Skiles Vista",
+        "Phone": "(+352) 621-7040 4940",
+        "Email": "rjoplin@uxdivers.com",
+        "Organization": "UXDivers",
+        "Country": "USA",
+        "Zip": "WY 96078",
+        "Notes": "UX/UI Designer with a BA in Motion Design.",
+        "LastSeen": "last seen recently"
+      },
+      {
+        "$id": "flow-messages-contact-7",
+        "Name": "Pat Davies",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_07.png",
+        "City": "San Francisco",
+        "Status": "Online",
+        "Address1": "05673 Brisa Cape",
+        "Address2": "4618 Skiles Vista",
+        "Phone": "(+352) 621-7040 4940",
+        "Email": "rjoplin@uxdivers.com",
+        "Organization": "UXDivers",
+        "Country": "USA",
+        "Zip": "WY 96078",
+        "Notes": "UX/UI Designer with a BA in Motion Design.",
+        "LastSeen": "last seen recently"
+      }
+    ],
+    "Conversations": [
+      {
+        "$id": "flow-messages-conversation-1",
+        "From": {
+          "$ref": "flow-messages-contact-4"
+        },
+        "Messages": [
+          {
+            "$id": "flow-messages-preview-1",
+            "When": "July 7",
+            "Text": "Hey buddy :), what's up? I\"m currently working on this amazing stuff called Grial. Have you heard about it? You shoud give it a try....it really rocks!!!!!.",
+            "IsIncoming": true
+          },
+          {
+            "When": "July 7",
+            "Text": "You should give it a try!",
+            "IsIncoming": true
+          },
+          {
+            "When": "",
+            "Text": "Wooow! Didn\"t know this exist!! Really cool stuff!",
+            "IsIncoming": false
+          },
+          {
+            "When": "July 7",
+            "Text": "I was wondering if something like this existed. This will save hundred of hours. I rather be skateboarding with my friends instead of compiling every little visual change. Thanks for sharing!",
+            "IsIncoming": false
+          },
+          {
+            "When": "July 7",
+            "Text": "No problem! I hope you can find it useful. It really makes the difference to me.",
+            "IsIncoming": true
+          },
+          {
+            "When": "July 7",
+            "Text": "Ok thanks and thanks again!! This is really awesome",
+            "IsIncoming": false
+          }
+        ],
+        "Preview": {
+          "$ref": "flow-messages-preview-1"
+        }
+      },
+      {
+        "$id": "flow-messages-conversation-2",
+        "From": {
+          "$ref": "flow-messages-contact-5"
+        },
+        "Messages": [
+          {
+            "$id": "flow-messages-preview-2",
+            "When": "30s",
+            "Text": "Hey buddy :), what's up? I\"m currently working on this amazing stuff called Grial. Have you heard about it? You shoud give it a try....it really rocks!!!!!.",
+            "IsIncoming": true
+          },
+          {
+            "When": "Now",
+            "Text": "Indeed.",
+            "IsIncoming": false
+          }
+        ],
+        "Preview": {
+          "$ref": "flow-messages-preview-2"
+        }
+      },
+      {
+        "$id": "flow-messages-conversation-3",
+        "From": {
+          "$ref": "flow-messages-contact-2"
+        },
+        "Messages": [
+          {
+            "$id": "flow-messages-preview-3",
+            "When": "50s",
+            "Text": "Hello there my friend, how is it going?",
+            "IsIncoming": true
+          },
+          {
+            "When": "",
+            "Text": "Great! C u later tonight at Gillian party, right?",
+            "IsIncoming": false
+          },
+          {
+            "When": "Now",
+            "Text": "For sure! See you later :)",
+            "IsIncoming": true
+          }
+        ],
+        "Preview": {
+          "$ref": "flow-messages-preview-3"
+        }
+      },
+      {
+        "$id": "flow-messages-conversation-4",
+        "From": {
+          "$ref": "flow-messages-contact-6"
+        },
+        "Messages": [
+          {
+            "$id": "flow-messages-preview-4",
+            "When": "2hs",
+            "Text": "Hey check this out!",
+            "IsIncoming": true
+          },
+          {
+            "When": "2hs",
+            "Text": "What? I was wondering...",
+            "IsIncoming": false
+          }
+        ],
+        "Preview": {
+          "$ref": "flow-messages-preview-4"
+        }
+      },
+      {
+        "$id": "flow-messages-conversation-5",
+        "From": {
+          "$ref": "flow-messages-contact-3"
+        },
+        "Messages": [
+          {
+            "$id": "flow-messages-preview-5",
+            "When": "1 day",
+            "Text": "C u later tonight at Gillian Japi party, right?",
+            "IsIncoming": true
+          },
+          {
+            "When": "1 day",
+            "Text": "Yeah, I won't miss that :)",
+            "IsIncoming": false
+          }
+        ],
+        "Preview": {
+          "$ref": "flow-messages-preview-5"
+        }
+      },
+      {
+        "$id": "flow-messages-conversation-6",
+        "From": {
+          "$ref": "flow-messages-contact-1"
+        },
+        "Messages": [
+          {
+            "$id": "flow-messages-preview-6",
+            "When": "1 day",
+            "Text": "Three sad tigers eat wheat in a wheat field",
+            "IsIncoming": true
+          },
+          {
+            "When": "1 day",
+            "Text": "are you alright??",
+            "IsIncoming": false
+          }
+        ],
+        "Preview": {
+          "$ref": "flow-messages-preview-6"
+        }
+      }
+    ]
+  },
+  "ChatMessagesPage.xaml": {
+    "Conversation": {
+      "$ref": "flow-messages-conversation-1"
+    }
+  },
+  "ContactDetailPage.xaml": {
+    "Contact": {
+      "$ref": "flow-messages-contact-6"
+    },
+    "Values": [
+      {
+        "Label": "Name",
+        "Value": "Regina Joplin"
+      },
+      {
+        "Label": "Address 1",
+        "Value": "05673 Brisa Cape"
+      },
+      {
+        "Label": "Address 2",
+        "Value": "4618 Skiles Vista"
+      },
+      {
+        "Label": "Phone Number",
+        "Value": "(+352) 621-7040 4940"
+      },
+      {
+        "Label": "Email",
+        "Value": "rjoplin@uxdivers.com"
+      },
+      {
+        "Label": "Organization",
+        "Value": "UXDivers"
+      },
+      {
+        "Label": "Country",
+        "Value": "USA"
+      },
+      {
+        "Label": "City",
+        "Value": "San Francisco"
+      },
+      {
+        "Label": "ZIP",
+        "Value": "WY 96078"
+      },
+      {
+        "Label": "Notes",
+        "Value": "UX/UI Designer with a BA in Motion Design."
+      }
+    ]
+  },
+  "AddContactPage.xaml": {
+    "Title": "New contact",
+    "IsEdit": false,
+    "Contact": {
+      "$ref": "flow-messages-contact-6"
+    }
+  },
+  "Products": {
+    "$id": "products",
+    "List": [
+      {
+        "$id": "product-1",
+        "Name": "Flannel Shirt",
+        "Description": "Classic 90's Skateboarding style shirt. Feel like Pat Duffy or even flow like Edie from Pearl Jam. With that casual grunge style this is the shirt you need.",
+        "Price": "$39.90",
+        "Image": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/product_item_0.jpg",
+        "RatingValue": 4.5,
+        "RatingMax": 5,
+        "Manufacturer": "UXDIVERS",
+        "UseLargeImage": false
+      },
+      {
+        "$id": "product-2",
+        "Name": "Bomber Jacket",
+        "Description": "Top gun in every gentelman closet. This leather jacket will make you feel like Tom Cruise without that crazy look. Be a good boy make mom proud.",
+        "Price": "$89.90",
+        "Image": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/product_item_1.jpg",
+        "RatingValue": 4,
+        "RatingMax": 5,
+        "Manufacturer": "UXDIVERS",
+        "UseLargeImage": false
+      },
+      {
+        "$id": "product-3",
+        "Name": "Classic Black",
+        "Description": "Get that instant normal look that everybody wants. Blend with the humans, it will make you feel less strange. You know you are not normal.",
+        "Price": "$49.90",
+        "Image": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/product_item_2.jpg",
+        "RatingValue": 3.5,
+        "RatingMax": 5,
+        "Manufacturer": "UXDIVERS",
+        "UseLargeImage": false
+      },
+      {
+        "$id": "product-4",
+        "Name": "Flowers Shirt",
+        "Description": "Our newest swim tees with a much looser fit than traditional rash guard for yet more comfort and versatility, is well known for great fit, function and colors.",
+        "Price": "$29.90",
+        "Image": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/product_item_3.jpg",
+        "RatingValue": 4,
+        "RatingMax": 5,
+        "Manufacturer": "UXDIVERS",
+        "UseLargeImage": false
+      },
+      {
+        "$id": "product-5",
+        "Name": "Sccotish Shirt",
+        "Description": "Not just another common shirt. Upgrade your sexappeal looking good. Rock and roll never gets old. Eric Burdon wears a shirt like this one when he wants to look good.",
+        "Price": "$34.90",
+        "Image": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/product_item_4.jpg",
+        "RatingValue": 2.5,
+        "RatingMax": 5,
+        "Manufacturer": "UXDIVERS",
+        "UseLargeImage": false
+      },
+      {
+        "$id": "product-6",
+        "Name": "Silk Shirt",
+        "Description": "Let's face it, this shirt does not look good on anybody. But how many times do you buy something that you don't need? Buy this one feel happy for a minute then dismiss it.",
+        "Price": "$39.90",
+        "Image": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/product_item_5.jpg",
+        "RatingValue": 4.5,
+        "RatingMax": 5,
+        "Manufacturer": "UXDIVERS",
+        "UseLargeImage": false
+      },
+      {
+        "$id": "product-7",
+        "Name": "Entrepreneur Shirt",
+        "Description": "Do you have a meeting? Do you want to look good reliable and confident? This is the shirt that you need for those horrible meetings trying to find someone that lend you some money.",
+        "Price": "$65.90",
+        "Image": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/product_item_6.jpg",
+        "RatingValue": 4,
+        "RatingMax": 5,
+        "Manufacturer": "UXDIVERS",
+        "UseLargeImage": false
+      },
+      {
+        "$id": "product-8",
+        "Name": "Soldier Shirt",
+        "Description": "Now is your time. Wanna be the alpha male of your local bar? Common! Get this shirt now and feel like a sexy Rambo on your next date. Remember that girls loves peacefull soliders.",
+        "Price": "$46.90",
+        "Image": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/product_item_7.jpg",
+        "RatingValue": 5,
+        "RatingMax": 5,
+        "Manufacturer": "UXDIVERS",
+        "UseLargeImage": false
+      }
+    ]
+  },
+  "ProductsCatalogPage.xaml": {
+    "$ref": "products"
+  },
+  "ProductsGridPage.xaml": {
+    "$ref": "products"
+  },
+  "ProductsGridVariantPage.xaml": {
+    "$ref": "products"
+  },
+  "ProductItemViewPage.xaml": {
+    "Product": {
+      "$ref": "product-1"
+    }
+  },
+  "ProductItemFullScreenPage.xaml": {
+    "Product": {
+      "$ref": "product-1"
+    }
+  },
+  "Char-Users": [
+    {
+      "From": {
+        "$id": "chat-user-1",
+        "Name": "Skyler Harrisson",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_01.png"
+      }
+    },
+    {
+      "From": {
+        "$id": "chat-user-2",
+        "Name": "Janis Spector",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_02.png"
+      }
+    },
+    {
+      "From": {
+        "$id": "chat-user-3",
+        "Name": "Regina Joplin",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_03.png"
+      }
+    },
+    {
+      "From": {
+        "$id": "chat-user-4",
+        "Name": "Jaco Morrison",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_04.png"
+      }
+    },
+    {
+      "From": {
+        "Name": "Margaret Whites",
+        "$id": "chat-user-5",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_05.png"
+      }
+    },
+    {
+      "From": {
+        "$id": "chat-user-6",
+        "Name": "Donald Davies",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_06.png"
+      }
+    },
+    {
+      "From": {
+        "$id": "chat-user-7",
+        "Name": "Al Pastorius",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_07.png"
+      }
+    }
+  ],
+  "Chats": {
+    "$id": "messages",
+    "Messages": [
+      {
+        "$id": "chat-message-1",
+        "From": {
+          "$ref": "chat-user-1"
+        },
+        "When": "July 7",
+        "Body": "Hey buddy :), what's up? I\"m currently working on this amazing stuff called Grial. Have you heard about it? You shoud give it a try....it really rocks!!!!!.",
+        "IsRead": true,
+        "IsInbound": true
+      },
+      {
+        "$id": "chat-message-2",
+        "From": {
+          "$ref": "chat-user-1"
+        },
+        "When": "July 7",
+        "Body": "You should give it a try!",
+        "IsRead": true,
+        "IsInbound": true
+      },
+      {
+        "$id": "chat-message-3",
+        "From": {
+          "$ref": "chat-user-2"
+        },
+        "When": "July 7",
+        "Body": "Wooow! Didn\"t know this exist!! Really cool stuff!",
+        "IsRead": false,
+        "IsInbound": false
+      },
+      {
+        "$id": "chat-message-4",
+        "From": {
+          "$ref": "chat-user-2"
+        },
+        "When": "July 7",
+        "Body": "I was wondering if something like this existed. This will save hundred of hours. I rather be skateboarding with my friends instead of compiling every little visual change. Thanks for sharing!",
+        "IsRead": false,
+        "IsInbound": false
+      },
+      {
+        "From": {
+          "$ref": "chat-user-1"
+        },
+        "When": "July 7",
+        "Body": "No problem! I hope you can find it useful. It really makes the difference to me.",
+        "IsRead": true,
+        "IsInbound": true
+      },
+      {
+        "From": {
+          "$ref": "chat-user-2"
+        },
+        "When": "July 7",
+        "Body": "Ok thanks and thanks again!! This is really awesome",
+        "IsRead": false,
+        "IsInbound": false
+      },
+      {
+        "From": {
+          "$ref": "chat-user-1"
+        },
+        "When": "July 7",
+        "Body": "Indeed.",
+        "IsRead": true,
+        "IsInbound": true
+      },
+      {
+        "From": {
+          "$ref": "chat-user-2"
+        },
+        "When": "July 7",
+        "Body": "C u later tonight at Gillian Japi party, right?",
+        "IsRead": false,
+        "IsInbound": false
+      },
+      {
+        "From": {
+          "$ref": "chat-user-1"
+        },
+        "When": "July 7",
+        "Body": "For sure! See you later :)",
+        "IsRead": true,
+        "IsInbound": true
+      }
+    ]
+  },
+  "ChatMessagesListPage.xaml": {
+    "$ref": "messages"
+  },
+  "ChatTimelinePage.xaml": {
+    "$ref": "messages"
+  },
+  "RecentChatListPage.xaml": {
+    "$ref": "messages"
+  },
+  "MessagesListPage.xaml": {
+    "Messages": [
+      {
+        "$id": "message-1",
+        "From": {
+          "$ref": "chat-user-1"
+        },
+        "Title": "Hey check this out!",
+        "Body": "In connection with this appellative of \"Whalebone whales,\" it is of great leap of yer happiness leadership colors.",
+        "HasAttachment": true,
+        "ThreadCount": 7,
+        "When": "July 7",
+        "IsStared": true,
+        "IsRead": true
+      },
+      {
+        "From": {
+          "$ref": "chat-user-2"
+        },
+        "Title": "Artina is awesome...you\"ll love it",
+        "Body": "In connection with this appellative of \"Whalebone whales,\" it is of great leap of yer happiness leadership colors.",
+        "HasAttachment": false,
+        "ThreadCount": 3,
+        "When": "Yesterday",
+        "IsStared": false,
+        "IsRead": true
+      },
+      {
+        "From": {
+          "$ref": "chat-user-3"
+        },
+        "Title": "Artina is awesome...you\"ll love it",
+        "Body": "In connection with this appellative of \"Whalebone whales,\" it is of great leap of yer happiness leadership colors.",
+        "HasAttachment": true,
+        "ThreadCount": 1,
+        "When": "July 7",
+        "IsStared": false,
+        "IsRead": false
+      },
+      {
+        "From": {
+          "$ref": "chat-user-4"
+        },
+        "Title": "Artina is awesome...you\"ll love it",
+        "Body": "In connection with this appellative of \"Whalebone whales,\" it is of great leap of yer happiness leadership colors.",
+        "HasAttachment": true,
+        "ThreadCount": 2,
+        "When": "July 7",
+        "IsStared": false,
+        "IsRead": false
+      },
+      {
+        "From": {
+          "$ref": "chat-user-5"
+        },
+        "Title": "Artina is awesome...you\"ll love it",
+        "Body": "In connection with this appellative of \"Whalebone whales,\" it is of great leap of yer happiness leadership colors.",
+        "HasAttachment": false,
+        "ThreadCount": 10,
+        "When": "3 minutes ago",
+        "IsStared": true,
+        "IsRead": false
+      },
+      {
+        "From": {
+          "$ref": "chat-user-6"
+        },
+        "Title": "Artina is awesome...you\"ll love it",
+        "Body": "In connection with this appellative of \"Whalebone whales,\" it is of great leap of yer happiness leadership colors.",
+        "HasAttachment": false,
+        "ThreadCount": 5,
+        "When": "July 7",
+        "IsStared": true,
+        "IsRead": true
+      },
+      {
+        "From": {
+          "$ref": "chat-user-7"
+        },
+        "Title": "Artina is awesome...you\"ll love it",
+        "Body": "In connection with this appellative of \"Whalebone whales,\" it is of great leap of yer happiness leadership colors.",
+        "HasAttachment": false,
+        "ThreadCount": 7,
+        "When": "July 7",
+        "IsStared": true,
+        "IsRead": false
+      }
+    ]
+  },
+  "NotificationsPage.xaml": {
+    "Notifications": [
+      {
+        "$id": "notification-1",
+        "Title": "Confirmation",
+        "Description": "Please confirm your email address",
+        "Type": 0
+      },
+      {
+        "$id": "notification-2",
+        "Title": "Error",
+        "Description": "Please confirm your email address",
+        "Type": 3
+      },
+      {
+        "$id": "notification-3",
+        "Title": "Warning",
+        "Description": "Can't reach your current location",
+        "Type": 4
+      },
+      {
+        "$id": "notification-4",
+        "Title": "Warning",
+        "Description": "Please contact support center",
+        "Type": 4
+      },
+      {
+        "$id": "notification-5",
+        "Title": "Notification",
+        "Description": "You have a new message",
+        "Type": 1
+      },
+      {
+        "$id": "notification-6",
+        "Title": "Success",
+        "Description": "You have a new follower",
+        "Type": 2
+      }
+    ]
+  },
+  "ShippingDetailPage.xaml": {
+    "All": [
+      {
+        "$id": "order-1",
+        "Id": "#45453",
+        "Progress": 0.5,
+        "Time": "5 days",
+        "Weight": 2,
+        "Price": 399.9
+      },
+      {
+        "$id": "order-2",
+        "Id": "#45443",
+        "Progress": 1,
+        "Time": "-",
+        "Weight": 1,
+        "Price": 125.9
+      },
+      {
+        "$id": "order-3",
+        "Id": "#45236",
+        "Progress": 0.5,
+        "Time": "2 days",
+        "Weight": 4,
+        "Price": 112.9
+      },
+      {
+        "$id": "order-4",
+        "Id": "#45918",
+        "Progress": 0.3,
+        "Time": "3 days",
+        "Weight": 2,
+        "Price": 231.9
+      },
+      {
+        "$id": "order-5",
+        "Id": "#45401",
+        "Progress": 1,
+        "Time": "-",
+        "Weight": 6,
+        "Price": 41.9
+      },
+      {
+        "$id": "order-6",
+        "Id": "#45418",
+        "Progress": 0.1,
+        "Time": "5 days",
+        "Weight": 4,
+        "Price": 14.9
+      },
+      {
+        "$id": "order-7",
+        "Id": "#45462",
+        "Progress": 0.5,
+        "Time": "2 days",
+        "Weight": 1,
+        "Price": 99.9
+      },
+      {
+        "$id": "order-8",
+        "Id": "#45422",
+        "Progress": 0.5,
+        "Time": "2 days",
+        "Weight": 3,
+        "Price": 890.9
+      },
+      {
+        "$id": "order-9",
+        "Id": "#45431",
+        "Progress": 0.7,
+        "Time": "1 days",
+        "Weight": 5,
+        "Price": 599.9
+      },
+      {
+        "$id": "order-10",
+        "Id": "#45416",
+        "Progress": 0.6,
+        "Time": "4 days",
+        "Weight": 1,
+        "Price": 12.9
+      }
+    ],
+    "InTransit": [
+      {
+        "$ref": "order-1"
+      },
+      {
+        "$ref": "order-3"
+      },
+      {
+        "$ref": "order-4"
+      },
+      {
+        "$ref": "order-6"
+      },
+      {
+        "$ref": "order-7"
+      },
+      {
+        "$ref": "order-8"
+      },
+      {
+        "$ref": "order-9"
+      },
+      {
+        "$ref": "order-10"
+      }
+    ],
+    "Closed": [
+      {
+        "$ref": "order-2"
+      },
+      {
+        "$ref": "order-5"
+      }
+    ]
+  },
+  "DocumentTimelinePage.xaml": {
+    "DocumentTimelineList": [
+      {
+        "$id": "timeline-document-1",
+        "Title": "Document Added",
+        "Author": "Andrew Reynolds",
+        "Icon": "",
+        "When": "Jul 7",
+        "IsInbound": true
+      },
+      {
+        "$id": "timeline-document-2",
+        "Title": "Document Edited",
+        "Author": "Tony Kamo",
+        "Icon": "",
+        "When": "Jul 7",
+        "IsInbound": false
+      },
+      {
+        "Title": "Document Edited",
+        "Author": "Elissa Steamer",
+        "Icon": "",
+        "When": "Jul 8",
+        "IsInbound": true
+      },
+      {
+        "Title": "I've added comments on policy section. Need to discuss about this first.",
+        "Author": "Gershon Mosley",
+        "Icon": "",
+        "When": "Jul 9",
+        "IsInbound": false
+      },
+      {
+        "Title": "Looks great!",
+        "Author": "Ingrid Davies",
+        "Icon": "",
+        "When": "Jul 9",
+        "IsInbound": true
+      },
+      {
+        "Title": "Approved!",
+        "Author": "Patrick Rampsey",
+        "Icon": "",
+        "When": "Jul 9",
+        "IsInbound": false
+      },
+      {
+        "Title": "Document signed",
+        "Author": "Ingrid Davies",
+        "Icon": "",
+        "When": "Jul 11",
+        "IsInbound": true
+      },
+      {
+        "Title": "Document Added",
+        "Author": "Chris Duff",
+        "Icon": "",
+        "When": "Jul 7",
+        "IsInbound": true
+      },
+      {
+        "Title": "Document Edited",
+        "Author": "Tony Kamo",
+        "Icon": "",
+        "When": "Aug 7",
+        "IsInbound": false
+      },
+      {
+        "Title": "Document Added",
+        "Author": "Chris Duff",
+        "Icon": "",
+        "When": "Aug 7",
+        "IsInbound": true
+      },
+      {
+        "Title": "Document Edited",
+        "Author": "Tony Kamo",
+        "Icon": "",
+        "When": "Aug 8",
+        "IsInbound": false
+      }
+    ]
+  },
+  "TaskBrowserPage.xaml": {
+    "Date": "Oct 16, 2018",
+    "Workspaces": [
+      {
+        "$id": "task-browser-group-1",
+        "Name": "Design Space",
+        "Completed": 29,
+        "Remaining": 12,
+        "RemainingTasks": "12 task remaining",
+        "Activity": [
+          0,
+          180,
+          90,
+          170,
+          400,
+          200
+        ]
+      },
+      {
+        "Name": "Development Space",
+        "Completed": 10,
+        "Remaining": 2,
+        "RemainingTasks": "2 task remaining",
+        "Activity": [
+          180,
+          190,
+          170,
+          40,
+          200,
+          90
+        ]
+      },
+      {
+        "Name": "Personal Space",
+        "Completed": 8,
+        "Remaining": 9,
+        "RemainingTasks": "9 task remaining",
+        "Activity": [
+          100,
+          180,
+          90,
+          170,
+          400,
+          200
+        ]
+      },
+      {
+        "Name": "Admin Space",
+        "Completed": 12,
+        "Remaining": 22,
+        "RemainingTasks": "22 task remaining",
+        "Activity": [
+          180,
+          190,
+          170,
+          40,
+          0,
+          90
+        ]
+      }
+    ],
+    "Projects": [
+      {
+        "Name": "BankSur",
+        "Completed": 15,
+        "Remaining": 2,
+        "RemainingTasks": "2 task remaining",
+        "Activity": [
+          180,
+          190,
+          170,
+          40,
+          200,
+          90
+        ]
+      },
+      {
+        "Name": "Live & Play",
+        "Completed": 18,
+        "Remaining": 9,
+        "RemainingTasks": "9 task remaining",
+        "Activity": [
+          100,
+          180,
+          90,
+          170,
+          400,
+          200
+        ]
+      },
+      {
+        "Name": "Real state App",
+        "Completed": 2,
+        "Remaining": 22,
+        "RemainingTasks": "22 task remaining",
+        "Activity": [
+          180,
+          190,
+          170,
+          40,
+          0,
+          90
+        ]
+      }
+    ]
+  },
+  "TaskOverviewPage.xaml": {
+    "Urgent": {
+      "$id": "task-overview",
+      "Title": "Urgent",
+      "Total": 45,
+      "Evolution": [
+        100,
+        120,
+        190,
+        170,
+        100,
+        150,
+        200,
+        200
+      ]
+    },
+    "Maintenance": {
+      "Title": "Maintenance",
+      "Total": 145,
+      "Evolution": [
+        120,
+        130,
+        190,
+        170,
+        40,
+        80,
+        40,
+        20,
+        60,
+        30
+      ]
+    },
+    "Closed": {
+      "Title": "Closed",
+      "Total": 345,
+      "Evolution": [
+        180,
+        200,
+        100,
+        100,
+        240,
+        80,
+        40,
+        20,
+        60,
+        30
+      ]
+    },
+    "Period": "This month",
+    "People": [
+      {
+        "Name": "Donald Davies",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_01.png",
+        "Division": "Support",
+        "Change": -0.87,
+        "Evolution": [
+          180,
+          200,
+          190,
+          170,
+          40,
+          80,
+          40,
+          0,
+          60,
+          30
+        ]
+      },
+      {
+        "Name": "Janis Spector",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_02.png",
+        "Division": "Support",
+        "Change": 0.54,
+        "Evolution": [
+          70,
+          60,
+          0,
+          40,
+          80,
+          40,
+          170,
+          190,
+          200,
+          180
+        ]
+      },
+      {
+        "Name": "Regina Joplin",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_03.png",
+        "Division": "Marketing",
+        "Change": -0.12,
+        "Evolution": [
+          100,
+          120,
+          190,
+          170,
+          40,
+          80,
+          40,
+          0,
+          60,
+          30
+        ]
+      },
+      {
+        "Name": "Jaco Morrison",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_04.png",
+        "Division": "Sales",
+        "Change": 0.103,
+        "Evolution": [
+          10,
+          60,
+          0,
+          40,
+          80,
+          40,
+          170,
+          190,
+          200,
+          180
+        ]
+      },
+      {
+        "Name": "Margaret Whites",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_05.png",
+        "Division": "Sales",
+        "Change": 0.45,
+        "Evolution": [
+          30,
+          60,
+          0,
+          140,
+          80,
+          140,
+          170,
+          190,
+          200,
+          180
+        ]
+      },
+      {
+        "Name": "Skyler Harrisson",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_06.png",
+        "Division": "IT",
+        "Change": 0.11,
+        "Evolution": [
+          30,
+          40,
+          50,
+          40,
+          60
+        ]
+      },
+      {
+        "Name": "Alison Pastorius",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_07.png",
+        "Division": "IT",
+        "Change": 0.23,
+        "Evolution": [
+          30,
+          40,
+          30,
+          40,
+          80
+        ]
+      }
+    ]
+  },
+  "ArticleClassicViewItemTemplate.xaml": {
+    "$ref": "article-1"
+  },
+  "ArticleFeedItemTemplate.xaml": {
+    "$ref": "article-1"
+  },
+  "ArticleItemTemplate.xaml": {
+    "$ref": "article-1"
+  },
+  "ArticleVariantItemTemplate.xaml": {
+    "$ref": "article-1"
+  },
+  "ArticleColumnsHeaderItemTemplate.xaml": {
+    "$ref": "article-5"
+  },
+  "ArticleColumnItemTemplate.xaml": {
+    "$ref": "article-1"
+  },
+  "ArticleCommentItemTemplate.xaml": {
+    "$ref": "article-comment-1"
+  },
+  "ArticleBrowserCardItemTemplate.xaml": {
+    "$ref": "article-2"
+  },
+  "ArticlesBrowserHeaderItemTemplate.xaml": {
+    "$ref": "article-2"
+  },
+  "RelatedArticleItemTemplate.xaml": {
+    "$ref": "article-2"
+  },
+  "ArticleCommentVariantItemTemplate.xaml": {
+    "$ref": "article-comment-1"
+  },
+  "FullHeaderArticleCardItemTemplate.xaml": {
+    "$ref": "article-card-1"
+  },
+  "RelatedArticlesCarouselItemTemplate.xaml": {
+    "$ref": "article-2"
+  },
+  "FullHeaderArticleGalleryItemTemplate.xaml": {
+    "$ref": "article-1"
+  },
+  "FeaturedMovieItemTemplate.xaml": {
+    "$ref": "featured-movie-1"
+  },
+  "MoviesSectionItemTemplate.xaml": {
+    "$ref": "movie-1"
+  },
+  "MoviesSectionTemplate.xaml": {
+    "$ref": "movie-section-1"
+  },
+  "ChatLeftMessageItemTemplate.xaml": {
+    "$ref": "chat-message-1"
+  },
+  "ChatRightMessageItemTemplate.xaml": {
+    "$ref": "chat-message-4"
+  },
+  "ChatTimelineIncomingItemTemplate.xaml": {
+    "$ref": "chat-message-1"
+  },
+  "ChatTimelineOutgoingItemTemplate.xaml": {
+    "$ref": "chat-message-4"
+  },
+  "MessageItemTemplate.xaml": {
+    "$ref": "message-1"
+  },
+  "RecentChatItemTemplate.xaml": {
+    "$ref": "message-1"
+  },
+  "FriendItemTemplate.xaml": {
+    "$ref": "friend-1"
+  },
+  "NotificationsListItemTemplate.xaml": {
+    "$ref": "notification-1"
+  },
+  "DocumentTimelineLeftItemTemplate.xaml": {
+    "$ref": "timeline-document-2"
+  },
+  "DocumentTimelineRightItemTemplate.xaml": {
+    "$ref": "timeline-document-1"
+  },
+  "TimelineItemTemplate.xaml": {
+    "$ref": "timeline-item-1"
+  },
+  "ProductGroupItemTemplate.xaml": {
+    "List": [
+      {
+        "$ref": "product-1"
+      },
+      {
+        "$ref": "product-2"
+      },
+      {
+        "$ref": "product-3"
+      },
+      {
+        "$ref": "product-4"
+      }
+    ]
+  },
+  "ProductsCatalogItemTemplate.xaml": {
+    "$ref": "product-1"
+  },
+  "ProductGridItemTemplate.xaml": {
+    "$ref": "product-1"
+  },
+  "DashboardAppNotificationItemTemplate.xaml": {
+    "$ref": "dashboard-tile-9"
+  },
+  "DashboardCardItemTemplate.xaml": {
+    "$ref": "dashboard-card-1"
+  },
+  "DashboardItemTemplate.xaml": {
+    "$ref": "dashboard-item-3"
+  },
+  "DashboardVariantItemTemplate.xaml": {
+    "$id": "dashboard-tile-1"
+  },
+  "NavigationCardsListItemTemplate.xaml": {
+    "$ref": "dashboard-item-1"
+  },
+  "NavigationListItemTemplate.xaml": {
+    "$ref": "dashboard-item-1"
+  },
+  "NavigationListWithIconsItemTemplate.xaml": {
+    "$ref": "dashboard-item-1"
+  },
+  "NavigationListWithImagesItemTemplate.xaml": {
+    "$ref": "dashboard-item-1"
+  },
+  "NavigationCardsDescriptionListItemTemplate.xaml": {
+    "$ref": "dashboard-item-1"
+  },
+  "DashboardCarouselHeaderItemTemplate.xaml": {
+    "$ref": "dashboard-header-item-1"
+  },
+  "DashboardCarouselMaintemTemplate.xaml": {
+    "$ref": "dashboard-item-1"
+  },
+  "ContactDetailItemTemplate.xaml": {
+    "Label": "Name",
+    "Value": "Regina Joplin"
+  },
+  "ContactItemTemplate.xaml": {
+    "$ref": "flow-messages-contact-1"
+  },
+  "ChatPreviewItemTemplate.xaml": {
+    "$ref": "flow-messages-conversation-1"
+  },
+  "OutgoingMessageItemTemplate.xaml": {
+    "$ref": "flow-messages-preview-1"
+  },
+  "IncomingMessageItemTemplate.xaml": {
+    "$ref": "flow-messages-preview-1"
+  },
+  "ContactPreviewPopup.xaml": {
+    "$ref": "flow-messages-contact-6"
+  },
+  "EmployeeCardTemplate.xaml": {
+    "$ref": "flow-tasks-employee-1"
+  },
+  "PerformanceDashboardScorecardTemplate.xaml": {
+    "Name": "Open Tasks",
+    "Value": 244,
+    "ValueDifference": 1
+  },
+  "ProductPurchaseCardTemplate.xaml": {
+    "Product": {
+      "$ref": "prod-lamp-1"
+    },
+    "Quantity": 2
+  },
+  "ProductGalleryItemTemplate.xaml": {
+    "$ref": "prod-lamp-1"
+  },
+  "ProductCardItemTemplate.xaml": {
+    "$ref": "prod-lamp-1"
+  },
+  "RelatedProductCardItemTemplate.xaml": {
+    "$ref": "prod-lamp-1"
+  },
+  "ReviewItemTemplate.xaml": {
+    "$ref": "ecommerce-flow-product-review-1"
+  },
+  "TabControlCustomSamplePage.xaml": {
+    "$id": "TabControlCustomSamplePage.xaml",
+    "Social": {
+      "$ref": "SocialPage.xaml"
+    },
+    "Chat": {
+      "$ref": "messages"
+    }
+  },
+  "TabControlAndroidSamplePage.xaml": {
+    "$ref": "TabControlCustomSamplePage.xaml"
+  },
+  "TabControlBottomPlacementSamplePage.xaml": {
+    "$ref": "TabControlCustomSamplePage.xaml"
+  },
+  "TabControliOSSamplePage.xaml": {
+    "$ref": "TabControlCustomSamplePage.xaml"
+  },
+  "TaskBrowserCardItemTemplate.xaml": {
+    "$ref": "task-browser-group-1"
+  },
+  "TaskOverviewCardItemTemplate.xaml": {
+    "$ref": "task-overview"
+  }
+}

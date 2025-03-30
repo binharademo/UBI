@@ -1,0 +1,281 @@
+{
+  "Char-Users": [
+    {
+      "From": {
+        "$id": "chat-user-1",
+        "Name": "هناء سعدى",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_01.png"
+      }
+    },
+    {
+      "From": {
+        "$id": "chat-user-2",
+        "Name": "أمينة رشيد",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_02.png"
+      }
+    },
+    {
+      "From": {
+        "$id": "chat-user-3",
+        "Name": "منا العجمى",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_03.png"
+      }
+    },
+    {
+      "From": {
+        "$id": "chat-user-4",
+        "Name": "محمود غالى",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_04.png"
+      }
+    },
+    {
+      "From": {
+        "$id": "chat-user-5",
+        "Name": "أنيسة نصار",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_05.png"
+      }
+    },
+    {
+      "From": {
+        "$id": "chat-user-6",
+        "Name": "محمد عثمان",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_06.png"
+      }
+    },
+    {
+      "From": {
+        "$id": "chat-user-7",
+        "Name": "وافر العجيب",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_07.png"
+      }
+    }
+  ],
+  "Chats": {
+    "$id": "messages",
+    "Messages": [
+      {
+        "$id": "chat-message-1",
+        "From": {
+          "$ref": "chat-user-1"
+        },
+        "When": "يوليو 7",
+        "Body": "إييه الحكاية بتاعة جرابال دى؟... ده شكله جميل جدا!",
+        "IsRead": true,
+        "IsInbound": true
+      },
+      {
+        "$id": "chat-message-2",
+        "From": {
+          "$ref": "chat-user-1"
+        },
+        "When": "يوليو 7",
+        "Body": "يستاهل التحربة!",
+        "IsRead": true,
+        "IsInbound": true
+      },
+      {
+        "$id": "chat-message-3",
+        "From": {
+          "$ref": "chat-user-2"
+        },
+        "When": "يوليو 7",
+        "Body": "آووو... مش مصدق أن يكون هذا حقيقة... أنا باحلم وللا إيه!",
+        "IsRead": false,
+        "IsInbound": false
+      },
+      {
+        "$id": "chat-message-4",
+        "From": {
+          "$ref": "chat-user-2"
+        },
+        "When": "يوليو 7",
+        "Body": "كنت أتساءل عما إذا كان هناك شيء من هذا القبيل موجود. وهذا سيوفر مئات الساعات. أنا بدلا من ذلك التزلج مع أصدقائي بدلا من تجميع كل تغيير البصرية قليلا. شكرا للمشاركة!",
+        "IsRead": false,
+        "IsInbound": false
+      },
+      {
+        "From": {
+          "$ref": "chat-user-1"
+        },
+        "When": "يوليو 7",
+        "Body": "أتمنى إنك تلاقيه مفيد لشغلك... ده حيوفر لك وقت كثير",
+        "IsRead": true,
+        "IsInbound": true
+      },
+      {
+        "From": {
+          "$ref": "chat-user-2"
+        },
+        "When": "يوليو 7",
+        "Body": "شكرا جزيلا... أنا حبدأ أستعمله حالا!!",
+        "IsRead": false,
+        "IsInbound": false
+      },
+      {
+        "From": {
+          "$ref": "chat-user-1"
+        },
+        "When": "يوليو 7",
+        "Body": "في الواقع.",
+        "IsRead": true,
+        "IsInbound": true
+      },
+      {
+        "From": {
+          "$ref": "chat-user-2"
+        },
+        "When": "يوليو 7",
+        "Body": "أراك لاحقا الليلة في حزب جيليان جابي، أليس كذلك؟",
+        "IsRead": false,
+        "IsInbound": false
+      },
+      {
+        "From": {
+          "$ref": "chat-user-1"
+        },
+        "When": "يوليو 7",
+        "Body": "بالتأكيد! أراك لاحقاً :)",
+        "IsRead": true,
+        "IsInbound": true
+      }
+    ]
+  },
+  "ChatMessagesListPage.xaml": {
+    "$ref": "messages"
+  },
+  "ChatTimelinePage.xaml": {
+    "$ref": "messages"
+  },
+  "RecentChatListPage.xaml": {
+    "$ref": "messages"
+  },
+  "MessagesListPage.xaml": {
+    "Messages": [
+      {
+        "$id": "message-1",
+        "From": {
+          "$ref": "chat-user-1"
+        },
+        "Title": "يا تحقق من ذلك!",
+        "Body": "أم بلا حقول تعداد القوى, من كنقطة معارضة بحث. السبب المتّبعة هذه من. يتعلّق بأضرار دنو أي, شرسة الشرقي مدن أي. أن حلّت الدولارات على. عل بلا ألمّ المنتصر والنفيس.",
+        "HasAttachment": true,
+        "ThreadCount": 7,
+        "When": "يوليو 7",
+        "IsStared": true,
+        "IsRead": true
+      },
+      {
+        "From": {
+          "$ref": "chat-user-2"
+        },
+        "Title": "أرتينا جرايال ده سوووبر... باحبه كتير",
+        "Body": "أم بلا حقول تعداد القوى, من كنقطة معارضة بحث. السبب المتّبعة هذه من. يتعلّق بأضرار دنو أي, شرسة الشرقي مدن أي. أن حلّت الدولارات على. عل بلا ألمّ المنتصر والنفيس.",
+        "HasAttachment": false,
+        "ThreadCount": 3,
+        "When": "في الامس",
+        "IsStared": false,
+        "IsRead": true
+      },
+      {
+        "From": {
+          "$ref": "chat-user-3"
+        },
+        "Title": "أرتينا جرايال ده سوووبر... باحبه كتير",
+        "Body": "أم بلا حقول تعداد القوى, من كنقطة معارضة بحث. السبب المتّبعة هذه من. يتعلّق بأضرار دنو أي, شرسة الشرقي مدن أي. أن حلّت الدولارات على. عل بلا ألمّ المنتصر والنفيس.",
+        "HasAttachment": true,
+        "ThreadCount": 1,
+        "When": "يوليو 7",
+        "IsStared": false,
+        "IsRead": false
+      },
+      {
+        "From": {
+          "$ref": "chat-user-4"
+        },
+        "Title": "أرتينا جرايال ده سوووبر... باحبه كتير",
+        "Body": "أم بلا حقول تعداد القوى, من كنقطة معارضة بحث. السبب المتّبعة هذه من. يتعلّق بأضرار دنو أي, شرسة الشرقي مدن أي. أن حلّت الدولارات على. عل بلا ألمّ المنتصر والنفيس.",
+        "HasAttachment": true,
+        "ThreadCount": 2,
+        "When": "يوليو 7",
+        "IsStared": false,
+        "IsRead": false
+      },
+      {
+        "From": {
+          "$ref": "chat-user-5"
+        },
+        "Title": "أرتينا جرايال ده سوووبر... باحبه كتير",
+        "Body": "أم بلا حقول تعداد القوى, من كنقطة معارضة بحث. السبب المتّبعة هذه من. يتعلّق بأضرار دنو أي, شرسة الشرقي مدن أي. أن حلّت الدولارات على. عل بلا ألمّ المنتصر والنفيس.",
+        "HasAttachment": false,
+        "ThreadCount": 10,
+        "When": "منذ 3 دقيقة",
+        "IsStared": true,
+        "IsRead": false
+      },
+      {
+        "From": {
+          "$ref": "chat-user-6"
+        },
+        "Title": "أرتينا جرايال ده سوووبر... باحبه كتير",
+        "Body": "أم بلا حقول تعداد القوى, من كنقطة معارضة بحث. السبب المتّبعة هذه من. يتعلّق بأضرار دنو أي, شرسة الشرقي مدن أي. أن حلّت الدولارات على. عل بلا ألمّ المنتصر والنفيس.",
+        "HasAttachment": false,
+        "ThreadCount": 5,
+        "When": "يوليو 7",
+        "IsStared": true,
+        "IsRead": true
+      },
+      {
+        "From": {
+          "$ref": "chat-user-7"
+        },
+        "Title": "أرتينا جرايال ده سوووبر... باحبه كتير",
+        "Body": "أم بلا حقول تعداد القوى, من كنقطة معارضة بحث. السبب المتّبعة هذه من. يتعلّق بأضرار دنو أي, شرسة الشرقي مدن أي. أن حلّت الدولارات على. عل بلا ألمّ المنتصر والنفيس.",
+        "HasAttachment": false,
+        "ThreadCount": 7,
+        "When": "يوليو 7",
+        "IsStared": true,
+        "IsRead": false
+      }
+    ]
+  },
+  "NotificationsPage.xaml": {
+    "Notifications": [
+      {
+        "$id": "notification-1",
+        "Title": "تأكيد",
+        "Description": "من فضلك أكد عنوانك الأليكترونى",
+        "Type": 0
+      },
+      {
+        "$id": "notification-2",
+        "Title": "خطأ",
+        "Description": "من فضلك أكد عنوانك الأليكترونى",
+        "Type": 3
+      },
+      {
+        "$id": "notification-3",
+        "Title": "تحذير",
+        "Description": "لم يمكن الإتصال بموقعك",
+        "Type": 4
+      },
+      {
+        "$id": "notification-4",
+        "Title": "تحذير",
+        "Description": "من فضلك إتصل بمكز المساعدة",
+        "Type": 4
+      },
+      {
+        "$id": "notification-5",
+        "Title": "إعلام",
+        "Description": "لك رسالة جديدة",
+        "Type": 1
+      },
+      {
+        "$id": "notification-6",
+        "Title": "نجاح",
+        "Description": "لك تابع جديد",
+        "Type": 2
+      }
+    ]
+  }
+}

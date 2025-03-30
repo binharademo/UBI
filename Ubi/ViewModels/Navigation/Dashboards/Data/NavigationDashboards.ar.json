@@ -1,0 +1,445 @@
+{
+  "Items": {
+    "$id": "dashboard-items",
+    "Items": [
+      {
+        "$id": "dashboard-item-1",
+        "Name": "جهات الاتصال",
+        "BackgroundColor": "#FF921243",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_05.jpg",
+        "Icon": "",
+        "ItemCount": 6,
+        "Description": "كل الأشخاص الذين تعرفهم هنا. إنشاء جهات الاتصال الخاصة بك وإزالتها وتنظيمها بكفاءة. يمكنك مشاركتها أيضا!",
+        "Badge": 0
+      },
+      {
+        "$id": "dashboard-item-2",
+        "Name": "ملفات",
+        "BackgroundColor": "#FFB31250",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_04.jpg",
+        "Icon": "",
+        "ItemCount": 5,
+        "Description": "جميع الوثائق التي تعمل مع كل يوم هنا. قم بإنشاء وإزالة وتنظيم ملفاتك بكفاءة. يمكنك مشاركتها أيضا!",
+        "Badge": 0
+      },
+      {
+        "$id": "dashboard-item-3",
+        "Name": "إخطارات",
+        "BackgroundColor": "#FFCD195E",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_07.jpg",
+        "Icon": "",
+        "ItemCount": 15,
+        "Description": "مركز الإشعارات الخاص بك. الرسائل ، رسائل البريد الإلكتروني ، الشبكات الاجتماعية ، التذكيرات ، كل شيء.",
+        "Badge": 9
+      },
+      {
+        "$id": "dashboard-item-4",
+        "Name": "صوري",
+        "BackgroundColor": "#FF56329A",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_03.jpg",
+        "Icon": "",
+        "ItemCount": 10,
+        "Description": "كل الصور التي تلتقطها هنا. قم بإنشاء وإزالة وتنظيم صورك بكفاءة. يمكنك مشاركتها أيضا!",
+        "Badge": 0
+      },
+      {
+        "$id": "dashboard-item-5",
+        "Name": "موسيقى",
+        "BackgroundColor": "#FF6A40B9",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_06.jpg",
+        "Icon": "",
+        "ItemCount": 5,
+        "Description": "كل الأغاني المفضلة لديك هنا. جميع الأنماط ، من الكلاسيكي إلى الملحنين الطليعيين. أنشئ قوائم تشغيل تتوافق مع حالتك المزاجية. الموسيقى هي كل شيء :)",
+        "Badge": 0
+      },
+      {
+        "$id": "dashboard-item-6",
+        "Name": "عروض",
+        "BackgroundColor": "#FF7C4ECD",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_02.jpg",
+        "Icon": "",
+        "ItemCount": 7,
+        "Badge": 0
+      },
+      {
+        "$id": "dashboard-item-7",
+        "Name": "اخبار العالم",
+        "BackgroundColor": "#FF525ABB",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_08.jpg",
+        "Icon": "",
+        "ItemCount": 3,
+        "Badge": 0
+      },
+      {
+        "$id": "dashboard-item-8",
+        "Name": "أحداث",
+        "BackgroundColor": "#FF5F7DD4",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_09.jpg",
+        "Icon": "",
+        "ItemCount": 19,
+        "Badge": 9
+      },
+      {
+        "$id": "dashboard-item-9",
+        "Name": "إعدادات",
+        "BackgroundColor": "#FF7B96E5",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_01.jpg",
+        "Icon": "",
+        "ItemCount": 4,
+        "Badge": 0
+      }
+    ]
+  },
+  "DashboardCardsPage.xaml": {
+    "Items": [
+      {
+        "$id": "dashboard-card-1",
+        "Title": "كشفت أسرار الصيد أعلى",
+        "Section": "طبيعة",
+        "Author": "مارغريت وايتس",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_04.png",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_04.jpg",
+        "BackgroundColor": "#d81b60"
+      },
+      {
+        "$id": "dashboard-card-2",
+        "Title": "مطاردة مافريكس",
+        "Section": "رياضات",
+        "Author": "سكايلر هاريسون",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_05.png",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_05.jpg",
+        "BackgroundColor": "#c2185b"
+      },
+      {
+        "$id": "dashboard-card-3",
+        "Title": "رأى شخص آخر ذلك",
+        "Section": "الصحة",
+        "Author": "إيرما ليتس",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_06.png",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_06.jpg",
+        "BackgroundColor": "#56329A"
+      },
+      {
+        "$id": "dashboard-card-4",
+        "Title": "المتحدة بالإيمان",
+        "Section": "حقيقة",
+        "Author": "UXDIVERS",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_01.png",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_01.jpg",
+        "BackgroundColor": "#4B436E"
+      },
+      {
+        "$id": "dashboard-card-5",
+        "Title": "الطريق لك",
+        "Section": "تهذيب",
+        "Author": "بات ديفيز",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_02.png",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_02.jpg",
+        "BackgroundColor": "#1e88e5"
+      },
+      {
+        "$id": "dashboard-card-6",
+        "Title": "الطبيعة وتأثيرها على التصميم",
+        "Section": "وقت فراغ",
+        "Author": "ريجينا جوبلين",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_03.png",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_03.jpg",
+        "BackgroundColor": "#1565c0"
+      },
+      {
+        "$id": "dashboard-card-7",
+        "Title": "رأى شخص آخر ذلك",
+        "Section": "رياضة",
+        "Author": "ديميتار تراداسوف",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_07.png",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_07.jpg",
+        "BackgroundColor": "#0097a7"
+      },
+      {
+        "$id": "dashboard-card-8",
+        "Title": "تطوير موسيقى الجاز",
+        "Section": "التصوير",
+        "Author": "ثيلونيوس ديفيز",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_01.png",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_08.jpg",
+        "BackgroundColor": "#00838f"
+      },
+      {
+        "$id": "dashboard-card-9",
+        "Title": "في مهب الريح",
+        "Section": "موسيقى",
+        "Author": "سير نوتبالك",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_02.png",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_09.jpg",
+        "BackgroundColor": "#2e7d32"
+      }
+    ]
+  },
+  "DashboardMultipleTilesPage.xaml": {
+    "Items": [
+      {
+        "$id": "dashboard-tile-1",
+        "Title": "اجتماعي",
+        "Body": "",
+        "Avatar": "",
+        "BackgroundColor": "#774C4C4C",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/profile_image.jpg",
+        "ShowBackgroundColor": false,
+        "IsNotification": false,
+        "Icon": "",
+        "Badge": 0
+      },
+      {
+        "$id": "dashboard-tile-2",
+        "Title": "جهات الاتصال",
+        "Body": "",
+        "Avatar": "",
+        "BackgroundColor": "#48B5BA",
+        "BackgroundImage": "",
+        "ShowBackgroundColor": true,
+        "IsNotification": false,
+        "Icon": "",
+        "Badge": 2
+      },
+      {
+        "$id": "dashboard-tile-3",
+        "Title": "Grial UI Kit",
+        "Body": "",
+        "Avatar": "",
+        "BackgroundColor": "#CD195E",
+        "BackgroundImage": "",
+        "ShowBackgroundColor": false,
+        "IsNotification": false,
+        "Icon": "",
+        "Badge": 0
+      },
+      {
+        "$id": "dashboard-tile-4",
+        "Title": "صوري",
+        "Body": "",
+        "Avatar": "",
+        "BackgroundColor": "#77742DAF",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/gallery_03.jpg",
+        "ShowBackgroundColor": false,
+        "IsNotification": false,
+        "Icon": "",
+        "Badge": 0
+      },
+      {
+        "$id": "dashboard-tile-5",
+        "Title": "موسيقى",
+        "Body": "",
+        "Avatar": "",
+        "BackgroundColor": "#BD3434",
+        "BackgroundImage": "",
+        "ShowBackgroundColor": true,
+        "IsNotification": false,
+        "Icon": "",
+        "Badge": 0
+      },
+      {
+        "$id": "dashboard-tile-6",
+        "Title": "عروض",
+        "Body": "",
+        "Avatar": "",
+        "BackgroundColor": "#770C60AF",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/product_item_4.jpg",
+        "ShowBackgroundColor": false,
+        "IsNotification": false,
+        "Icon": "",
+        "Badge": 1
+      },
+      {
+        "$id": "dashboard-tile-7",
+        "Title": "Twitter",
+        "Body": "@Grialuikit الصخور!",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_05.png",
+        "BackgroundColor": "#1DA1F2",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_09.jpg",
+        "ShowBackgroundColor": false,
+        "IsNotification": true,
+        "Icon": "",
+        "Badge": 2
+      },
+      {
+        "$id": "dashboard-tile-8",
+        "Title": "اخبار العالم",
+        "Body": "",
+        "Avatar": "",
+        "BackgroundColor": "#770A002B",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_01.jpg",
+        "ShowBackgroundColor": false,
+        "IsNotification": false,
+        "Icon": "",
+        "Badge": 1
+      },
+      {
+        "$id": "dashboard-tile-9",
+        "Title": "Facebook",
+        "Body": "GrialKit #AWESOME",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_03.png",
+        "BackgroundColor": "#3b5998",
+        "BackgroundImage": "",
+        "ShowBackgroundColor": false,
+        "IsNotification": true,
+        "Icon": "",
+        "Badge": 2
+      },
+      {
+        "$id": "dashboard-tile-10",
+        "Title": "Instagram",
+        "Body": "Grial 3.0 معاينة, حلو!",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_01.png",
+        "BackgroundColor": "#833ab4",
+        "BackgroundImage": "",
+        "ShowBackgroundColor": false,
+        "IsNotification": true,
+        "Icon": "",
+        "Badge": 2
+      },
+      {
+        "$id": "dashboard-tile-11",
+        "Title": "أحداث",
+        "Body": "",
+        "Avatar": "",
+        "BackgroundColor": "#319E3A",
+        "BackgroundImage": "",
+        "ShowBackgroundColor": true,
+        "IsNotification": false,
+        "Icon": "",
+        "Badge": 0
+      },
+      {
+        "$id": "dashboard-tile-12",
+        "Title": "Whatsapp",
+        "Body": "التحقق من Grial 3.0!!!",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_02.png",
+        "BackgroundColor": "#128c7e",
+        "BackgroundImage": "",
+        "ShowBackgroundColor": false,
+        "IsNotification": true,
+        "Icon": "",
+        "Badge": 5
+      },
+      {
+        "$id": "dashboard-tile-13",
+        "Title": "Linkedin",
+        "Body": "Xamarin Forms IS Grial",
+        "Avatar": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/friend_07.png",
+        "BackgroundColor": "#0077b5",
+        "BackgroundImage": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/category_08.jpg",
+        "ShowBackgroundColor": false,
+        "IsNotification": true,
+        "Icon": "",
+        "Badge": 0
+      },
+      {
+        "$id": "dashboard-tile-14",
+        "Title": "ألعاب",
+        "Body": "",
+        "Avatar": "",
+        "BackgroundColor": "#DE6D3B",
+        "BackgroundImage": "",
+        "ShowBackgroundColor": true,
+        "IsNotification": false,
+        "Icon": "",
+        "Badge": 0
+      }
+    ]
+  },
+  "IconsDashboardPage.xaml": {
+    "$ref": "dashboard-items"
+  },
+  "ImagesDashboardPage.xaml": {
+    "$ref": "dashboard-items"
+  },
+  "FlatDashboardPage.xaml": {
+    "$ref": "dashboard-items"
+  },
+  "NavigationListWithImagesPage.xaml": {
+    "$ref": "dashboard-items"
+  },
+  "NavigationListWithIconsPage.xaml": {
+    "$ref": "dashboard-items"
+  },
+  "NavigationFlatListPage.xaml": {
+    "$ref": "dashboard-items"
+  },
+  "NavigationCardsListPage.xaml": {
+    "$ref": "dashboard-items"
+  },
+  "NavigationCardsDescriptionListPage.xaml": {
+    "Category": {
+      "Icon": "",
+      "Name": "Trending"
+    },
+    "Items": [
+      {
+        "$ref": "dashboard-item-1"
+      },
+      {
+        "$ref": "dashboard-item-2"
+      },
+      {
+        "$ref": "dashboard-item-3"
+      },
+      {
+        "$ref": "dashboard-item-4"
+      },
+      {
+        "$ref": "dashboard-item-5"
+      }
+    ]
+  },
+  "DashboardCarouselPage.xaml": {
+    "Items": [
+      {
+        "$ref": "dashboard-item-1"
+      },
+      {
+        "$ref": "dashboard-item-2"
+      },
+      {
+        "$ref": "dashboard-item-3"
+      },
+      {
+        "$ref": "dashboard-item-4"
+      },
+      {
+        "$ref": "dashboard-item-5"
+      },
+      {
+        "$ref": "dashboard-item-6"
+      },
+      {
+        "$ref": "dashboard-item-7"
+      },
+      {
+        "$ref": "dashboard-item-8"
+      },
+      {
+        "$ref": "dashboard-item-9"
+      }
+    ],
+    "Headers": [
+      {
+        "$id": "dashboard-header-item-1",
+        "Name": "اخبار العالم",
+        "Description": "تعديل والتي وسمّيت بـ بعد, بين حصدت يتبقّ مشاركة هو. عن ألمانيا الإتحاد الواقعة ذلك",
+        "Icon": ""
+      },
+      {
+        "$id": "dashboard-header-item-1",
+        "Name": "أفلام حائزة على جوائز",
+        "Description": "تعديل والتي وسمّيت بـ بعد, بين حصدت يتبقّ مشاركة هو. عن ألمانيا الإتحاد الواقعة ذلك",
+        "Icon": ""
+      },
+      {
+        "$id": "dashboard-header-item-1",
+        "Name": "تعلم",
+        "Description": "تعديل والتي وسمّيت بـ بعد, بين حصدت يتبقّ مشاركة هو. عن ألمانيا الإتحاد الواقعة ذلك",
+        "Icon": ""
+      }
+    ]
+  }
+}

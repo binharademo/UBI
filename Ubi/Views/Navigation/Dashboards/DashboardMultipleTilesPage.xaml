@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Ubi" 
+             xmlns:grial="clr-namespace:UXDivers.Grial;assembly=UXDivers.Grial"
+	x:Class="Ubi.DashboardMultipleTilesPage"
+	BackgroundColor="{ DynamicResource BasePageColor }"
+	Title="{ grial:Translate PageTitleDashboardMultipleTiles }"
+             >
+
+    <ContentPage.Resources>
+        <ResourceDictionary Source="/Styles/TabControl/SimpleTabResources.xaml">
+            <grial:BoolMemberTemplateSelector
+				x:Key="Selector"
+				MemberName="IsNotification">
+                
+                <grial:BoolMemberTemplateSelector.TrueDataTemplate>
+                    <DataTemplate>
+                        <local:DashboardAppNotificationItemTemplate
+							WidthRequest="145"
+							HeightRequest="145" />
+                    </DataTemplate>
+                </grial:BoolMemberTemplateSelector.TrueDataTemplate>
+                
+                <grial:BoolMemberTemplateSelector.FalseDataTemplate>
+                    <DataTemplate>
+                        <local:DashboardVariantItemTemplate
+							ShowBackgroundImage="true"
+							ShowBackgroundColor="true"
+							ShowiconColoredCircleBackground="false"
+							TextColor="{ DynamicResource DashboardIconColor }"
+							WidthRequest="145"
+							HeightRequest="145" />
+                    </DataTemplate>
+                </grial:BoolMemberTemplateSelector.FalseDataTemplate>
+                
+            </grial:BoolMemberTemplateSelector>
+        </ResourceDictionary>
+
+                
+        
+    </ContentPage.Resources>
+
+
+    <grial:TabControl Style="{ StaticResource SimpleTabStyle  }"
+                      TabStripPlacement="Top"
+					TabStripBackgroundColor="{ DynamicResource BasePageColor}"
+					TabContentBackgroundColor="{ DynamicResource MainWrapperBackgroundColor }">
+        
+        <grial:TabItem Text="Categorias">
+            <Grid BackgroundColor="White">
+                <ScrollView Orientation="Both">
+                    <grial:GridView
+                    WidthRequest="320"
+                    Margin="0"
+                    Padding="10"
+                    ColumnSpacing="10"
+                    RowSpacing="10"
+                    ColumnCount="2"
+                    RowCount="3"
+                    ItemsSource="{ Binding Items }"
+                    ItemTemplate="{ StaticResource Selector }" />
+                </ScrollView>
+            </Grid>
+        </grial:TabItem>
+        
+        
+
+        <grial:TabItem Text="Cursos">
+            <Grid BackgroundColor="White" 
+                      Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+
+
+                <grial:CardView CornerRadius="0" 
+                                    RowSpacing="1"
+                                    ColumnSpacing="1"
+                                    Padding="12"
+                                    ShadowSize="20" 
+                                    ShadowOpacity="1"
+                                    BackgroundColor="White"
+                                    Grid.Row="0">
+
+                    <!--<grial:CardView.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </grial:CardView.RowDefinitions>-->
+
+                    <StackLayout Orientation="Vertical" BackgroundColor="White">
+                        <StackLayout BackgroundColor="White" Orientation="Horizontal">
+                        <Label Text="Básico" TextColor="Black" Grid.Row="0" FontSize="Medium" FontAttributes="Bold"></Label>
+                            <Image Source="starubi.jpg"  HorizontalOptions="EndAndExpand" ></Image>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                            <Label Text="Aprenda o mínimo para ser um usuário capacitado na ferramenta" TextColor="Black" Grid.Row="0" FontSize="Default" ></Label>
+                            <Label Text="R$ 0,00"   TextColor="LightBlue" FontSize="Medium" HorizontalOptions="EndAndExpand" Grid.Column="3"></Label>
+                        </StackLayout>
+                    </StackLayout>
+
+
+                </grial:CardView>
+
+                <grial:CardView CornerRadius="0" 
+                                    RowSpacing="1"
+                                    ColumnSpacing="1"
+                                    Padding="12"
+                                    ShadowSize="20" 
+                                    ShadowOpacity="1"
+                                    BackgroundColor="White"
+                                    Grid.Row="1">
+
+                    <!--<grial:CardView.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </grial:CardView.RowDefinitions>-->
+
+
+                    <StackLayout Orientation="Vertical" BackgroundColor="White">
+                        <StackLayout BackgroundColor="White" Orientation="Horizontal">
+                            <Label Text="Intermediário" TextColor="Black" Grid.Row="0" FontSize="Medium" FontAttributes="Bold"></Label>
+                            <Image Source="starubi2.jpg" HorizontalOptions="EndAndExpand" ></Image>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                            <Label Text="Aprenda o mínimo para ser um usuário capacitado na ferramenta" TextColor="Black" Grid.Row="0" FontSize="Default" ></Label>
+                            <Label Text="R$ 0,00"   TextColor="LightBlue" FontSize="Medium" HorizontalOptions="EndAndExpand" Grid.Column="3"></Label>
+                        </StackLayout>
+                    </StackLayout>
+
+
+                </grial:CardView>
+
+                <grial:CardView CornerRadius="0" 
+                                    RowSpacing="1"
+                                    ColumnSpacing="1"
+                                    Padding="12"
+                                    ShadowSize="20" 
+                                    ShadowOpacity="1"
+                                    BackgroundColor="White"
+                                    Grid.Row="2">
+
+                    <!--<grial:CardView.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </grial:CardView.RowDefinitions>-->
+
+
+                    <StackLayout Orientation="Vertical" BackgroundColor="White" Opacity=".5">
+                        <StackLayout BackgroundColor="White" Orientation="Horizontal">
+                            <Label Text="Avançado" TextColor="Black" Grid.Row="0" FontSize="Medium" FontAttributes="Bold"></Label>
+                            <Image Source="starubi3.jpg"  HorizontalOptions="EndAndExpand" ></Image>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                            <Label Text="Aprenda o mínimo para ser um usuário capacitado na ferramenta" TextColor="Black" Grid.Row="0" FontSize="Default" ></Label>
+                            <Label Text="R$ 0,00"   TextColor="LightBlue" FontSize="Medium" HorizontalOptions="EndAndExpand" Grid.Column="3"></Label>
+                        </StackLayout>
+                    </StackLayout>
+
+
+                </grial:CardView>
+
+               
+
+
+
+
+
+
+
+            </Grid>
+        </grial:TabItem>
+
+        <grial:TabItem Text="Meus Cursos">
+            <Grid BackgroundColor="White" 
+                      Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+
+
+                <grial:CardView CornerRadius="0" 
+                                    RowSpacing="1"
+                                    ColumnSpacing="1"
+                                    Padding="12"
+                                    ShadowSize="20" 
+                                    ShadowOpacity="1"
+                                    BackgroundColor="White"
+                                    Grid.Row="0">
+
+                    <!--<grial:CardView.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </grial:CardView.RowDefinitions>-->
+
+                    <StackLayout Orientation="Vertical" BackgroundColor="White">
+                        <StackLayout BackgroundColor="White" Orientation="Horizontal">
+                            <Label Text="Seguro de Vida" TextColor="Black" Grid.Row="0" FontSize="Medium" FontAttributes="Bold"></Label>
+                            <Image Source="starubi.jpg"  HorizontalOptions="EndAndExpand" ></Image>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Vertical" BackgroundColor="White">
+                            <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                            <Label Text="Complete o curso e ganhe pontos" TextColor="Black" Grid.Row="0" FontSize="Default" ></Label>
+                            <Label Text="0%"   TextColor="LightBlue" FontSize="Medium" HorizontalOptions="EndAndExpand" Grid.Column="3"></Label>
+                            </StackLayout>
+                            <ProgressBar 
+                                x:Name="MyProgressBar"
+                                Progress="0.01" 
+                                WidthRequest="300"
+                                HeightRequest="20"
+                                ProgressColor="LightBlue"
+                                          ></ProgressBar>
+                            
+                            <!--<Image Source="bluebar.jpg" Aspect="AspectFill"></Image>-->
+                        </StackLayout>
+                    </StackLayout>
+
+
+                </grial:CardView>
+
+                <grial:CardView CornerRadius="0" 
+                                    RowSpacing="1"
+                                    ColumnSpacing="1"
+                                    Padding="12"
+                                    ShadowSize="20" 
+                                    ShadowOpacity="1"
+                                    BackgroundColor="White"
+                                    Grid.Row="1">
+
+                    <!--<grial:CardView.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </grial:CardView.RowDefinitions>-->
+
+
+                    <StackLayout Orientation="Vertical" BackgroundColor="White">
+                        <StackLayout BackgroundColor="White" Orientation="Horizontal">
+                            <Label Text="Máquina de cartões" TextColor="Black" Grid.Row="0" FontSize="Medium" FontAttributes="Bold"></Label>
+                            <Image Source="starubi.jpg" HorizontalOptions="EndAndExpand" ></Image>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Vertical" BackgroundColor="White">
+                            <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                            <Label Text="Venda pela categoria e ganhe pontos" TextColor="Black" Grid.Row="0" FontSize="Default" ></Label>
+                            <Label Text="80%"   TextColor="LightBlue" FontSize="Medium" HorizontalOptions="EndAndExpand" Grid.Column="3"></Label>
+                            </StackLayout>
+                            <ProgressBar 
+                                x:Name="MyProgressBar1"
+                                Progress="0.8" 
+                                WidthRequest="300"
+                                HeightRequest="20"
+                                ProgressColor="Orange"
+                                          ></ProgressBar>
+                            <!--<Image Source="orangebar.jpg" Aspect="AspectFill"></Image>-->
+                        </StackLayout>
+                    </StackLayout>
+
+
+                </grial:CardView>
+
+                
+
+
+
+
+
+
+
+
+
+            </Grid>
+        </grial:TabItem>
+    </grial:TabControl>
+    
+
+
+    
+
+         
+
+             
+
+
+            
+        
+   
+</ContentPage>

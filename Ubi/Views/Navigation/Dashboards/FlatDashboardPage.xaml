@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Ubi" xmlns:grial="clr-namespace:UXDivers.Grial;assembly=UXDivers.Grial"
+	x:Class="Ubi.FlatDashboardPage"
+	Title="{ grial:Translate PageTitleFlatDashboard }">
+    
+    <ContentPage.Content>
+
+
+        <grial:GridView
+			ColumnCount="3"
+			ColumnSpacing="0"
+			RowSpacing="0"
+            RowCount="2"
+			Padding="0"
+			VerticalOptions="FillAndExpand"
+            ItemClickCommand ="{Binding ItemCommand} "
+			ItemsSource="{ Binding Items }">
+           
+            <grial:GridView.ItemTemplate>
+                <DataTemplate>
+                    <local:DashboardItemTemplate
+						ShowBackgroundImage="false"
+						ShowBackgroundColor="true"
+						ShowiconColoredCircleBackground="false"
+						TextColor="{ DynamicResource OverImageTextColor }" />
+                </DataTemplate>
+            </grial:GridView.ItemTemplate>
+        </grial:GridView>
+
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:grial="clr-namespace:UXDivers.Grial;assembly=UXDivers.Grial" xmlns:local="clr-namespace:Ubi"
+	x:Class="Ubi.MainMenuPage"
+	NavigationPage.HasNavigationBar="false"
+	Icon="{ StaticResource HamburguerIcon }"
+	Style="{ StaticResource MainMenuStyle }"
+	Title="{ grial:Translate PageTitleMainMenu }">
+
+    <Grid>
+        
+        <BoxView
+			Style="{ StaticResource MainMenuOrModalBackgroundStyle }"
+			Opacity="1" />
+
+        <Image
+			Style="{ StaticResource MainMenuBackgroundImageStyle }" /> 
+        
+        <Grid
+			grial:Effects.ApplyIOSSafeAreaAsPadding="Left,Right"
+			RowSpacing="0"
+			VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition
+					Height="Auto" />
+                <RowDefinition
+					Height="*" />
+            </Grid.RowDefinitions>
+
+            <Label
+                    
+                    Margin="20,0"
+                    TextColor="{ DynamicResource InverseTextColor }"
+                    FontSize="74"
+                    Text="{ x:Static local:UbiFont.A }"
+                    Style="{ StaticResource UbiFontStyle }"
+                    HorizontalOptions="Start"
+                    VerticalTextAlignment="Center" />
+
+            <Label Text="" x:Name="tfUserName" FontSize="Medium"
+                   TextColor="White" Grid.Column="1" Grid.Row="0" Margin="5,60,5,30" VerticalOptions="Start" HorizontalOptions="Start" 
+                   
+            ></Label>
+           
+
+                <!--LOGO />-->
+           <!-- <local:BrandBlock
+				Grid.Row="0"
+				Grid.Column="0"
+				Margin="20,60,20,30"
+				VerticalOptions="Start"
+				HorizontalOptions="Start" />-->
+
+            <!-- MENU ENTRIES -->
+            <ListView
+				Margin="0,0,0,10"
+				Grid.Row="1"
+                Grid.ColumnSpan="2"
+				x:Name="sampleListView"
+				SelectedItem="{ Binding MainMenuSelectedItem, Mode=TwoWay }"
+				ItemsSource="{ Binding MainMenuEntries }"
+				VerticalOptions="FillAndExpand"
+				Style="{ StaticResource MainMenuListViewStyle }"
+				CachingStrategy="RecycleElement">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <local:MainMenuItemTemplate />
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+        </Grid>
+    </Grid>
+</ContentPage>

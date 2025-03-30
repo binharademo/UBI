@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ubi.Views.Navigation.Dashboards.DashboardPage"
+             xmlns:grial="clr-namespace:UXDivers.Grial;assembly=UXDivers.Grial"
+             xmlns:local="clr-namespace:Ubi"
+             BackgroundColor="{ DynamicResource BasePageColor }"
+	Title="{ grial:Translate PageTitleDashboardPage }">
+    <ContentPage.Resources>
+        <ResourceDictionary Source="/Styles/TabControl/SimpleTabResources.xaml" >
+            <grial:BoolMemberTemplateSelector
+                x:Key="Selector"
+                MemberName="IsNotification">
+
+                <grial:BoolMemberTemplateSelector.TrueDataTemplate>
+                    <DataTemplate>
+                        <local:DashboardAppNotificationItemTemplate
+                            WidthRequest="145"
+                            HeightRequest="55" />
+                    </DataTemplate>
+                </grial:BoolMemberTemplateSelector.TrueDataTemplate>
+
+                <grial:BoolMemberTemplateSelector.FalseDataTemplate>
+                    <DataTemplate>
+                        <local:DashboardVariantItemTemplate
+                            ShowBackgroundImage="False"
+                            
+                            ShowBackgroundColor="true"
+                            ShowiconColoredCircleBackground="false"
+                            TextColor="{ DynamicResource DashboardIconColor }"
+                            WidthRequest="245"
+                            HeightRequest="10"
+                            />
+                    </DataTemplate>
+                </grial:BoolMemberTemplateSelector.FalseDataTemplate>
+
+            </grial:BoolMemberTemplateSelector>
+
+
+        </ResourceDictionary>
+
+
+    </ContentPage.Resources>
+
+    <!--<ContentPage.Content>-->
+        <grial:TabControl Style="{ StaticResource SimpleTabStyle }">
+            
+            <grial:TabItem Text="Saldos">
+                
+                <Grid BackgroundColor="White" 
+                      Padding="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+
+                    <grial:CardView CornerRadius="0" 
+                                    RowSpacing="1"
+                                    ColumnSpacing="1"
+                                    Padding="12"
+                                    ShadowSize="20" 
+                                    ShadowOpacity="1"
+                                    BackgroundColor="White"
+                                    Grid.Row="0">
+
+                        <!--<grial:CardView.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </grial:CardView.RowDefinitions>-->
+                        
+                        <StackLayout Orientation="Vertical" BackgroundColor="White">
+                        <Label Text="Saldo total" TextColor="Black" Grid.Row="0" FontSize="Large" FontAttributes="Bold"></Label>
+
+
+                            <StackLayout Orientation="Horizontal" BackgroundColor="White">
+
+
+                            <Label Text="Ubi" TextColor="Black" Grid.Row="0" FontSize="Medium" FontAttributes="Bold"></Label>
+                            <Label Text="$" TextColor="#FFCC00" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Start"></Label>
+                            <Label Text="10" TextColor="BlueViolet" FontSize="Medium" HorizontalOptions="EndAndExpand" Grid.Column="3"></Label>
+                            </StackLayout>
+                        </StackLayout>
+
+
+                    </grial:CardView>
+
+                    <grial:CardView CornerRadius="0" 
+                                    RowSpacing="1"
+                                    ColumnSpacing="1"
+                                    Padding="12"
+                                    ShadowSize="20" 
+                                    ShadowOpacity="1"
+                                    BackgroundColor="White"
+                                    Grid.Row="1">
+
+                        <!--<grial:CardView.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </grial:CardView.RowDefinitions>-->
+
+
+                        <StackLayout Orientation="Vertical" BackgroundColor="White">
+                            <Label Text="Ganhos do mês - Abril" TextColor="Black" Grid.Row="0" FontSize="Large" FontAttributes="Bold"></Label>
+
+
+                            <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                            <Label Text="Ubi" TextColor="Black" Grid.Row="0" FontSize="Medium" FontAttributes="Bold"></Label>
+                            <Label Text="$" TextColor="#FFCC00" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Start"></Label>
+                            <Label Text="10" TextColor="BlueViolet" FontSize="Medium" HorizontalOptions="EndAndExpand" Grid.Column="3"></Label>
+                            </StackLayout>
+                        </StackLayout>
+
+
+                    </grial:CardView>
+
+                    <grial:CardView CornerRadius="0" 
+                                    RowSpacing="1"
+                                    ColumnSpacing="1"
+                                    Padding="12"
+                                    ShadowSize="20" 
+                                    ShadowOpacity="1"
+                                    BackgroundColor="White"
+                                    Grid.Row="2">
+
+                        <!--<grial:CardView.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </grial:CardView.RowDefinitions>-->
+
+
+                        <StackLayout Orientation="Vertical" BackgroundColor="White">
+                            <Label Text="Ganhos da semana - 31/03 - 07/04" TextColor="Black" Grid.Row="0" FontSize="Large" FontAttributes="Bold"></Label>
+
+
+                            <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                            <Label Text="Ubi" TextColor="Black" Grid.Row="0" FontSize="Medium" FontAttributes="Bold"></Label>
+                            <Label Text="$" TextColor="#FFCC00" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Start"></Label>
+                            <Label Text="10" TextColor="BlueViolet" FontSize="Medium" HorizontalOptions="EndAndExpand" Grid.Column="3"></Label>
+                            </StackLayout>
+                            <Label Text="Mais detalhes" TextColor="Blue" Grid.Row="0" FontSize="Small" HorizontalOptions="Center" FontAttributes="Bold"></Label>
+                        </StackLayout>
+
+
+                    </grial:CardView>
+
+                    <grial:CardView CornerRadius="0" 
+                                    RowSpacing="1"
+                                    ColumnSpacing="1"
+                                    Padding="12"
+                                    ShadowSize="20" 
+                                    ShadowOpacity="1"
+                                    BackgroundColor="White"
+                                    Grid.Row="3 ">
+
+                        <!--<grial:CardView.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </grial:CardView.RowDefinitions>-->
+
+
+                        <StackLayout Orientation="Vertical" BackgroundColor="White">
+                            <Label Text="Saldo pendente" TextColor="Black" Grid.Row="0" FontSize="Large" FontAttributes="Bold"></Label>
+
+
+                            <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                            <Label Text="Ubi" TextColor="Black" Grid.Row="0" FontSize="Medium" FontAttributes="Bold"></Label>
+                            <Label Text="$" TextColor="#FFCC00" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Start"></Label>
+                            <Label Text="90" TextColor="#FFCC00" FontSize="Medium" HorizontalOptions="EndAndExpand" Grid.Column="3"></Label>
+                            </StackLayout>
+                        </StackLayout>
+
+
+                    </grial:CardView>
+
+
+
+
+
+
+
+                </Grid>
+                
+            </grial:TabItem>
+
+            <grial:TabItem Text="Pontos">
+
+            <StackLayout BackgroundColor="White" Grid.Row="0" Margin="10">
+    
+            <grial:CardView  CornerRadius="0" RowSpacing="1" ColumnSpacing="6"
+                     Padding="12" grial:Effects.Shadow="True" grial:Effects.ShadowSize="10" >
+                    <grial:CardView.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </grial:CardView.RowDefinitions>
+
+                    <grial:CardView.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </grial:CardView.ColumnDefinitions>    
+                    <!-- Avatar -->
+                   
+                    <local:CircleCachedImage Grid.Column="0" Grid.Row="0" Grid.RowSpan="1" Source="friend_06.png"
+                                    Style="{ StaticResource Avatar }" VerticalOptions="Start"  />
+
+                    <Label Grid.Column="1"  Grid.Row="0" Text="Marina Lara" Style="{ StaticResource LabelBoldStyle }"
+                                Margin="0,0,0,0" TextColor="Black" VerticalOptions="Start"  />
+
+                    <Label Grid.Column="1" Grid.Row="0" Text="Nivel 2"  VerticalOptions="StartAndExpand"
+                                TextColor="Gray" Margin="0,20,0,0"  />
+
+                    <Image Source="graf.jpg" Grid.Column="3" />
+                    
+            </grial:CardView>
+
+            <grial:CardView BackgroundColor="White" Padding="15"  Grid.Row="1">
+
+                    <Label Text="Ubi$" TextColor="Black" Grid.Row="0" FontSize="Medium" FontAttributes="Bold"></Label>
+                    
+                    <Label Text="10" TextColor="Blue" HorizontalOptions="EndAndExpand"></Label>
+            </grial:CardView>
+
+                <StackLayout BackgroundColor="White" Padding="10">
+                    <Label Text="Benefícios dos Pontos" TextColor="Gray" FontAttributes="Bold" FontSize="Medium"></Label>
+                </StackLayout>
+
+
+                <Grid BackgroundColor="White">
+                
+                    <grial:GridView
+                                
+                                Margin="0"
+                               
+                                Padding="10"
+                                RowSpacing="15"
+                                ColumnCount="3"
+                                RowCount="1"
+                                HorizontalOptions="Center"
+                         
+                        ItemsSource="{ Binding ItemPontos }"
+                        ItemTemplate="{ StaticResource Selector }" 
+
+                            ></grial:GridView>
+               
+            </Grid>
+                <Label Text="Mais Benefícios" TextColor="Blue" HorizontalOptions="Center"></Label>
+
+            </StackLayout>
+
+            </grial:TabItem>
+
+
+        <grial:TabItem Text="Vendas">
+                <Grid BackgroundColor="Yellow">
+
+
+                    <Grid BackgroundColor="White" 
+                      Padding="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+
+                        <grial:CardView CornerRadius="0" 
+                                    RowSpacing="1"
+                                    ColumnSpacing="1"
+                                    Padding="12"
+                                    ShadowSize="20" 
+                                    ShadowOpacity="1"
+                                    BackgroundColor="White"
+                                    Grid.Row="0">
+
+                            <!--<grial:CardView.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </grial:CardView.RowDefinitions>-->
+
+                            <StackLayout Orientation="Vertical" BackgroundColor="White">
+                                <StackLayout Orientation="Horizontal" BackgroundColor="White" Margin="0,0,0,10">
+                                <Label Text="Atendimento" TextColor="Black" Grid.Row="0" FontSize="Medium" FontAttributes="Bold"></Label>
+                                <Image Source="starubi3.jpg" HorizontalOptions="EndAndExpand" Grid.Column="3"></Image>
+                                </StackLayout>
+
+                                <Label Text="Máquina de cartões" TextColor="Black" Grid.Row="0" FontSize="Medium" FontAttributes="Bold"></Label>
+                                <Label Text="Manuel Pereira" TextColor="Black" Grid.Row="0" FontSize="Medium" FontAttributes="Bold"></Label>
+                            <Label Text="$ 27,00 - Saldo pendente " TextColor="#FFCC00" Grid.Row="0" FontSize="Medium" FontAttributes="Bold"></Label>
+                                <Label Text="$ 30,00 - venda Total " TextColor="DarkGreen" Grid.Row="0" FontSize="Medium" FontAttributes="Bold"></Label>
+                                    
+                                
+                            </StackLayout>
+
+                        </grial:CardView>
+
+                    </Grid>
+
+                </Grid>
+            </grial:TabItem>
+
+
+            <grial:TabItem Text="Resgate">
+
+            <ScrollView>
+                <Grid BackgroundColor="White" 
+                      Padding="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+
+
+
+
+
+
+
+                    <grial:CardView CornerRadius="0" 
+                                    RowSpacing="1"
+                                    ColumnSpacing="1"
+                                    Padding="12"
+                                    ShadowSize="20" 
+                                    ShadowOpacity="1"
+                                    BackgroundColor="White"
+                                    Grid.Row="0">
+
+
+
+                        <StackLayout Orientation="Vertical" BackgroundColor="White">
+                            <StackLayout BackgroundColor="White" Orientation="Horizontal">
+                                <Label Text="Saldo Total" TextColor="Black" Grid.Row="0" FontSize="Medium" ></Label>
+
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                <Label Text="Ubi" TextColor="Black" Grid.Row="0" FontSize="Medium" FontAttributes="Bold"></Label>
+                                <Label Text="$" TextColor="#FFCC00" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Start"></Label>
+                                <Label Text="10" TextColor="Blue" Grid.Row="0" FontSize="Default" HorizontalOptions="EndAndExpand" ></Label>
+
+                            </StackLayout>
+                        </StackLayout>
+
+
+                    </grial:CardView>
+
+                    <grial:CardView CornerRadius="0" 
+                                    RowSpacing="1"
+                                    ColumnSpacing="1"
+                                    Padding="12"
+                                    ShadowSize="20" 
+                                    ShadowOpacity="1"
+                                    BackgroundColor="White"
+                                    Grid.Row="1">
+
+
+
+
+                        <StackLayout Orientation="Vertical" BackgroundColor="White">
+                            <StackLayout BackgroundColor="White" Orientation="Horizontal">
+                                <Label Text="Valor de Ubis para conversão" TextColor="Black" Grid.Row="0" FontSize="Medium" ></Label>
+
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                <Label Text="Ubi" TextColor="Black" Grid.Row="0" FontSize="Medium" FontAttributes="Bold"></Label>
+                                <Label Text="$" TextColor="#FFCC00" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Start"></Label>
+                                <Label Text="5" TextColor="Blue" Grid.Row="0" FontSize="Default" HorizontalOptions="EndAndExpand"></Label>
+                            </StackLayout>
+                        </StackLayout>
+
+
+                    </grial:CardView>
+
+                    <Label Text="Opções de resgate de ubis" TextColor="Black" Margin="0,15,0,15" Grid.Row="2" ></Label>
+
+                    <grial:CardView CornerRadius="0" 
+                                    RowSpacing="1"
+                                    ColumnSpacing="1"
+                                    Padding="12"
+                                    ShadowSize="20" 
+                                    ShadowOpacity="1"
+                                    BackgroundColor="White"
+                                    Grid.Row="3">
+
+
+
+
+
+                        <StackLayout BackgroundColor="White" Orientation="Horizontal">
+                            <Label Text="Saque em Conta Corrente" TextColor="Black" Grid.Row="0" FontSize="Medium" ></Label>
+                            <Label Text="R$ 0,25" TextColor="Black" Grid.Row="0" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="EndAndExpand"></Label>
+                        </StackLayout>
+
+
+
+
+                    </grial:CardView>
+
+                    <grial:CardView CornerRadius="0" 
+                                    RowSpacing="1"
+                                    ColumnSpacing="1"
+                                    Padding="12"
+                                    ShadowSize="20" 
+                                    ShadowOpacity="1"
+                                    BackgroundColor="White"
+                                    Grid.Row="4">
+
+
+
+
+
+                        <StackLayout BackgroundColor="White" Orientation="Horizontal">
+                            <Label Text="Crédito de Telefone" TextColor="Black" Grid.Row="0" FontSize="Medium"></Label>
+                            <Label Text="R$ 0,50" TextColor="Black" Grid.Row="0" FontSize="Medium" HorizontalOptions="EndAndExpand" ></Label>
+                        </StackLayout>
+
+
+
+
+
+                    </grial:CardView>
+
+                    <grial:CardView CornerRadius="0" 
+                                    RowSpacing="1"
+                                    ColumnSpacing="1"
+                                    Padding="12"
+                                    ShadowSize="20" 
+                                    ShadowOpacity="1"
+                                    BackgroundColor="White"
+                                    Grid.Row="5">
+
+
+
+
+
+                        <StackLayout BackgroundColor="White" Orientation="Horizontal">
+                            <Label Text="Saldo em Cartão de Crédito" TextColor="Black" Grid.Row="0" FontSize="Medium"></Label>
+                            <Label Text="R$ 0,80" TextColor="Black" Grid.Row="0" FontSize="Medium" HorizontalOptions="EndAndExpand" ></Label>
+                        </StackLayout>
+
+
+                    </grial:CardView>
+
+                    <grial:CardView CornerRadius="0" 
+                                    RowSpacing="1"
+                                    ColumnSpacing="1"
+                                    Padding="12"
+                                    ShadowSize="20" 
+                                    ShadowOpacity="1"
+                                    BackgroundColor="White"
+                                    Grid.Row="6">
+
+
+
+
+
+                        <StackLayout BackgroundColor="White" Orientation="Horizontal">
+                            <Label Text="Compra Amazon" TextColor="Black" Grid.Row="0" FontSize="Medium"></Label>
+                            <Label Text="R$ 0,75" TextColor="Black" Grid.Row="0" FontSize="Medium" HorizontalOptions="EndAndExpand" ></Label>
+                        </StackLayout>
+
+
+                    </grial:CardView>
+
+                    <grial:CardView CornerRadius="0" 
+                                    RowSpacing="1"
+                                    ColumnSpacing="1"
+                                    Padding="12"
+                                    ShadowSize="20" 
+                                    ShadowOpacity="1"
+                                    BackgroundColor="White"
+                                    Grid.Row="7">
+
+
+
+
+
+                        <StackLayout BackgroundColor="White" Orientation="Horizontal">
+                            <Label Text="Compra Uber" TextColor="Black" Grid.Row="0" FontSize="Medium"></Label>
+                            <Label Text="R$ 0,60" TextColor="Black" Grid.Row="0" FontSize="Medium" HorizontalOptions="EndAndExpand" ></Label>
+                        </StackLayout>
+
+
+                    </grial:CardView>
+
+
+
+
+
+
+
+
+
+                </Grid>
+            </ScrollView>
+
+        </grial:TabItem>
+        </grial:TabControl>
+    <!--</ContentPage.Content>-->
+</ContentPage>

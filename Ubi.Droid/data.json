@@ -1,0 +1,322 @@
+[
+  {
+    "step": 0,
+    "status": "",
+    "question": "",
+    "yes": 1,
+    "no": 1,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 1,
+    "status": "",
+    "question": "Bom dia meu nome � [Seu Nome] da BIN maquininha de cart�es tudo bem?",
+    "yes": 2,
+    "no": 6,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 2,
+    "status": "",
+    "question": "FULANO, estamos com uma excelente campanha de taxa de d�bito de XX % e cr�dito YY % Essas taxas fazem sentido pra voc�?",
+    "yes": 3,
+    "no": 7,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 3,
+    "status": "",
+    "question": "Voc� tem interesse na proposta com esses benef�cios que lhe informei?",
+    "yes": 4,
+    "no": 19,
+    "aditional": "[NOME DO CLIENTE], voc� prefere uma ou mais m�quinas? Lembrando que al�m das taxas voc� ter� muitos benef�cios no nosso COMBO DE VANTAGENS como: 500 bobinas gr�tis por m�s se precisar, basta solicitar via whats. Sua m�quina ir� habilitada para venda de cr�dito para celular onde seu retorno � de 3% de todos os cr�ditos vendidos. Suporte hor�rio comercial via whats e 24 horas via 0800.Troca da maquininha com defeito em 48 horas. Chip da sua m�quina da operadora com melhor sinal . N�o paga transfer�ncia banc�ria.",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 4,
+    "status": "",
+    "question": "[NOME DO CLIENTE], me passe os dados banc�rios para voc� receber seus pagamentos , � necess�rio que seja conta PJ ou seja em nome da sua empresa .",
+    "yes": 8,
+    "no": 15,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 5,
+    "status": "CLOSE",
+    "question": "A BIN a agradece e tenha um �timo dia.",
+    "yes": 30,
+    "no": 30,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 6,
+    "status": "",
+    "question": "Pergunte quem est� falando e questione se ele conhece o [NOME DO CLIENTE].",
+    "yes": 21,
+    "no": 30,
+    "aditional": "[NOME DO CLIENTE], voc� prefere uma ou mais m�quinas? Lembrando que al�m das taxas voc� ter� muitos benef�cios no nosso COMBO DE VANTAGENS como: 500 bobinas gr�tis por m�s se precisar, basta solicitar via whats. Sua m�quina ir� habilitada para venda de cr�dito para celular onde seu retorno � de 3% de todos os cr�ditos vendidos. Suporte hor�rio comercial via whats e 24 horas via 0800.Troca da maquininha com defeito em 48 horas. Chip da sua m�quina da operadora com melhor sinal . N�o paga transfer�ncia banc�ria.",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 7,
+    "status": "",
+    "question": "[NOME DO CLIENTE] Qual a maquininha que voc� possui e quais as taxas? Quem sabe consigo melhorar a sua proposta.",
+    "yes": 3,
+    "no": 14,
+    "aditional": "[NOME DO CLIENTE] essa proposta de taxa de d�bito de XX % e cr�dito YY % Essas taxas fazem sentido pra voc�? Lhe interessa?",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 8,
+    "status": "",
+    "question": "FULANO , voc� tem alguma maquininha SIPAG?",
+    "yes": 9,
+    "no": 16,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 9,
+    "status": "",
+    "question": "[NOME DO CLIENTE], voc� ir� faturar por m�s um valor superior a 3 mil reais em nossa m�quina?",
+    "yes": 10,
+    "no": 17,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 10,
+    "status": "",
+    "question": "[NOME DO CLIENTE], confirme seu endere�o completo para que receba a maquininha em at� 10 dias �teis. O endere�o para recebimento da m�quina � o mesmo comercial?",
+    "yes": 11,
+    "no": 18,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 11,
+    "status": "",
+    "question": "[NOME DO CLIENTE], no final da chamada voc� receber� com SMS com todos os nossos contatos de whatsapp e tamb�m 0800 e que qualquer d�vida nos chame nesses n�meros . Ajudo em algo mais?",
+    "yes": 5,
+    "no": 40,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 12,
+    "status": "",
+    "question": "",
+    "yes": 40,
+    "no": 40,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 13,
+    "status": "",
+    "question": "",
+    "yes": 40,
+    "no": 40,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 14,
+    "status": "FIM",
+    "question": "[NOME DO CLIENTE] agrade�o e sua aten��o e lhe informo que assim que eu desligar essa chamada voc� vai receber um SMS com nossos contatos e caso mude de ideia pode nos chamar nesses n�mero. Obrigado e bom dia. [tarde] , [noite].",
+    "yes": 1,
+    "no": 30,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 15,
+    "status": "FIM",
+    "question": "Agradece e informa que essa campanha � somente para conta PJ, e que futuramente quando tivermos campanha para conta PF entraremos em contato . Informe tamb�m que ele receber� um SMS com nossos telefones e caso venha a abrir uma conta PJ que pode nos chamar.",
+    "yes": 1,
+    "no": 30,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 16,
+    "status": "FIM",
+    "question": "Agrade�a e informe que infelizmente n�o podemos vender para clientes que j� possuem m�quina SIPAG mesmo que ele cancele a m�quina , pois no Brasil existe um acordo entre essas empresas.",
+    "yes": 1,
+    "no": 30,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 17,
+    "status": "FIM",
+    "question": "Agrade�a e diga que essa campanha � para clientes que faturem pelo menos 3 mil reais por m�s na maquininha.\n Informe que no final da liga��o ele receber� um SMS com nossos contatos e se ele conseguir subir esse faturamento basta entrar em contato .",
+    "yes": 1,
+    "no": 30,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 18,
+    "status": "FIM",
+    "question": "Informe que � poss�vel fazer entrega somente no endere�o da empresa que consta no CNPJ.  Caso contr�rio, infelizmente n�o podemos continuar com a proposta.  [Agrade�a pela aten��o e informe que no final da chamada ele receber� um SMS com nossos contatos e caso consiga fazer a altera��o, que entre em contato imediatamente .]",
+    "yes": 1,
+    "no": 30,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 19,
+    "status": "",
+    "question": "Solicite informa��es sobre o servi�o de m�quinas de cart�es de cr�dito e fa�a uma oferta baseado nos itens do Passo 3",
+    "yes": 3,
+    "no": 3,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 20,
+    "status": "",
+    "question": "",
+    "yes": 40,
+    "no": 40,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 21,
+    "status": "",
+    "question": "Pergunte se pode falar com ele no momento ou qual melhor hor�rio.",
+    "yes": 40,
+    "no": 40,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 22,
+    "status": "",
+    "question": "Qual a maquininha que voc� possui e quais as taxas? Quem sabe consigo melhorar a sua proposta.",
+    "yes": 40,
+    "no": 40,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 23,
+    "status": "",
+    "question": "",
+    "yes": 40,
+    "no": 40,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 24,
+    "status": "",
+    "question": "",
+    "yes": 40,
+    "no": 40,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 25,
+    "status": "",
+    "question": "",
+    "yes": 40,
+    "no": 40,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 26,
+    "status": "",
+    "question": "",
+    "yes": 40,
+    "no": 40,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 27,
+    "status": "",
+    "question": "",
+    "yes": 40,
+    "no": 40,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 28,
+    "status": "",
+    "question": "",
+    "yes": 40,
+    "no": 40,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 30,
+    "status": "CLOSE",
+    "question": "Agrade�a e finalize a chamada com: Obrigado pela informa��o e tenha um bom dia (tarde), (noite).",
+    "yes": 1,
+    "no": 1,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 31,
+    "status": "",
+    "question": "",
+    "yes": 40,
+    "no": 40,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "step": 40,
+    "status": "INDEFINIDO",
+    "question": "",
+    "yes": 40,
+    "no": 40,
+    "aditional": "",
+    "": "",
+    "__1": ""
+  }
+]

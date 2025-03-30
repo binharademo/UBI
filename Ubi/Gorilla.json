@@ -1,0 +1,191 @@
+{
+  "localization": {
+    "markupExtension": {
+      "name": "Translate",
+      "namespace": "UXDivers.Grial",
+      "keyPropertyName": "Key"
+    },
+    "resources": {
+      "resourceId": "Ubi.Resx.AppResources",
+      "assembly": "Ubi",
+      "defaultCulture": "en"
+    }
+  },
+  "navigationPage": {
+    "all": true,
+    "exclude": [
+      "WalkthroughMinimalStepItemTemplate.xaml",
+      "ArticleBrowserCardItemTemplate.xaml",
+      "ArticlesBrowserHeaderItemTemplate.xaml",
+      "CustomActionSheet.xaml",
+      "IrregularDialog.xaml",
+      "NotificationPopup.xaml",
+      "SimpleDialog.xaml",
+      "SimpleDialogNoTitle.xaml",
+      "SimpleDialogNoTitleInverse.xaml",
+      "TabbedLoginPage.xaml",
+      "FullBackgroundLoginPage.xaml",
+      "FullBackgroundSignupPage.xaml",
+      "ContactPreviewPopup.xaml",
+      "GrialHighlightsPage.xaml",
+      "AnimatedSpheresPage.xaml",
+      "AnimationTimelinePage.xaml",
+      "WalkthroughFlatStepItemTemplate.xaml",
+      "WalkthroughStepItemTemplate.xaml",
+      "WalkthroughVariantStepItemTemplate.xaml",
+      "WalkthroughFlatPage.xaml",
+      "WalkthroughPage.xaml",
+      "WalkthroughVariantPage.xaml",
+      "WelcomePage.xaml",
+      "WalkthroughVariant2StepItemTemplate.xaml",
+      "ArticleClassicViewItemTemplate.xaml",
+      "ArticleFeedItemTemplate.xaml",
+      "ArticleItemTemplate.xaml",
+      "ArticleVariantItemTemplate.xaml",
+      "CommentItemTemplate.xaml",
+      "FrontPageHeaderItemTemplate.xaml",
+      "FrontPageNewsItemTemplate.xaml",
+      "FullHeaderArticleGalleryItemTemplate.xaml",
+      "Badge.xaml",
+      "BrandBlock.xaml",
+      "CircleIcon.xaml",
+      "CustomActivityIndicator.xaml",
+      "Rating.xaml",
+      "RoundedLabel.xaml",
+      "FullBackgroundLoginPage.xaml",
+      "FullBackgroundSignupPage.xaml",
+      "DashboardAppNotificationItemTemplate.xaml",
+      "DashboardCardItemTemplate.xaml",
+      "DashboardItemTemplate.xaml",
+      "DashboardMultipleScrollMainItemTemplate.xaml",
+      "DashboardVariantItemTemplate.xaml",
+      "ProductGridItemTemplate.xaml",
+      "ProductsCatalogItemTemplate.xaml",
+      "ProductImageFullScreenPage.xaml",
+      "ChatLeftMessageItemTemplate.xaml",
+      "ChatRightMessageItemTemplate.xaml",
+      "ChatTimelineIncomingItemTemplate.xaml",
+      "ChatTimelineOutgoingItemTemplate.xaml",
+      "MessageItemTemplate.xaml",
+      "RecentChatItemTemplate.xaml",
+      "NavigationCardsListItemTemplate.xaml",
+      "NavigationListItemTemplate.xaml",
+      "NavigationListWithIconsItemTemplate.xaml",
+      "NavigationListWithImagesItemTemplate.xaml",
+      "MainMenuItemTemplate.xaml",
+      "NotificationsListItemTemplate.xaml",
+      "DocumentTimelineLeftItemTemplate.xaml",
+      "DocumentTimelineRightItemTemplate.xaml",
+      "FriendItemTemplate.xaml",
+      "SocialGalleryImage.xaml",
+      "SocialHeaderTemplate.xaml",
+      "SocialGalleryImagePreviewPage.xaml",
+      "TimelineItemTemplate.xaml",
+      "ContactSimpleDetailPage.xaml",
+      "WalkthroughFlatStepItemTemplate.xaml",
+      "WalkthroughStepItemTemplate.xaml",
+      "WalkthroughVariantStepItemTemplate.xaml",
+      "WalkthroughGradientStepTemplate.xaml",
+      "WalkthroughGradientPage.xaml",
+      "WalkthroughImageStepTemplate.xaml",
+      "WalkthroughImagePage.xaml",
+      "WalkthroughIllustrationStepTemplate.xaml",
+      "WalkthroughIllustrationPage.xaml",
+      "WhatsNewStepTemplate.xaml",
+      "WhatsNewPage.xaml",
+      "FeaturedMovieItemTemplate.xaml",
+      "MoviesSectionItemTemplate.xaml",
+      "MoviesSectionTemplate.xaml",
+      "PerformanceDashboardScorecardTemplate.xaml",
+      "PerformanceDashboardFilterTemplate.xaml",
+      "EmployeeCardTemplate.xaml",
+      "ProductCardItemTemplate.xaml",
+      "RelatedProductCardItemTemplate.xaml",
+      "ProductGalleryItemTemplate.xaml",
+      "ReviewItemTemplate.xaml",
+      "ContactItemTemplate.xaml",
+      "ContactDetailItemTemplate.xaml",
+      "IncomingMessageItemTemplate.xaml",
+      "OutgoingMessageItemTemplate.xaml",
+      "ChatPreviewItemTemplate.xaml",
+      "NotificationPreviewItemTemplate.xaml",
+      "WelcomeVideoPage.xaml"
+    ],
+    "include": [
+      {
+        "file": "PerformanceDashboardMainPage.xaml",
+        "navigationPageClass": "Ubi.PerformanceDashboardNavigationPage, Ubi"
+      },
+      {
+        "file": "EmployeeProfileDashboardPage.xaml",
+        "navigationPageClass": "Ubi.PerformanceDashboardNavigationPage, Ubi"
+      },
+      {
+        "file": "EmployeePerformanceDashboardPage.xaml",
+        "navigationPageClass": "Ubi.PerformanceDashboardNavigationPage, Ubi"
+      },
+      {
+        "file": "FeaturedMoviesPage.xaml",
+        "navigationPageClass": "Ubi.MoviesNavigationPage, Ubi"
+      },
+      {
+        "file": "MoviesMainPage.xaml",
+        "navigationPageClass": "Ubi.MoviesNavigationPage, Ubi"
+      },
+      {
+        "file": "MovieDetailPage.xaml",
+        "navigationPageClass": "Ubi.MoviesNavigationPage, Ubi"
+      },
+      {
+        "file": "ChatMessagesPage.xaml",
+        "navigationPageClass": "Ubi.ChatNavigationPage, Ubi"
+      },
+      {
+        "file": "ChatMainPage.xaml",
+        "navigationPageClass": "Ubi.ChatNavigationPage, Ubi"
+      },
+      {
+        "file": "AddContactPage.xaml",
+        "navigationPageClass": "Ubi.ChatNavigationPage, Ubi"
+      },
+      {
+        "file": "ContactDetailPage.xaml",
+        "navigationPageClass": "Ubi.ChatNavigationPage, Ubi"
+      },
+      {
+        "file": "ProductDetailPage.xaml",
+        "navigationPageClass": "Ubi.EcommerceNavigationPage, Ubi"
+      },
+      {
+        "file": "OrderConfirmationPage.xaml",
+        "navigationPageClass": "Ubi.EcommerceNavigationPage, Ubi"
+      },
+      {
+        "file": "CheckoutPage.xaml",
+        "navigationPageClass": "Ubi.EcommerceNavigationPage, Ubi"
+      },
+      {
+        "file": "EcommerceMainPage.xaml",
+        "navigationPageClass": "Ubi.EcommerceNavigationPage, Ubi"
+      }
+    ]
+  },
+  "xaml": {
+    "avoidExpansion": [
+      "Badge.xaml",
+      "Rating.xaml",
+      "Tag.xaml",
+      "RingChart.xaml",
+      "AvatarWithStatus.xaml",
+      "RoundedLabel.xaml",
+      "CurvedMask.xaml"
+    ]
+  },
+  "alwaysPreserveResources": [
+    "WarningColor",
+    "OkColor",
+    "ErrorColor",
+    "NotificationColor",
+    "DisabledColor"
+  ]
+}

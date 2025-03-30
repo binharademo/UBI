@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:grial="clr-namespace:UXDivers.Grial;assembly=UXDivers.Grial" xmlns:local="clr-namespace:Ubi"
+	x:Class="Ubi.ChatTimelinePage"
+	Title="{ grial:Translate PageTitleChatTimeline }"
+	BackgroundColor="{ DynamicResource BasePageColor }"
+	Padding="{ StaticResource MainWrapperPadding }">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <grial:BoolMemberTemplateSelector
+				x:Key="Selector"
+				MemberName="IsInbound">
+                <grial:BoolMemberTemplateSelector.TrueDataTemplate>
+                    <DataTemplate> 
+                        <ViewCell>
+                            <local:ChatTimelineOutgoingItemTemplate />
+                        </ViewCell>
+                    </DataTemplate>
+                </grial:BoolMemberTemplateSelector.TrueDataTemplate>
+
+                <grial:BoolMemberTemplateSelector.FalseDataTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <local:ChatTimelineIncomingItemTemplate />
+                        </ViewCell>
+                    </DataTemplate>
+                </grial:BoolMemberTemplateSelector.FalseDataTemplate>
+
+            </grial:BoolMemberTemplateSelector>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+            <ContentPage.Content>
+        <AbsoluteLayout>
+            
+            <!-- Transparent Background -->
+            <StackLayout x:Name="transparentBackground" Opacity="0.5" IsVisible="False"
+                         BackgroundColor="Black"  AbsoluteLayout.LayoutBounds=" 0.5, 0.5, 1, 1 "
+                         AbsoluteLayout.LayoutFlags="All"> 
+            </StackLayout>
+            
+            <StackLayout AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+                <ListView
+                x:Name="chatlist"
+                CachingStrategy="RecycleElement"
+			    ItemsSource="{ Binding Messages }"
+			    SeparatorVisibility="None"
+			    HasUnevenRows="true"
+			    ItemTemplate="{ StaticResource Selector }"
+			    Style="{ StaticResource ResponsiveLandscapeMarginStyle }" />   
+                
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                    <Entry x:Name="entryMessage" Placeholder="Digite aqui" HorizontalOptions="StartAndExpand" WidthRequest="300" />
+                    <Button x:Name="btSend" Clicked="BtSend_OnClicked" Text="Enviar" HorizontalOptions="End"  WidthRequest="80"></Button>
+                </StackLayout>
+                <grial:GridView
+                    x:Name="btPainel"
+                    ColumnCount="3"
+                    ColumnSpacing="0"
+                    RowSpacing="0"
+                    RowCount="2"
+                    Padding="0"
+                    HeightRequest="400"
+                    VerticalOptions="FillAndExpand"
+                    ItemsSource="{ Binding Items }">
+                    <grial:GridView.ItemTemplate>
+                        <DataTemplate>
+                            <local:DashboardItemTemplate
+                                ShowBackgroundImage="false"
+                                ShowBackgroundColor="true"
+                                ShowiconColoredCircleBackground="false"
+                                TextColor="{ DynamicResource OverImageTextColor }" />
+                        </DataTemplate>
+                    </grial:GridView.ItemTemplate>
+                </grial:GridView>
+            </StackLayout >
+            
+            <!-- DATA SELECTOR -->
+            <Frame 
+               CornerRadius="6" 
+               x:Name="popupLayout"
+               HorizontalOptions="CenterAndExpand" 
+               VerticalOptions="StartAndExpand"
+               HasShadow="True"
+               BackgroundColor="White"       
+               IsClippedToBounds="True"
+               Padding="10,10,10,10" 
+               IsVisible="False" 
+               AbsoluteLayout.LayoutBounds=" 0.5, 0.3, 0.8, 0.6"
+               AbsoluteLayout.LayoutFlags="All"
+               WidthRequest="300">
+                <StackLayout BackgroundColor="Transparent">
+                    <DatePicker
+                        x:Name="dataPicker"
+                        MinimumDate="{Binding currentTime}"
+                        MaximumDate="12/31/2030"
+                        DateSelected="SaveDate"/>
+                    <Entry Placeholder="Observações?" x:Name="obsReschedule" ReturnType="Done" />
+                    <Button WidthRequest="100" x:Name="buttonReschedule" Text="Reagendar" Clicked="Reschedule"/>
+                    <Button WidthRequest="100" Text="Cancelar" Clicked="Bt_ClosePopup_Reschedule"/>
+                </StackLayout>
+            </Frame>
+
+
+
+            <!-- USER ADRESS-->
+            <Frame 
+               CornerRadius="6" 
+               x:Name="popupUserAdress"
+               HorizontalOptions="CenterAndExpand" 
+               VerticalOptions="StartAndExpand"
+               HasShadow="True"
+               BackgroundColor="White"       
+               IsClippedToBounds="True"
+               Padding="10,10,10,10" 
+               IsVisible="False" 
+               AbsoluteLayout.LayoutBounds=" 0.5, 0.3, 0.8, 0.6"
+               AbsoluteLayout.LayoutFlags="All"
+               WidthRequest="300">
+
+                <StackLayout BackgroundColor="Transparent">
+                    <Entry Placeholder="CEP" x:Name="infoCEP" Keyboard="Numeric" ReturnType="Next"/>
+                    <Entry Placeholder="Numero" x:Name="infoHomeNumber" Keyboard="Numeric" ReturnType="Done"/>
+                    <!-- same as comercial adress? -->
+                    <grial:Checkbox
+                                        x:Name="infoSameComercialAdress"
+										Margin="0,10,0,20"
+										IsChecked="true"
+										HorizontalOptions="Start">
+                        <Label
+											Margin="10,0"
+											Text="É seu endereço comercial?"
+											VerticalOptions="Center" />
+                    </grial:Checkbox>
+                    <Button WidthRequest="100" Text="Ok" Clicked="OkInfo_UserAdress"/>
+                    <Button WidthRequest="100" Text="Cancelar" Clicked="CancelInfo_UserAdress"/>
+
+                </StackLayout>
+
+            </Frame>
+
+
+            <!-- CAN'T TALK TO USER INFO -->
+            <Frame 
+               CornerRadius="6" 
+               x:Name="popupCantTalkToUser"
+               HorizontalOptions="CenterAndExpand" 
+               VerticalOptions="StartAndExpand"
+               HasShadow="True"
+               BackgroundColor="White"       
+               IsClippedToBounds="True"
+               Padding="10,10,10,10" 
+               IsVisible="False" 
+               AbsoluteLayout.LayoutBounds=" 0.5, 0.3, 0.8, 0.6"
+               AbsoluteLayout.LayoutFlags="All"
+               WidthRequest="300">
+
+                <StackLayout BackgroundColor="Transparent">
+                    <!-- can I talk to him/her? -->
+                    <grial:Checkbox         x:Name="infoCanTalkToUserLater"
+										Margin="0,10,0,20"
+										IsChecked="true"
+										HorizontalOptions="Start">
+                        <Label
+											Margin="10,0"
+											Text="Ele(a) consegue falar mais tarde?"
+											VerticalOptions="Center" />
+                    </grial:Checkbox>
+                    <DatePicker
+                    x:Name="dataPicker_CantTalkToUser"
+                    MinimumDate="{Binding currentTime}"
+                    MaximumDate="12/31/2030"
+                    DateSelected="SaveCantTalkToUserDate"/>
+                    <Button WidthRequest="100" Text="Ok" Clicked="OkInfo_CantTalkToUser"/>
+                    <Button WidthRequest="100" Text="Cancelar" Clicked="CancelInfo_CantTalkToUser"/>
+
+                </StackLayout>
+
+            </Frame>
+
+
+            <!-- BANK INFO -->
+            <Frame
+                CornerRadius="6" 
+                x:Name="popupBank"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="StartAndExpand"
+                HasShadow="True"
+                BackgroundColor="White"
+                IsClippedToBounds="True"
+                Padding="10,10,10,10"
+                IsVisible="False"
+                AbsoluteLayout.LayoutBounds=" 0.5, 0.3, 0.8, 0.6"
+                AbsoluteLayout.LayoutFlags="All"
+                WidthRequest="300"
+                >
+                
+                <StackLayout BackgroundColor="Transparent">
+                    <Picker  x:Name="infoBank" Title="Selecione um banco" SelectedIndexChanged="CheckBank">
+                        <Picker.Items>
+                            <x:String>Banco do Brasil</x:String>
+                            <x:String>Bradesco</x:String>
+                            <x:String>Caixa</x:String>
+                            <x:String>Inter</x:String>
+                            <x:String>Itaú</x:String>
+                            <x:String>Nubank</x:String>
+                            <x:String>Santander</x:String>
+                            <x:String>Outro</x:String>
+                        </Picker.Items>
+                    </Picker>
+                    <Entry Placeholder="Outro banco" ReturnType="Done" IsVisible="False" x:Name="anotherBankEntry"/>
+                    <Entry Placeholder="Agencia" x:Name="infoAgency" Keyboard="Numeric" ReturnType="Done" />
+                    <Label Text="Conta"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Entry Placeholder="Número" x:Name="AccountNumber" Keyboard="Numeric" ReturnType="Next" MaxLength="4"/>
+                        <Label Text="-" VerticalOptions="Center"/>
+                        <Entry Placeholder="Dígito" x:Name="AccountDigit" Keyboard="Numeric" ReturnType="Done" MaxLength="1"/>
+                    </StackLayout>
+                    <Button WidthRequest="100" Text="Ok" Clicked="OkInfo_Bank"/>
+                    <Button WidthRequest="100" Text="Cancelar" Clicked="CancelInfo_Bank"/>
+
+                </StackLayout>
+
+            </Frame>
+
+
+            <!-- PAYMENT INFO -->
+            <Frame 
+               CornerRadius="6" 
+               x:Name="popupPayment"
+               HorizontalOptions="CenterAndExpand" 
+               VerticalOptions="StartAndExpand"
+               HasShadow="True"
+               BackgroundColor="White"       
+               IsClippedToBounds="True"
+               Padding="10,10,10,10" 
+               IsVisible="False" 
+               AbsoluteLayout.LayoutBounds=" 0.5, 0.3, 0.8, 0.6"
+               AbsoluteLayout.LayoutFlags="All"
+               WidthRequest="300">
+
+                <StackLayout BackgroundColor="Transparent">
+                    <Entry Placeholder="Maquininha" x:Name="infoMachine" ReturnType="Next"/>
+                    <Entry Placeholder="Taxas (%)" x:Name="infoTaxes" Keyboard="Numeric" ReturnType="Done"/>
+                    <Button WidthRequest="100" Text="Ok" Clicked="OkInfo_Payment"/>
+                    <Button WidthRequest="100" Text="Cancelar" Clicked="CancelInfo_Payment"/>
+
+                </StackLayout>
+
+            </Frame>
+
+            <!-- INSERT COMMENTS -->
+            <Frame 
+               CornerRadius="6" 
+               x:Name="popupComment"
+               HorizontalOptions="CenterAndExpand" 
+               VerticalOptions="StartAndExpand"
+               HasShadow="True"
+               BackgroundColor="White"       
+               IsClippedToBounds="True"
+               Padding="10,10,10,10" 
+               IsVisible="False" 
+               AbsoluteLayout.LayoutBounds=" 0.5, 0.3, 0.8, 0.6"
+               AbsoluteLayout.LayoutFlags="All"
+               WidthRequest="300">
+
+                <StackLayout BackgroundColor="Transparent">
+                    <Label Text="Seu comentário será adicionado ao chat e analisado em breve." />
+                    <Entry Placeholder="Comentário" x:Name="infoComment" ReturnType="Done" HeightRequest="50"/>
+                    <Button WidthRequest="100" Text="Enviar" Clicked="OkInfo_Comment"/>
+                    <Button WidthRequest="100" Text="Cancelar" Clicked="CancelInfo_Comment"/>
+                </StackLayout>
+
+            </Frame>
+
+        </AbsoluteLayout>
+                
+    </ContentPage.Content>
+
+</ContentPage>

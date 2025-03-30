@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<local:WalkthroughBasePage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Ubi" xmlns:grial="clr-namespace:UXDivers.Grial;assembly=UXDivers.Grial" xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+	x:Class="Ubi.WalkthroughImagePage"
+	NavigationPage.HasNavigationBar="False">
+    
+    <local:WalkthroughImageStepTemplate
+		StepBackgroundImage="https://s3.us-east-2.amazonaws.com/ubigrial/index-1-jumping-woman.jpg"
+		Header="{ grial:Translate WalkthroughHeaderWelcome }"
+		Text="{ grial:Translate WalkthroughTextWelcome }"
+		ButtonText="{grial:Translate StringNext }"
+		BackgroundColor="{ DynamicResource BasePageColor }" />
+    
+    <local:WalkthroughImageStepTemplate
+		StepBackgroundImage="https://s3.us-east-2.amazonaws.com/ubigrial/index-3-fence-guy.png"
+		Header="{ grial:Translate WalkthroughHeaderSaveTime }"
+		Text="{ grial:Translate WalkthroughTextSaveTime }"
+		ButtonText="{grial:Translate StringNext }"
+		BackgroundColor="{ DynamicResource BasePageColor }" />
+    
+   
+    
+</local:WalkthroughBasePage>

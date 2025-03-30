@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ubi.Views.Phone.CallVoipPage"
+             xmlns:grial="clr-namespace:UXDivers.Grial;assembly=UXDivers.Grial"
+             xmlns:local="clr-namespace:Ubi"
+             BackgroundColor="{ DynamicResource BasePageColor }">
+
+
+    <ContentPage.Resources>
+        <ResourceDictionary Source="/Styles/TabControl/SimpleTabResources.xaml" >
+            <grial:BoolMemberTemplateSelector
+                x:Key="Selector"
+                MemberName="IsNotification">
+
+                <grial:BoolMemberTemplateSelector.TrueDataTemplate>
+                    <DataTemplate>
+                        <local:DashboardAppNotificationItemTemplate
+                            WidthRequest="145"
+                            HeightRequest="55" />
+                    </DataTemplate>
+                </grial:BoolMemberTemplateSelector.TrueDataTemplate>
+
+                <grial:BoolMemberTemplateSelector.FalseDataTemplate>
+                    <DataTemplate>
+                        <local:DashboardVariantItemTemplate
+                            ShowBackgroundImage="False"
+                            
+                            ShowBackgroundColor="true"
+                            ShowiconColoredCircleBackground="false"
+                            TextColor="{ DynamicResource DashboardIconColor }"
+                            WidthRequest="245"
+                            HeightRequest="10"
+                            />
+                    </DataTemplate>
+                </grial:BoolMemberTemplateSelector.FalseDataTemplate>
+
+            </grial:BoolMemberTemplateSelector>
+
+
+        </ResourceDictionary>
+
+
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White" Padding="30" Orientation="Vertical">
+            <local:CircleCachedImage  Source="friend_06.png"
+                                    Style="{ StaticResource Avatar }"  VerticalOptions="CenterAndExpand" Scale="3"  HorizontalOptions="Center" />
+            <Label Text="Marina Lara" FontSize="20" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" ></Label>
+
+            <StackLayout Orientation="Horizontal" BackgroundColor="White" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand">
+                <Button Text="{ x:Static local:GrialIconsFont.PhoneCall }"
+					    Style="{ DynamicResource FontIconFill }"
+                        TextColor="White"  
+                        BackgroundColor="Green" 
+                        HeightRequest="50" 
+                        WidthRequest="100"></Button>
+                <Button Text="{ x:Static local:GrialIconsFont.PhoneMissed }"
+					    Style="{ DynamicResource FontIconFill }"
+                        TextColor="White"  
+                        BackgroundColor="#CA2715" 
+                        HeightRequest="50" 
+                        WidthRequest="100" ></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<local:WalkthroughBasePage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="Ubi.WalkthroughMinimalPage" xmlns:local="clr-namespace:Ubi" xmlns:grial="clr-namespace:UXDivers.Grial;assembly=UXDivers.Grial"
+	Style="{ StaticResource WalkthroughStepStyle }"
+	BackgroundColor="{ DynamicResource BasePageColor }"
+	NavigationPage.HasNavigationBar="False">
+
+    <local:WalkthroughMinimalStepItemTemplate
+		Header="{ grial:Translate WalkthroughTextEtapa }"
+		Text="{ grial:Translate WalkthroughTextParabens }"
+		IconText="{ x:Static local:GrialIconsFont.CheckCircle }"
+		IconColor="#7ED321"
+		ButtonText="{ grial:Translate StringDashBoard }" />
+
+   
+</local:WalkthroughBasePage>

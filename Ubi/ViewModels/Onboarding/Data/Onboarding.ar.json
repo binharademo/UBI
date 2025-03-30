@@ -1,0 +1,31 @@
+{
+  "VideoCarouselHighlightsPage.xaml": {
+    "BackgroundVideo": "https://s3-us-west-2.amazonaws.com/grial-images/v3.0/local_video.mp4",
+    "Highlights": [
+      {
+        "Title": "More Content",
+        "Description": "تدفق Grial UI Kit، والمزيد من السمات ، والمزيد من الصفحات والمزيد من التخطيطات والمزيد من الرموز.",
+        "Icon": "",
+        "Color": "#48B5BA"
+      },
+      {
+        "Title": "Richer Content",
+        "Description": "الرسوم المتحركة السوائل ، تخطيطات مرنة ، دعم التدرج ، المزيد من الضوابط المخصصة.",
+        "Icon": "",
+        "Color": "#CD195E"
+      },
+      {
+        "Title": "Faster Kickstart",
+        "Description": "قم بإعداد مشروعك وأنشئ مظهرك الخاصة باستخدام Grial Customizer.",
+        "Icon": "",
+        "Color": "#0C60AF"
+      },
+      {
+        "Title": "Grial 3.0",
+        "Description": "أفضل مجموعة واجهة المستخدم لأنواع Xamarin.",
+        "Icon": "",
+        "Color": "#833AB4"
+      }
+    ]
+  }
+}

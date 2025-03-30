@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ubi.Views.Phone.MenuVoipPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" BackgroundColor="White" Padding="20" Spacing="30" VerticalOptions="CenterAndExpand">
+            <Button x:Name="btnVoipTeste" Clicked="BtnVoipTeste_OnClicked" BackgroundColor="#CA2715" Text="Voip Teste" TextColor="White" HorizontalOptions="Center" HeightRequest="100" WidthRequest="200" FontAttributes="Bold" ></Button>
+            <Button x:Name="btnReceber" Clicked="BtnReceber_OnClicked" BackgroundColor="#CA2715" Text="Receber" TextColor="White" HorizontalOptions="Center" HeightRequest="100" WidthRequest="200" FontAttributes="Bold" ></Button>
+            <Button x:Name="btnVoipTesteDual" Clicked="BtnVoipTesteDual_OnClicked" BackgroundColor="#CA2715"  Text="Voip Teste Dual" TextColor="White" HorizontalOptions="Center" HeightRequest="100" WidthRequest="200" FontAttributes="Bold" ></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

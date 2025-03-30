@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ubi.Views.Phone.PhoneDiallingImagePage"
+             xmlns:grial="clr-namespace:UXDivers.Grial;assembly=UXDivers.Grial"
+             xmlns:local="clr-namespace:Ubi"
+             Title="{ grial:Translate PageTitlePhoneDialler }">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" x:Name="StackPhoneImage" VerticalOptions="CenterAndExpand" Padding="30" Spacing="40">
+            
+            <local:CircleCachedImage Source="cartaoubi.jpg" VerticalOptions="Center" Scale="2"></local:CircleCachedImage>
+
+            <Button Text="{ x:Static local:GrialIconsFont.PhoneCall }"
+					    Style="{ DynamicResource FontIconFill }"
+                        TextColor="White"  
+                        BackgroundColor="Green" 
+                        HeightRequest="50" 
+                        WidthRequest="100"
+                        VerticalOptions="EndAndExpand"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

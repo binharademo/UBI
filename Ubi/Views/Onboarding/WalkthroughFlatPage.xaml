@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<local:WalkthroughBasePage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="Ubi.WalkthroughFlatPage" xmlns:grial="clr-namespace:UXDivers.Grial;assembly=UXDivers.Grial" xmlns:local="clr-namespace:Ubi"
+	NavigationPage.HasNavigationBar="False">
+
+    <local:WalkthroughFlatStepItemTemplate
+		BackgroundColor="#CA2715"
+		
+		IconText="{ x:Static local:GrialIconsFont.Globe }"
+		IconColor="#FFF"
+		ButtonText="{ grial:Translate StringUbi }"
+		ButtonBackgroundColor="#CA2715" />
+
+    
+
+</local:WalkthroughBasePage>

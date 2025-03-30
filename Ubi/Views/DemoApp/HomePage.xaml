@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ubi.Views.DemoApp.HomePage"
+             xmlns:grial="clr-namespace:UXDivers.Grial;assembly=UXDivers.Grial"
+             xmlns:local="clr-namespace:Ubi"
+             xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+             Title="{ grial:Translate PageTitleHome }"
+	BackgroundColor="{ DynamicResource BasePageColor }"
+             NavigationPage.HasNavigationBar="True"
+            
+	>
+    <ContentPage.Content>
+        <grial:GridView>
+            <grial:GridView.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </grial:GridView.RowDefinitions>
+
+            <StackLayout BackgroundColor="White">
+        
+                <StackLayout Orientation="Horizontal" BackgroundColor="white" grial:Effects.Shadow="True" grial:Effects.ShadowSize="5" Grid.Row="0" Padding="10">
+                    <StackLayout Orientation="Vertical" BackgroundColor="White">
+                    
+                        <StackLayout Orientation="Vertical" BackgroundColor="White" Margin="0,0,0,20">
+                            <Label Text="{Binding Text}" x:Name="lb_status_atendimento" TextColor="{Binding Color}" FontSize="Medium"  FontAttributes="Bold"/>
+                            <!--<Label Text="{Binding atendimento_text}" x:Name="Label01" TextColor="Black" FontSize="Medium"  FontAttributes="Bold"></Label>-->
+                            <Label Text="Habilitações" TextColor="Black" FontSize="Default"  FontAttributes="None"></Label>
+                        </StackLayout>
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Label Text="Ubi" Grid.Row="0" Grid.Column="0" HorizontalOptions="EndAndExpand" TextColor="Black"/>
+                            <Label Text="$" Grid.Row="0" Grid.Column="1" HorizontalOptions="StartAndExpand" TextColor="#FFCC00"/>
+                        </Grid>
+
+                    </StackLayout>
+
+                    <StackLayout Orientation="Vertical" HorizontalOptions="EndAndExpand">
+                            <Switch HorizontalOptions="EndAndExpand" x:Name="Switch01" IsToggled="{Binding AtendimentoAtivado}" HeightRequest="50" grial:SwitchProperties.TintColor="ForestGreen" PropertyChanged="Switch01_PropertyChanged" />
+                        <Label Text="0" TextColor="Blue" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                </StackLayout>
+
+                <StackLayout Padding="5" Orientation="Horizontal" BackgroundColor="White">
+                    <Label Text="Suas habilitações" TextColor="Black"/>
+                    <Label Text="Mais categorias" HorizontalOptions="EndAndExpand" TextColor="Blue"/>
+                </StackLayout>
+
+                <grial:Repeater HorizontalOptions="Center" Spacing="8"
+                                Padding="0,10"
+                                ScrollPadding="0,0" 
+                                ItemSize="98"
+                                HeightRequest="100"
+                                SelectionMode="Single"
+                                BackgroundColor="DarkGoldenrod"
+                                x:Name="repeater">
+                    
+                    <grial:Repeater.ItemsSource>
+                        <x:Array Type="{ x:Type x:String }">
+                            <x:String>b.png</x:String>
+                            <x:String>aa.png</x:String>
+                            <x:String>a.png</x:String>
+                        </x:Array>
+                    </grial:Repeater.ItemsSource>
+<!--ITEM NÃO SELECIONADO-->
+                    <grial:Repeater.ItemTemplate>
+                        <DataTemplate>
+                            
+                            <!--<local:CircleCachedImage
+                                Source="{ Binding ImageSource }" 
+                                Style="{ StaticResource Avatar }"
+                                Opacity=".5" Scale=".8" >
+
+                                <local:CircleCachedImage.Transformations>
+                                    <fftransformations:GrayscaleTransformation/>
+                                    <fftransformations:TintTransformation HexColor="#C6C6C6" />
+                                </local:CircleCachedImage.Transformations>
+
+                            </local:CircleCachedImage>-->
+                            <Label Text="{Binding .}" BackgroundColor="Red" HeightRequest="50" WidthRequest="50" />
+
+                        </DataTemplate>
+                        
+                    </grial:Repeater.ItemTemplate>
+<!--ITEM SELECIONADO-->
+                    <grial:Repeater.SelectedItemTemplate>
+                        <DataTemplate>
+                            <!--<local:CircleCachedImage
+                                
+                                Scale="1" 
+                                BorderColor="#A32CA3" BorderSize="0"
+                                Source="{ Binding . }"
+                                Style="{ StaticResource Avatar }"
+                                DownsampleToViewSize="true">
+                                
+                                <local:CircleCachedImage.Transformations>
+                                    <fftransformations:GrayscaleTransformation/>
+                                    <fftransformations:TintTransformation HexColor="#FFA500">
+                                    </fftransformations:TintTransformation>
+                                </local:CircleCachedImage.Transformations>
+                                
+                            </local:CircleCachedImage>-->
+
+                            <Label Text="{Binding .}" BackgroundColor="Green"  HeightRequest="50" WidthRequest="50" />
+                        </DataTemplate>
+                    </grial:Repeater.SelectedItemTemplate>
+
+                </grial:Repeater>
+<!--
+                <StackLayout Orientation="Horizontal" BackgroundColor="White" Margin="30,0,0,0" Spacing="10" Padding="10">
+                    <Label Text="Plano de Celular" TextColor="Black" HorizontalOptions="StartAndExpand" ></Label>
+                    <Label Text="Plano de Televisão" TextColor="Black" HorizontalOptions="Center"  ></Label>
+                    <Label Text="Máquina de Cartões" TextColor="Black" HorizontalOptions="EndAndExpand"  ></Label>
+                </StackLayout>
+-->
+                <!--<Image Source="ubicarrega.png" HeightRequest="270" ></Image>-->
+                <StackLayout Orientation="Vertical" BackgroundColor="White" Padding="12" Grid.Row="3" Grid.RowSpan="2">
+
+                    <Label Text="Seus Objetivos Geral" FontSize="Medium" TextColor="Black" />
+<!-- BARRA HORA ONLINE -->
+                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                        <Label Text="Tempo online" TextColor="Black"/>
+                        <Label Text="" x:Name="tfHoras" HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+
+                    <ProgressBar x:Name="tfBarraProgressoOnline" ProgressColor="Green" />
+<!-- BARRA ATENDIMENTO -->
+                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                        <Label Text="Atendimentos" TextColor="Black"/>
+                        <Label Text="" x:Name="tfAtentimentos" HorizontalOptions="EndAndExpand"/>
+
+                    </StackLayout>
+
+                    <ProgressBar x:Name="tfBarraProgressoAtendimento" ProgressColor="Green" />
+<!-- BARRA FECHAMENTO -->
+                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                        <Label Text="Fechamentos" TextColor="Black"/>
+                        <Label Text="" x:Name="tfFechamentos" HorizontalOptions="EndAndExpand"/>
+
+                    </StackLayout>
+
+                    <ProgressBar x:Name="tfBarraProgressoFechamento" ProgressColor="Green"/>
+
+<!-- BARRA TAXA DE CONVERSÃO -->
+                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                        <Label Text="Taxa de Conversão" TextColor="Black"/>
+                        <Label Text="10%" x:Name="tfConversao" HorizontalOptions="EndAndExpand"/>
+
+                    </StackLayout>
+
+                    <ProgressBar x:Name="tfBarraProgressoTaxa" ProgressColor="Green" />
+                </StackLayout>
+            </StackLayout>  
+        </grial:GridView>
+    </ContentPage.Content>
+</ContentPage>

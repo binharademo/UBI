@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="UbiModel.Call">
+    <Position X="8.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAABIAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Call.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Chats" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="UbiModel.Categoria">
+    <Position X="11.75" Y="3" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEBIAQQBAAAADAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Categoria.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UbiModel.Chat">
+    <Position X="10.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Chat.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="ChatMessages" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="UbiModel.ChatMessage">
+    <Position X="12.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAQAAIAAAAAA=</HashCode>
+      <FileName>ChatMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UbiModel.Product">
+    <Position X="8.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UbiModel.PurchasedProduct">
+    <Position X="5.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PurchasedProduct.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Product" />
+      <Property Name="Customer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="UbiModel.User">
+    <Position X="2.5" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAACgAAACAAAIAAAAAAAAQABQAAQAAAgAQAAADAAEA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="UserConfig" />
+      <Property Name="UserVoip" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="PurchasedProducts" />
+      <Property Name="MyCourses" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="UbiModel.UserConfig">
+    <Position X="0.5" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQACAABAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UbiModel.UserVoip">
+    <Position X="5.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAgAAAAAAAAAAAAAAAAwAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>UserVoip.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Calls" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="UbiModel.Customer">
+    <Position X="8.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UbiModel.Course">
+    <Position X="5.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAABAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Lms\Courses.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CourseCategory" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="UbiModel.CourseCategory">
+    <Position X="5.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lms\CourseCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UbiModel.Lms.Quiz">
+    <Position X="10.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Lms\Quiz.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Questions" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="UbiModel.Lms.Video">
+    <Position X="8.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Lms\Video.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UbiModel.Lms.Question">
+    <Position X="13" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAABAQAAAAAAAAAA=</HashCode>
+      <FileName>Lms\Question.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CorrectAnswer" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Answers" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="UbiModel.Lms.Answer">
+    <Position X="15" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lms\Answer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="UbiModel.Lms.IActivities">
+    <Position X="8.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lms\IActivities.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

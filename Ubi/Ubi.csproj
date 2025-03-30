@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Ubi</RootNamespace>
+    <AssemblyName>Ubi</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Gorilla|AnyCPU' ">
+    <IntermediateOutputPath>obj\Debug\netstandard2.0</IntermediateOutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <DefineConstants>TRACE;DEBUG;NETSTANDARD;NETSTANDARD2_0;GORILLA</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Gorilla|iPhone' ">
+    <IntermediateOutputPath>obj\iPhone\Gorilla</IntermediateOutputPath>
+    <DebugType></DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Gorilla</OutputPath>
+    <DefineConstants></DefineConstants>
+    <NoWarn></NoWarn>
+    <NoStdLib>false</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Gorilla|iPhoneSimulator' ">
+    <IntermediateOutputPath>obj\iPhoneSimulator\Gorilla</IntermediateOutputPath>
+    <DebugType></DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Gorilla</OutputPath>
+    <DefineConstants></DefineConstants>
+    <NoWarn></NoWarn>
+    <NoStdLib>false</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Realm" Version="3.4.0" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.3.840" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Microcharts.Forms" Version="0.8.5-pre" />
+    <PackageReference Include="Microcharts" Version="0.8.5-pre" />
+    <PackageReference Include="CarouselView.FormsPlugin" Version="5.2.0" />
+    <PackageReference Include="Rg.Plugins.Popup" Version="1.1.5.188" />
+    <PackageReference Include="Xamarin.Forms" Version="3.6.0.264807" />
+    <PackageReference Include="Xamanimation" Version="1.2.0" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+    <PackageReference Include="UXDivers.Grial" Version="3.0.20" />
+    <PackageReference Include="Xamarin.FFImageLoading.Svg" Version="2.4.3.840" />
+    <PackageReference Include="Xamarin.FFImageLoading.Svg.Forms" Version="2.4.3.840" />
+    <PackageReference Include="Xamarin.FFImageLoading.Transformations" Version="2.4.3.840" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Styles\" />
+    <Folder Include="Controls\" />
+    <Folder Include="ViewModels\EcommerceFlow\" />
+    <Folder Include="Views\EcommerceFlow\" />
+    <Folder Include="Styles\TabControl\" />
+    <Folder Include="Views\EcommerceFlow\Templates\" />
+    <Folder Include="Styles\VideoPlayer\" />
+    <Folder Include="Controls\Charts\" />
+    <Folder Include="Controls\Popups\" />
+    <Folder Include="Helpers\Animations\" />
+    <Folder Include="Helpers\Converters\" />
+    <Folder Include="ViewModels\Social\" />
+    <Folder Include="ViewModels\Onboarding\" />
+    <Folder Include="Resx\" />
+    <Folder Include="Views\Messages\Templates\" />
+    <Folder Include="Views\Onboarding\" />
+    <Folder Include="Views\Onboarding\Templates\" />
+    <Folder Include="Views\Social\" />
+    <Folder Include="ViewModels\Messages\Data\" />
+    <Folder Include="ViewModels\Social\Data\" />
+    <Folder Include="ViewModels\EcommerceFlow\Data\" />
+    <Folder Include="Controls\SharedViews\" />
+    <Folder Include="Views\Theme\" />
+    <Folder Include="ViewModels\Onboarding\Data\" />
+    <Folder Include="ViewModels\Navigation\Dashboards\Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Styles\curved_mask.svg" />
+    <EmbeddedResource Include="ViewModels\Messages\Data\Messages.ar.json" />
+    <EmbeddedResource Include="ViewModels\Messages\Data\Messages.json" />
+    <EmbeddedResource Include="ViewModels\Social\Data\Social.ar.json" />
+    <EmbeddedResource Include="ViewModels\Social\Data\Social.json" />
+    <EmbeddedResource Include="ViewModels\EcommerceFlow\Data\EcommerceFlow.ar.json" />
+    <EmbeddedResource Include="ViewModels\EcommerceFlow\Data\EcommerceFlow.json" />
+    <EmbeddedResource Include="ViewModels\Onboarding\Data\Onboarding.json" />
+    <EmbeddedResource Include="ViewModels\Onboarding\Data\Onboarding.ar.json" />
+    <EmbeddedResource Include="ViewModels\Navigation\Dashboards\Data\NavigationDashboards.ar.json" />
+    <EmbeddedResource Include="ViewModels\Navigation\Dashboards\Data\NavigationDashboards.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Styles\curved_mask.svg" />
+    <None Remove="ViewModels\Navigation\Data\Navigation.ar.json" />
+    <None Remove="ViewModels\Navigation\Data\Navigation.json" />
+    <None Remove="ViewModels\Messages\Data\Messages.ar.json" />
+    <None Remove="ViewModels\Messages\Data\Messages.json" />
+    <None Remove="ViewModels\Social\Data\Social.ar.json" />
+    <None Remove="ViewModels\Social\Data\Social.json" />
+    <None Remove="ViewModels\EcommerceFlow\Data\EcommerceFlow.ar.json" />
+    <None Remove="ViewModels\EcommerceFlow\Data\EcommerceFlow.json" />
+    <None Remove="ViewModels\Onboarding\Data\Onboarding.json" />
+    <None Remove="ViewModels\Onboarding\Data\Onboarding.ar.json" />
+    <None Remove="ViewModels\Navigation\Dashboards\Data\Navigation.ar.json" />
+    <None Remove="ViewModels\Navigation\Dashboards\Data\Navigation.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Liblinphone\Liblinphone.csproj" />
+    <ProjectReference Include="..\UbiModel\UbiModel.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android">
+      <HintPath>..\..\..\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoAndroid\v9.0\Mono.Android.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Condition=" '$(EnableDefaultEmbeddedResourceItems)' == 'true' " Update="Resx\AppResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Messages\MockChat.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\DemoApp\HomePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Navigation\Dashboards\CursesBasicPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Navigation\Dashboards\DashboardPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Phone\CallVoipPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Phone\MenuVoipPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Phone\PhoneDiallingImagePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Phone\PhoneDiallingPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Phone\UbiPhoneTesteDualPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Phone\UbuPhoneTestPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Resx\AppResources.Designer.cs">
+      <DependentUpon>AppResources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="a_VideoPlayer_Rascunho\VideoPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Controls\Charts\RingChart.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Controls\Popups\CustomActionSheet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Controls\Popups\IrregularDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Controls\Popups\NotificationPopup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Controls\Popups\Resources\DialogsResources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Controls\Popups\SimpleDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Controls\Popups\SimpleDialogNoTitle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Controls\Popups\SimpleDialogNoTitleInverse.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Controls\SharedViews\AvatarWithStatus.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Controls\SharedViews\Badge.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Controls\SharedViews\BrandBlock.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Controls\SharedViews\CurvedMask.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Controls\SharedViews\CustomActivityIndicator.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Controls\SharedViews\Rating.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Controls\SharedViews\RoundedLabel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Controls\SharedViews\Tag.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Styles\AppFontFamilies.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Styles\TabControl\AndroidTabResources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Styles\TabControl\CustomTabResources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Styles\TabControl\DotTabResources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Styles\TabControl\IOSTabResources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Styles\TabControl\SegmentedTabResources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Styles\TabControl\SimpleTabResources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Styles\VideoPlayer\VideoPlayerResources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Themes\BlackboardTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Themes\BlackSunTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Themes\CabernetLightTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Themes\DarkTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Themes\HazeTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Themes\LightTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Themes\MyAppTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\DemoApp\HomePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\DemoApp\MainMenuPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\DemoApp\RootMasterDetailPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\DemoApp\Templates\MainMenuItemTemplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\DemoApp\WelcomeStarterPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\EcommerceFlow\CheckoutPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\EcommerceFlow\EcommerceNavigationPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\EcommerceFlow\Templates\ProductPurchaseCardTemplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Forms\TabbedLoginPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Messages\ChatTimelinePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Messages\MockChat.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Messages\Templates\ChatTimelineIncomingItemTemplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Messages\Templates\ChatTimelineOutgoingItemTemplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Navigation\Dashboards\CursesBasicPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Navigation\Dashboards\DashboardMultipleTilesPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Navigation\Dashboards\DashboardPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Navigation\Dashboards\FlatDashboardPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Navigation\Dashboards\Templates\DashboardAppNotificationItemTemplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Navigation\Dashboards\Templates\DashboardItemTemplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Navigation\Dashboards\Templates\DashboardVariantItemTemplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Onboarding\Templates\WalkthroughFlatStepItemTemplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Onboarding\Templates\WalkthroughImageStepTemplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Onboarding\Templates\WalkthroughMinimalStepItemTemplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Onboarding\WalkthroughFlatPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Onboarding\WalkthroughImagePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Onboarding\WalkthroughMinimalPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Phone\CallVoipPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Phone\MenuVoipPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Phone\PhoneDiallingImagePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Phone\PhoneDiallingPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Phone\UbiPhoneTesteDualPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Phone\UbuPhoneTestPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Social\ProfilePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Theme\SettingsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Theme\ThemeOverviewPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+  <ProjectExtensions><VisualStudio><UserProperties designtimedata_1json__JsonSchema="http://json.schemastore.org/asmdef" /></VisualStudio></ProjectExtensions>
+  <Import Project="..\LinphoneXamarin\LinphoneXamarin.projitems" Label="Shared" />
+  <Import Project="..\..\srcModel\UbiModelShared\UbiModelShared.projitems" Label="Shared" />
+</Project>

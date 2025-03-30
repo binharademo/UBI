@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:LinphoneXamarin"
+
+             x:Class="Ubi.Views.Phone.UbuPhoneTestPage">
+<ScrollView>
+    <StackLayout x:Name="stack_layout" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical" Spacing="15">
+        <Label Text="UBI Phone" HorizontalOptions="Center" />
+
+        <StackLayout x:Name="stack_registrar">
+            <Entry x:Name="username" Placeholder="Username" />
+            <Entry x:Name="password" Placeholder="Senha" IsPassword="true"/>
+            <Entry x:Name="domain" Placeholder="Domain" Text=""/>
+            <Button x:Name="register" Text="Registrar" Clicked="OnRegisterClicked" HorizontalOptions="Center" />
+            <Label x:Name="registration_status" HorizontalOptions="Center" />
+        </StackLayout>
+
+        <Entry x:Name="address" Placeholder="Address" />
+        <Button x:Name="call" Text="Chamar" Clicked="OnCallClicked" HorizontalOptions="Center" />
+        <Label x:Name="call_status" HorizontalOptions="Center" />
+        <Label x:Name="call_stats" HorizontalOptions="Center" />
+        <Entry x:Name="redirect" Placeholder="Address" />
+        <Button x:Name="callredirect" Text="Redirecionar" Clicked="Callredirect_Clicked" HorizontalOptions="Center" />
+
+        <Button x:Name="video" Text="......" Clicked="OnVideoClicked" HorizontalOptions="Center" />
+    </StackLayout>
+</ScrollView>
+
+</ContentPage>

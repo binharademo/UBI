@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:LinphoneXamarin"
+             x:Class="Ubi.Views.Phone.UbiPhoneTesteDualPage">
+
+
+    <ScrollView BackgroundColor="#F5F6F8">
+        <StackLayout x:Name="stack_layout" VerticalOptions="FillAndExpand" BackgroundColor="#F5F6F8"
+                 HorizontalOptions="FillAndExpand" Orientation="Vertical" Spacing="15">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="5">
+                <Image Source="logoubicinza1.png" HorizontalOptions="CenterAndExpand" Scale="0.5"  >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped" NumberOfTapsRequired="5"></TapGestureRecognizer>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="UBI Phone" HorizontalOptions="Center" TextColor="#818181" FontSize="Large" VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+                <Button x:Name="btnUser01" Clicked="BtnUser01_OnClicked" Text="User01" 
+                    WidthRequest="100" HeightRequest="100" BackgroundColor="White" TextColor="Black"
+                    BorderWidth="1"></Button>
+
+                <Button x:Name="btnUser02" Clicked="BtnUser02_OnClicked" Text="User02" 
+                    WidthRequest="100" HeightRequest="100" BackgroundColor="White" TextColor="Black"
+                    BorderRadius="5" BorderColor="#818181" BorderWidth="1" ></Button>
+            </StackLayout>
+
+
+
+            <!--<Entry x:Name="username" Placeholder="Usuário" />
+            <Entry x:Name="password" Placeholder="Senha" IsPassword="true"/>
+            <Entry x:Name="domain" Placeholder="Domain" Text=""/>-->
+            <Label x:Name="lbuserselect" Text="Usuário: usuario01" Margin="20,0,0,0" TextColor="#818181" FontSize="Large"></Label>
+            <Label x:Name="registration_status" HorizontalOptions="Center" Text="offline" TextColor="#818181" />
+
+            <Button x:Name="register" Text="Conectar ao servidor" Clicked="OnRegisterClicked"
+                BorderRadius="5" BackgroundColor="#CA2715" 
+                 WidthRequest="300" BorderColor="#818181"
+                BorderWidth="2" 
+                TextColor = "White"
+                VerticalOptions = "Start"
+                HorizontalOptions = "Fill"
+                Margin="20,0,20,0"
+                
+                />
+
+
+
+            <Entry x:Name="address" Placeholder="Digite Telefone" TextChanged="Address_OnTextChanged" />
+            <Button x:Name="call" Text="Ligar " Clicked="OnCallClicked"
+                BorderRadius="5" BackgroundColor="#F5F6F8" WidthRequest="300" BorderColor="#818181"
+                BorderWidth="2" 
+                TextColor = "Black"
+                VerticalOptions = "Start"
+                HorizontalOptions = "Fill"
+                Margin="20,0,20,0"
+
+                />
+
+
+            <Label x:Name="call_status" HorizontalOptions="Center" Text="Status... " TextColor="#818181" />
+            <Label x:Name="call_stats" HorizontalOptions="Center" Text="..... " TextColor="#818181"/>
+
+            <!--<Button x:Name="video" Text="...." Clicked="OnVideoClicked" HorizontalOptions="Center" />-->
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
